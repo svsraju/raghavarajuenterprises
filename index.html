@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raghavaraju Enterprises | Premium Solar Solutions in Andhra Pradesh</title>
+    <meta name="description" content="Leading solar EPC contractor in Andhra Pradesh. Expert installation of residential, commercial & industrial solar systems from 1kW to 100kW. Quality guaranteed, subsidy support included.">
+    <meta name="keywords" content="solar installation, solar EPC, Andhra Pradesh solar, Kakinada solar, solar panels, rooftop solar, PM Surya Ghar, solar subsidy">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --gold-primary: #D4AF37;
+            --gold-light: #F4E4B8;
+            --gold-dark: #B8941F;
+            --navy-deep: #1B2951;
+            --navy-medium: #2A3F6B;
+            --cream: #FEFBF3;
+            --warm-white: #FAF8F1;
+            --charcoal: #2C2C2C;
+            --gray-light: #F5F5F5;
+            --text-primary: #333333;
+            --text-secondary: #666666;
+            --accent-orange: #E67E22;
+            --success-green: #27AE60;
+            
+            --gradient-hero: linear-gradient(135deg, #D4AF37 0%, #E67E22 50%, #DC7633 100%);
+            --gradient-section: linear-gradient(180deg, #FEFBF3 0%, #FAF8F1 100%);
+            --shadow-elegant: 0 8px 32px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 12px 40px rgba(212, 175, 55, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            overflow-x: hidden;
+            background: var(--cream);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header & Navigation */
+        .header {
+            background: rgba(254, 251, 243, 0.95);
+            backdrop-filter: blur(20px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-family: 'Crimson Text', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--navy-deep);
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: translateY(-2px);
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-hero);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: var(--shadow-elegant);
+            transition: all 0.3s ease;
+        }
+
+        .logo:hover .logo-icon {
+            transform: rotate(10deg) scale(1.05);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-primary);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold-primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .nav-menu a:hover {
+            color: var(--gold-dark);
+        }
+
+        .cta-button {
+            background: var(--gradient-hero);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-elegant);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        /* Mobile menu toggle */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 140px 0 100px;
+            background: linear-gradient(135deg, rgba(254, 251, 243, 0.9) 0%, rgba(250, 248, 241, 0.9) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -20%;
+            width: 40%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(212, 175, 55, 0.05) 0%, rgba(230, 126, 34, 0.05) 100%);
+            transform: skewX(-15deg);
+            z-index: -1;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-family: 'Crimson Text', serif;
+            font-size: 3.5rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--navy-deep);
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+
+        .hero-text .highlight {
+            background: var(--gradient-hero);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-text .subtitle {
+            font-size: 1.3rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-weight: 400;
+            animation: fadeInUp 1s ease 0.4s both;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+            animation: fadeInUp 1s ease 0.6s both;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--gold-primary);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            animation: fadeInUp 1s ease 0.8s both;
+        }
+
+        .btn-primary {
+            background: var(--gradient-hero);
+            color: white;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-elegant);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--navy-deep);
+            padding: 16px 32px;
+            border: 2px solid var(--gold-primary);
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: var(--gold-primary);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .hero-image {
+            position: relative;
+            animation: fadeInRight 1s ease 0.4s both;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: var(--shadow-elegant);
+            transition: transform 0.3s ease;
+        }
+
+        .hero-image:hover img {
+            transform: scale(1.02);
+        }
+
+        /* Business Divisions Section */
+        .divisions {
+            padding: 100px 0;
+            background: var(--warm-white);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-family: 'Crimson Text', serif;
+            font-size: 2.8rem;
+            font-weight: 600;
+            color: var(--navy-deep);
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .divisions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .division-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow-elegant);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .division-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-hero);
+            transition: height 0.3s ease;
+        }
+
+        .division-card:hover::before {
+            height: 8px;
+        }
+
+        .division-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .division-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-hero);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .division-card:hover .division-icon {
+            transform: rotate(10deg) scale(1.1);
+        }
+
+        .division-card h3 {
+            font-family: 'Crimson Text', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--navy-deep);
+            margin-bottom: 1rem;
+        }
+
+        .division-card p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .division-features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .division-features li {
+            padding: 0.3rem 0;
+            color: var(--text-secondary);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .division-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success-green);
+            font-weight: bold;
+        }
+
+        /* Contact Info Section */
+        .contact-info {
+            background: var(--navy-deep);
+            color: white;
+            padding: 80px 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .contact-item {
+            padding: 2rem;
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-hero);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin: 0 auto 1rem;
+        }
+
+        .contact-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--gold-light);
+        }
+
+        .contact-item p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--charcoal);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            font-family: 'Crimson Text', serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--gold-light);
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            line-height: 1.8;
+        }
+
+        .footer-section a:hover {
+            color: var(--gold-primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2rem;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-stats {
+                justify-content: center;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .divisions-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-header h2 {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .hero {
+                padding: 120px 0 80px;
+            }
+
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+
+            .division-card {
+                padding: 2rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">
+                <div class="logo-icon">☀</div>
+                <span>Raghavaraju Enterprises</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#divisions">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <a href="tel:8367086748" class="cta-button">Call Now</a>
+            
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Premium <span class="highlight">Solar Solutions</span> for Andhra Pradesh</h1>
+                    <p class="subtitle">Leading EPC contractor delivering residential, commercial & industrial solar installations from 1kW to 100kW with guaranteed quality and comprehensive support.</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">25</span>
+                            <span class="stat-label">Years Warranty</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100kW</span>
+                            <span class="stat-label">Max Capacity</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary">Get Quote →</a>
+                        <a href="#divisions" class="btn-secondary">Our Services</a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Solar Panel Installation" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Divisions -->
+    <section class="divisions" id="divisions">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Business Divisions</h2>
+                <p>Comprehensive solutions across multiple sectors with specialized expertise and dedicated service teams for each division.</p>
+            </div>
+            
+            <div class="divisions-grid">
+                <div class="division-card">
+                    <div class="division-icon">🏡</div>
+                    <h3>RR Interiors & Home Decors</h3>
+                    <p>Complete interior design and home decoration services with modern aesthetics and functional designs.</p>
+                    <ul class="division-features">
+                        <li>Custom interior design</li>
+                        <li>Home decoration solutions</li>
+                        <li>Project gallery management</li>
+                        <li>Quality materials & finishes</li>
+                    </ul>
+                    <a href="interiors.html" class="btn-secondary" style="display: inline-block; padding: 12px 24px; font-size: 0.9rem;">View Projects →</a>
+                </div>
+                
+                <div class="division-card">
+                    <div class="division-icon">☀</div>
+                    <h3>Suryakantha Solar Energies</h3>
+                    <p>Authorized solar EPC contractor specializing in residential, commercial, and industrial solar installations across Andhra Pradesh.</p>
+                    <ul class="division-features">
+                        <li>1kW to 100kW installations</li>
+                        <li>PM Surya Ghar subsidy support</li>
+                        <li>Quality brands & components</li>
+                        <li>25-year system warranty</li>
+                        <li>Bank loan facilitation</li>
+                    </ul>
+                    <a href="solar.html" class="btn-secondary" style="display: inline-block; padding: 12px 24px; font-size: 0.9rem;">Solar Solutions →</a>
+                </div>
+                
+                <div class="division-card">
+                    <div class="division-icon">🏗</div>
+                    <h3>RR Homes</h3>
+                    <p>Complete construction solutions from residential homes to commercial buildings with quality construction and timely delivery.</p>
+                    <ul class="division-features">
+                        <li>Residential construction</li>
+                        <li>Commercial buildings</li>
+                        <li>Project management</li>
+                        <li>Quality assurance</li>
+                    </ul>
+                    <a href="construction.html" class="btn-secondary" style="display: inline-block; padding: 12px 24px; font-size: 0.9rem;">Construction →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info" id="contact">
+        <div class="container">
+            <div class="section-header" style="color: white; margin-bottom: 3rem;">
+                <h2 style="color: var(--gold-light);">Get In Touch</h2>
+                <p style="color: rgba(255, 255, 255, 0.8);">Ready to start your project? Contact us for expert consultation and competitive quotes.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <h3>Phone</h3>
+                    <p><a href="tel:8367086748" style="color: white; font-size: 1.1rem;">8367086748</a></p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@raghavarajuenterprises.com" style="color: white;">info@raghavarajuenterprises.com</a></p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <h3>Location</h3>
+                    <p>Rajeshwari Nagar<br>Kakinada, Andhra Pradesh</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">🆔</div>
+                    <h3>GST Number</h3>
+                    <p>37MIFPS2466D1ZU</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Raghavaraju Enterprises</h3>
+                    <p>Leading provider of solar solutions, interior design, and construction services in Andhra Pradesh. Committed to quality, innovation, and customer satisfaction.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Our Divisions</h3>
+                    <p><a href="interiors.html">RR Interiors & Home Decors</a></p>
+                    <p><a href="solar.html">Suryakantha Solar Energies</a></p>
+                    <p><a href="construction.html">RR Homes Construction</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Phone: <a href="tel:8367086748">8367086748</a></p>
+                    <p>Email: <a href="mailto:info@raghavarajuenterprises.com">info@raghavarajuenterprises.com</a></p>
+                    <p>Kakinada, Andhra Pradesh</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <p>Solar EPC Installation</p>
+                    <p>Interior Design</p>
+                    <p>Home Construction</p>
+                    <p>Project Management</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Raghavaraju Enterprises. All rights reserved. | GST: 37MIFPS2466D1ZU</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(254, 251, 243, 0.98)';
+                header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.background = 'rgba(254, 251, 243, 0.95)';
+                header.style.boxShadow = 'none';
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileToggle = document.querySelector('.mobile-menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileToggle.addEventListener('click', () => {
+            navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe division cards
+        document.querySelectorAll('.division-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
