@@ -6,6 +6,12 @@
     <title>Raghavaraju Enterprises | Solar, Interiors & Construction Services in Andhra Pradesh</title>
     <meta name="description" content="Leading provider of solar solutions, interior design, and construction services in Andhra Pradesh. Three specialized divisions serving residential and commercial clients across AP.">
     
+    <!-- Favicon and Logo Meta Tags -->
+    <link rel="icon" type="image/x-icon" href="assets/images/branding/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/branding/logo-icon.png">
+    <meta property="og:image" content="assets/images/branding/logo-main.png">
+    <meta name="twitter:image" content="assets/images/branding/logo-main.png">
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,6 +95,30 @@
             font-size: 1.2rem;
             color: white;
             font-weight: bold;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Logo image styling */
+        .logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        /* Fallback text when no logo image */
+        .logo-icon::after {
+            content: 'R';
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Hide fallback when image loads */
+        .logo-icon:has(img)::after {
+            display: none;
         }
 
         .logo-text {
@@ -96,6 +126,24 @@
             font-size: 1.5rem;
             font-weight: 600;
             color: var(--dark-gray);
+        }
+
+        /* Logo responsive sizing */
+        @media (max-width: 768px) {
+            .logo-icon {
+                width: 36px;
+                height: 36px;
+            }
+            
+            .logo-text {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-text {
+                display: none; /* Show only logo icon on very small screens */
+            }
         }
 
         .nav-menu {
@@ -281,6 +329,10 @@
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            min-height: 520px;
         }
 
         .service-card::before {
@@ -302,6 +354,12 @@
         .service-card:hover {
             transform: translateY(-8px);
             box-shadow: var(--hover-shadow);
+        }
+
+        .service-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
         }
 
         .service-icon {
@@ -339,6 +397,7 @@
             font-weight: 500;
             color: var(--dark-gray);
             margin-bottom: 16px;
+            line-height: 1.3;
         }
 
         .service-card p {
@@ -346,20 +405,23 @@
             margin-bottom: 24px;
             line-height: 1.6;
             font-size: 15px;
+            flex-grow: 1;
         }
 
         .service-features {
             list-style: none;
             margin-bottom: 32px;
             text-align: left;
+            flex-grow: 1;
         }
 
         .service-features li {
-            padding: 6px 0;
+            padding: 8px 0;
             color: var(--medium-gray);
             position: relative;
             padding-left: 20px;
             font-size: 14px;
+            line-height: 1.4;
         }
 
         .service-features li::before {
@@ -368,26 +430,36 @@
             left: 0;
             color: var(--accent-green);
             font-weight: bold;
+            top: 8px;
+        }
+
+        .service-link-container {
+            margin-top: auto;
+            padding-top: 20px;
         }
 
         .service-link {
             background: var(--light-gray);
             color: var(--dark-gray);
-            padding: 12px 24px;
+            padding: 14px 28px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: 500;
             transition: all 0.2s ease;
             display: inline-flex;
             align-items: center;
-            gap: 6px;
+            gap: 8px;
             font-size: 14px;
+            width: 100%;
+            justify-content: center;
+            box-sizing: border-box;
         }
 
         .service-link:hover {
             background: var(--accent-orange);
             color: white;
-            transform: translateY(-1px);
+            transform: translateY(-2px);
+            box-shadow: var(--soft-shadow);
         }
 
         /* Stats Section */
@@ -542,7 +614,18 @@
             font-size: 14px;
         }
 
-        /* Mobile Responsive */
+        /* Mobile Responsive - Enhanced */
+        @media (max-width: 1024px) {
+            .container {
+                padding: 0 20px;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 24px;
+            }
+        }
+
         @media (max-width: 768px) {
             .nav-menu {
                 display: none;
@@ -550,30 +633,43 @@
 
             .hero h1 {
                 font-size: 2.4rem;
+                line-height: 1.2;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 32px;
             }
 
             .hero-buttons {
                 flex-direction: column;
                 align-items: center;
+                gap: 12px;
             }
 
             .services-grid {
                 grid-template-columns: 1fr;
-                gap: 24px;
+                gap: 20px;
             }
 
             .service-card {
-                padding: 32px 24px;
+                padding: 28px 20px;
             }
 
             .stats-grid {
                 grid-template-columns: repeat(2, 1fr);
-                gap: 24px;
+                gap: 20px;
             }
 
             .contact-buttons {
                 flex-direction: column;
                 align-items: center;
+                gap: 12px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 32px;
             }
         }
 
@@ -588,14 +684,78 @@
 
             .hero h1 {
                 font-size: 2rem;
+                margin-bottom: 16px;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+                margin-bottom: 28px;
             }
 
             .service-card {
-                padding: 24px;
+                padding: 24px 16px;
+            }
+
+            .service-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.8rem;
             }
 
             .stats-grid {
                 grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .stat-item {
+                padding: 24px 16px;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .services {
+                padding: 60px 0;
+            }
+
+            .stats {
+                padding: 50px 0;
+            }
+
+            .contact {
+                padding: 60px 0;
+            }
+        }
+
+        /* Tablet specific optimizations */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 28px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /* Large desktop optimizations */
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1300px;
+            }
+
+            .hero h1 {
+                font-size: 3.6rem;
+            }
+
+            .services-grid {
+                gap: 40px;
             }
         }
     </style>
@@ -605,7 +765,12 @@
     <header class="header">
         <nav class="nav container">
             <a href="#" class="logo">
-                <div class="logo-icon">R</div>
+                <div class="logo-icon">
+                    <img src="assets/images/branding/logo-icon.png" 
+                         alt="Raghavaraju Enterprises Logo" 
+                         onerror="this.style.display='none'"
+                         onload="this.style.display='block'">
+                </div>
                 <span class="logo-text">Raghavaraju Enterprises</span>
             </a>
             
@@ -625,8 +790,8 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <h1>Three <span class="highlight">Specialized Divisions</span><br>One Commitment to Excellence</h1>
-                <p class="hero-subtitle">Leading provider of solar energy solutions, premium interior design, and construction services across Andhra Pradesh. Quality, innovation, and customer satisfaction guaranteed.</p>
+                <h1>Transforming <span class="highlight">Dreams</span> Into<br>Reality Across Andhra Pradesh</h1>
+                <p class="hero-subtitle">From stunning interiors to sustainable solar energy and quality construction - we bring expertise, innovation, and excellence to every project we undertake.</p>
                 
                 <div class="hero-buttons">
                     <a href="#services" class="btn-primary">🚀 Explore Our Services</a>
@@ -640,57 +805,69 @@
     <section class="services" id="services">
         <div class="container">
             <div class="section-header">
-                <h2>Our Three Business Divisions</h2>
-                <p>Comprehensive solutions across multiple sectors with specialized expertise and dedicated service teams for each division.</p>
+                <h2>Our Business Excellence</h2>
+                <p>Comprehensive solutions across multiple sectors with dedicated expertise and personalized service for every client need.</p>
             </div>
             
             <div class="services-grid">
                 <!-- Interior Design Division -->
                 <div class="service-card">
-                    <div class="service-icon interiors">🏡</div>
-                    <h3>RR Interiors & Home Decors</h3>
-                    <p>Transform your living and working spaces with our premium interior design services. Modern aesthetics meet functional design for residential and commercial projects.</p>
-                    <ul class="service-features">
-                        <li>Residential interior design</li>
-                        <li>Commercial space planning</li>
-                        <li>Custom furniture & décor</li>
-                        <li>3D visualization & planning</li>
-                        <li>Complete project management</li>
-                        <li>Quality materials & finishes</li>
-                    </ul>
-                    <a href="interiors.html" class="service-link">View Interior Projects →</a>
+                    <div class="service-content">
+                        <div class="service-icon interiors">🏡</div>
+                        <h3>RR Interiors & Home Decors</h3>
+                        <p>Transform your living and working spaces with our premium interior design services. Modern aesthetics meet functional design for residential and commercial projects.</p>
+                        <ul class="service-features">
+                            <li>Residential interior design</li>
+                            <li>Commercial space planning</li>
+                            <li>Custom furniture & décor</li>
+                            <li>3D visualization & planning</li>
+                            <li>Complete project management</li>
+                            <li>Quality materials & finishes</li>
+                        </ul>
+                    </div>
+                    <div class="service-link-container">
+                        <a href="interiors.html" class="service-link">View Interior Projects →</a>
+                    </div>
                 </div>
 
                 <!-- Solar Energy Division -->
                 <div class="service-card">
-                    <div class="service-icon solar">☀️</div>
-                    <h3>Suryakantha Solar Energies</h3>
-                    <p>Harness clean energy with our comprehensive solar solutions. Authorized EPC contractor serving residential, commercial, and industrial clients across Andhra Pradesh.</p>
-                    <ul class="service-features">
-                        <li>1kW to 100kW solar installations</li>
-                        <li>Residential & commercial projects</li>
-                        <li>PM Surya Ghar subsidy support</li>
-                        <li>25-year system warranty</li>
-                        <li>Bank loan facilitation</li>
-                        <li>Complete EPC services</li>
-                    </ul>
-                    <a href="solar.html" class="service-link">Solar Solutions →</a>
+                    <div class="service-content">
+                        <div class="service-icon solar">☀️</div>
+                        <h3>Suryakantha Solar Energies</h3>
+                        <p>Harness clean energy with our comprehensive solar solutions. Authorized EPC contractor serving residential, commercial, and industrial clients across Andhra Pradesh.</p>
+                        <ul class="service-features">
+                            <li>1kW to 100kW solar installations</li>
+                            <li>Residential & commercial projects</li>
+                            <li>PM Surya Ghar subsidy support</li>
+                            <li>25-year system warranty</li>
+                            <li>Bank loan facilitation</li>
+                            <li>Complete EPC services</li>
+                        </ul>
+                    </div>
+                    <div class="service-link-container">
+                        <a href="solar.html" class="service-link">Solar Solutions →</a>
+                    </div>
                 </div>
 
                 <!-- Construction Division -->
                 <div class="service-card">
-                    <div class="service-icon construction">🏗️</div>
-                    <h3>RR Homes Construction</h3>
-                    <p>Build your dreams with our expert construction services. Quality materials, skilled workforce, and timely delivery for residential and commercial projects.</p>
-                    <ul class="service-features">
-                        <li>Residential construction</li>
-                        <li>Commercial buildings</li>
-                        <li>Renovation & remodeling</li>
-                        <li>Project management</li>
-                        <li>Quality assurance</li>
-                        <li>Timely delivery</li>
-                    </ul>
-                    <a href="construction.html" class="service-link">Construction Projects →</a>
+                    <div class="service-content">
+                        <div class="service-icon construction">🏗️</div>
+                        <h3>RR Homes Construction</h3>
+                        <p>Build your dreams with our expert construction services. Quality materials, skilled workforce, and timely delivery for residential and commercial projects.</p>
+                        <ul class="service-features">
+                            <li>Residential construction</li>
+                            <li>Commercial buildings</li>
+                            <li>Renovation & remodeling</li>
+                            <li>Project management</li>
+                            <li>Quality assurance</li>
+                            <li>Timely delivery</li>
+                        </ul>
+                    </div>
+                    <div class="service-link-container">
+                        <a href="construction.html" class="service-link">Construction Projects →</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -728,7 +905,7 @@
             
             <div class="contact-buttons">
                 <a href="tel:8367086748" class="btn-white">📞 Call: 8367086748</a>
-                <a href="mailto:info@raghavarajuenterprises.com" class="btn-outline-white">✉️ Email Us</a>
+                <a href="/cdn-cgi/l/email-protection#7d14131b123d0f1c1a151c0b1c0f1c1708181309180f0d0f140e180e531e1210" class="btn-outline-white">✉️ Email Us</a>
             </div>
         </div>
     </section>
@@ -752,7 +929,7 @@
                 <div class="footer-section">
                     <h3>Contact Info</h3>
                     <p>📞 <a href="tel:8367086748">8367086748</a></p>
-                    <p>✉️ <a href="mailto:info@raghavarajuenterprises.com">info@raghavarajuenterprises.com</a></p>
+                    <p>✉️ <a href="/cdn-cgi/l/email-protection#fe97909891be8c9f99969f889f8c9f948b9b908a9b8c8e8c978d9b8dd09d9193"><span class="__cf_email__" data-cfemail="7e171018113e0c1f19161f081f0c1f140b1b100a1b0c0e0c170d1b0d501d1113">[email&#160;protected]</span></a></p>
                     <p>📍 Kakinada, Andhra Pradesh</p>
                 </div>
                 
@@ -770,7 +947,7 @@
         </div>
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // Smooth scrolling for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -807,15 +984,4 @@
             });
         }, {
             threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        });
-
-        document.querySelectorAll('.service-card, .stat-item').forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(30px)';
-            card.style.transition = 'all 0.6s ease';
-            observer.observe(card);
-        });
-    </script>
-</body>
-</html>
+            rootMargin: '0px 0px -50px 0
