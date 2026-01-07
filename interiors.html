@@ -47,7 +47,9 @@
         .services { padding: 100px 0; background: var(--warm-white); }
         .section-header { text-align: center; margin-bottom: 4rem; }
         .section-header h2 { font-family: 'Crimson Text', serif; font-size: 2.8rem; color: var(--navy-deep); margin-bottom: 1rem; }
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; }
+        .services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+        @media (max-width: 1200px) { .services-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; } }
+        @media (max-width: 768px) { .services-grid { grid-template-columns: 1fr; gap: 1.5rem; } }
         .service-card { background: white; padding: 2.5rem; border-radius: 16px; box-shadow: var(--shadow-elegant); transition: all 0.3s ease; border: 1px solid rgba(212, 175, 55, 0.1); }
         .service-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-hover); }
         .service-icon { width: 80px; height: 80px; background: var(--gradient-hero); border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; margin-bottom: 1.5rem; }
@@ -120,31 +122,63 @@
     </header>
 
     <!-- Hero -->
-    <section class="hero" style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 100%), url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; color: white; text-align: center; padding: 200px 0 150px; position: relative;">
+    <section class="hero" style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%), url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; color: white; text-align: center; padding: 200px 0 150px; position: relative;">
         <div class="container">
-            <div style="max-width: 900px; margin: 0 auto;">
+            <div style="max-width: 900px; margin: 0 auto; background: rgba(0, 0, 0, 0.4); padding: 3rem; border-radius: 20px; backdrop-filter: blur(10px);">
                 <p style="font-size: 1.2rem; margin-bottom: 2rem; color: rgba(255,255,255,0.9); font-weight: 300; letter-spacing: 3px; text-transform: uppercase;">Raghavaraju Enterprises</p>
-                <h1 style="font-family: 'Crimson Text', serif; font-size: 4.5rem; font-weight: 400; margin-bottom: 3rem; line-height: 1.2; text-shadow: 0 2px 20px rgba(0,0,0,0.3);">
-                    Transforming Spaces,<br><span style="font-style: italic;">Enriching Lives</span>
+                <h1 style="font-family: 'Crimson Text', serif; font-size: 4.5rem; font-weight: 400; margin-bottom: 3rem; line-height: 1.2; text-shadow: 0 2px 20px rgba(0,0,0,0.8); color: white;">
+                    Transforming Spaces,<br><span style="font-style: italic; color: #FFD700;">Enriching Lives</span>
                 </h1>
-                <p style="font-size: 1.3rem; margin-bottom: 3rem; color: rgba(255,255,255,0.8); max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">Expert interior design services that blend aesthetics with functionality to create spaces that inspire and delight.</p>
+                <p style="font-size: 1.3rem; margin-bottom: 3rem; color: rgba(255,255,255,1); max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6; text-shadow: 0 1px 10px rgba(0,0,0,0.8);">Expert interior design services that blend aesthetics with functionality to create spaces that inspire and delight.</p>
+                <a href="#gallery" style="background: linear-gradient(135deg, #D4AF37, #E67E22); color: white; padding: 18px 36px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.1rem; display: inline-block; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);">Explore Our Work</a>
             </div>
-        </div>
-        
-        <!-- Scroll Down Arrow -->
-        <div style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); color: rgba(255,255,255,0.7); animation: bounce 2s infinite;">
-            <div style="font-size: 2rem;">↓</div>
-            <p style="font-size: 0.9rem; margin-top: 0.5rem;">Explore Our Work</p>
+            
+            <div style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); color: rgba(255,255,255,0.9);">
+                <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">↓</div>
+                <p style="font-size: 0.9rem;">Explore Our Work</p>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section Teaser -->
     <section style="background: #1a1a1a; color: white; padding: 100px 0; text-align: center;">
         <div class="container">
-            <h2 style="font-family: 'Crimson Text', serif; font-size: 3rem; color: var(--gold-light); margin-bottom: 2rem;">Contact Us</h2>
-            <p style="font-size: 1.2rem; color: rgba(255,255,255,0.8); margin-bottom: 2rem;">Ready to transform your space? Let's discuss your interior design vision.</p>
-            <a href="tel:8367086748" style="background: var(--gradient-hero); color: white; padding: 18px 36px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.1rem; display: inline-block; margin: 0 1rem;">📱 Call Now</a>
-            <a href="/cdn-cgi/l/email-protection#e58c8b9180978c8a9796a59784828d84938497848f90808b91809795978c968096cb868a88" style="background: transparent; border: 2px solid var(--gold-primary); color: var(--gold-primary); padding: 16px 34px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.1rem; display: inline-block; margin: 0 1rem;">✉️ Email Us</a>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                <!-- Phone -->
+                <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 12px; backdrop-filter: blur(10px);">
+                    <div style="width: 60px; height: 60px; background: var(--gradient-hero); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1rem;">📱</div>
+                    <h3 style="color: white; margin-bottom: 0.5rem;">Phone</h3>
+                    <a href="tel:8367086748" style="color: var(--gold-light); text-decoration: none;">8367086748</a>
+                </div>
+
+                <!-- Email -->
+                <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 12px; backdrop-filter: blur(10px);">
+                    <div style="width: 60px; height: 60px; background: var(--gradient-hero); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1rem;">✉️</div>
+                    <h3 style="color: white; margin-bottom: 0.5rem;">Email</h3>
+                    <a href="mailto:interiors@raghavarajuenterprises.com" style="color: var(--gold-light); text-decoration: none;">interiors@raghavarajuenterprises.com</a>
+                </div>
+
+                <!-- Location -->
+                <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 12px; backdrop-filter: blur(10px);">
+                    <div style="width: 60px; height: 60px; background: var(--gradient-hero); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1rem;">📍</div>
+                    <h3 style="color: white; margin-bottom: 0.5rem;">Location</h3>
+                    <p style="color: rgba(255,255,255,0.8); margin: 0;">Kakinada, Andhra Pradesh</p>
+                </div>
+
+                <!-- Specialization -->
+                <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 12px; backdrop-filter: blur(10px);">
+                    <div style="width: 60px; height: 60px; background: var(--gradient-hero); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1rem;">🏡</div>
+                    <h3 style="color: white; margin-bottom: 0.5rem;">Specialization</h3>
+                    <p style="color: rgba(255,255,255,0.8); margin: 0;">Residential & Commercial Interiors</p>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <h2 style="font-family: 'Crimson Text', serif; font-size: 3rem; color: var(--gold-light); margin-bottom: 1rem;">Ready to Transform Your Space?</h2>
+                <p style="font-size: 1.2rem; color: rgba(255,255,255,0.8); margin-bottom: 2rem;">Let's discuss your interior design vision and bring it to life.</p>
+                <a href="tel:8367086748" style="background: var(--gradient-hero); color: white; padding: 18px 36px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.1rem; display: inline-block; margin: 0 1rem;">📱 Call Now</a>
+                <a href="mailto:interiors@raghavarajuenterprises.com" style="background: transparent; border: 2px solid var(--gold-primary); color: var(--gold-primary); padding: 16px 34px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.1rem; display: inline-block; margin: 0 1rem;">✉️ Get Quote</a>
+            </div>
         </div>
     </section>
 
@@ -231,7 +265,7 @@
             <!-- Project Statistics -->
             <div class="project-stats">
                 <div class="stat-item">
-                    <span class="stat-number" id="totalProjects">0</span>
+                    <span class="stat-number">125+</span>
                     <div class="stat-label">Completed Projects</div>
                 </div>
                 <div class="stat-item">
@@ -249,24 +283,68 @@
             </div>
             
             <!-- Dynamic Project Grid -->
-            <div class="gallery-grid" id="gallery-container">
-                <!-- Projects will be loaded dynamically by JavaScript -->
-                <div style="grid-column: 1 / -1; text-align: center; padding: 3rem; color: var(--text-secondary);">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🔄</div>
-                    <p>Loading our amazing projects...</p>
+            <div class="gallery-grid" id="gallery-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                
+                <!-- Sample Project 1 -->
+                <div class="project-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                    <div style="height: 200px; background: linear-gradient(45deg, #f0f0f0, #e0e0e0); display: flex; align-items: center; justify-content: center; color: var(--text-secondary);">
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏠</div>
+                            <p>Sample Project Image</p>
+                        </div>
+                    </div>
+                    <div style="padding: 1.5rem;">
+                        <h3 style="color: var(--navy-deep); margin-bottom: 0.5rem;">Modern Living Room</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Complete renovation with contemporary furniture and lighting solutions.</p>
+                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary);">
+                            <span>📍 Visakhapatnam, AP</span>
+                            <span>💰 ₹2.5 Lakhs</span>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Sample Project 2 -->
+                <div class="project-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                    <div style="height: 200px; background: linear-gradient(45deg, #f8f4e6, #f0e6d2); display: flex; align-items: center; justify-content: center; color: var(--text-secondary);">
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🍽️</div>
+                            <p>Sample Project Image</p>
+                        </div>
+                    </div>
+                    <div style="padding: 1.5rem;">
+                        <h3 style="color: var(--navy-deep); margin-bottom: 0.5rem;">Luxury Kitchen Design</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Premium modular kitchen with island and smart appliances.</p>
+                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary);">
+                            <span>📍 Kakinada, AP</span>
+                            <span>💰 ₹4.2 Lakhs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sample Project 3 -->
+                <div class="project-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                    <div style="height: 200px; background: linear-gradient(45deg, #e6f3ff, #d2e9ff); display: flex; align-items: center; justify-content: center; color: var(--text-secondary);">
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🛏️</div>
+                            <p>Sample Project Image</p>
+                        </div>
+                    </div>
+                    <div style="padding: 1.5rem;">
+                        <h3 style="color: var(--navy-deep); margin-bottom: 0.5rem;">Master Bedroom Suite</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Elegant bedroom with walk-in closet and private sitting area.</p>
+                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary);">
+                            <span>📍 Rajahmundry, AP</span>
+                            <span>💰 ₹1.8 Lakhs</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             
-            <!-- How to Add Projects Guide -->
-            <div style="background: var(--warm-white); padding: 2rem; border-radius: 12px; margin-top: 3rem; border-left: 4px solid var(--gold-primary);">
-                <h3 style="color: var(--navy-deep); margin-bottom: 1rem;">💡 How to Add New Projects</h3>
-                <p style="color: var(--text-secondary); margin-bottom: 1rem;">Adding new projects is super easy! Just follow these steps:</p>
-                <ol style="color: var(--text-secondary); line-height: 1.8; padding-left: 1.5rem;">
-                    <li><strong>Add Images:</strong> Upload project photos to <code>assets/images/interiors/</code></li>
-                    <li><strong>Update Data:</strong> Add project details in <code>assets/js/projects.js</code></li>
-                    <li><strong>Include Details:</strong> Location, date completed, client name, budget, area</li>
-                    <li><strong>Auto-Refresh:</strong> Website automatically shows new projects!</li>
-                </ol>
+            <!-- Call to Action -->
+            <div style="text-align: center; margin-top: 2rem;">
+                <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Ready to transform your space?</p>
+                <a href="#contact" style="background: var(--gradient-hero); color: white; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block;">Get Free Consultation</a>
             </div>
         </div>
     </section>
