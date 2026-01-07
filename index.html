@@ -128,7 +128,6 @@
             color: var(--dark-gray);
         }
 
-        /* Logo responsive sizing */
         @media (max-width: 768px) {
             .logo-icon {
                 width: 36px;
@@ -141,8 +140,13 @@
         }
 
         @media (max-width: 480px) {
+            .logo-icon {
+                width: 32px;
+                height: 32px;
+            }
+            
             .logo-text {
-                display: none; /* Show only logo icon on very small screens */
+                font-size: 1.1rem; /* Keep company name visible on mobile */
             }
         }
 
@@ -833,7 +837,12 @@
                 <!-- Solar Energy Division -->
                 <div class="service-card">
                     <div class="service-content">
-                        <div class="service-icon solar">☀️</div>
+                        <div class="service-icon solar">
+                            <img src="images/branding/suryakantha-solar-logo.png" 
+                                 alt="Suryakantha Solar Energies"
+                                 style="width: 85%; height: 85%; object-fit: contain;"
+                                 onerror="this.style.display='none'; this.parentElement.innerHTML='☀️';">
+                        </div>
                         <h3>Suryakantha Solar Energies</h3>
                         <p>Harness clean energy with our comprehensive solar solutions. Authorized EPC contractor serving residential, commercial, and industrial clients across Andhra Pradesh.</p>
                         <ul class="service-features">
