@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/projects.css">
     
     <style>
         :root {
@@ -97,8 +98,13 @@
     <header class="header">
         <nav class="nav container">
             <a href="index.html" class="logo">
-                <div class="logo-icon">🏡</div>
-                <span>RR Interiors</span>
+                <div class="logo-icon">
+                    <img src="images/branding/rr-main-logo.png" 
+                         alt="RR Interiors - Raghavaraju Enterprises" 
+                         onerror="this.style.display='none'; this.parentElement.innerHTML='🏡';"
+                         style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                <span>Raghavaraju Enterprises</span>
             </a>
             
             <ul class="nav-menu">
@@ -114,14 +120,31 @@
     </header>
 
     <!-- Hero -->
-    <section class="hero">
+    <section class="hero" style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 100%), url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; color: white; text-align: center; padding: 200px 0 150px; position: relative;">
         <div class="container">
-            <h1><span class="highlight">RR Interiors</span> & Home Decors</h1>
-            <p class="subtitle">Transform your spaces with our premium interior design services. Modern aesthetics, functional designs, and quality finishes for residential and commercial projects.</p>
-            <div style="margin-top: 2rem;">
-                <a href="#contact" class="btn-primary">Get Design Quote</a>
-                <a href="#gallery" class="btn-primary" style="background: transparent; color: var(--navy-deep); border: 2px solid var(--gold-primary);">View Portfolio</a>
+            <div style="max-width: 900px; margin: 0 auto;">
+                <p style="font-size: 1.2rem; margin-bottom: 2rem; color: rgba(255,255,255,0.9); font-weight: 300; letter-spacing: 3px; text-transform: uppercase;">Raghavaraju Enterprises</p>
+                <h1 style="font-family: 'Crimson Text', serif; font-size: 4.5rem; font-weight: 400; margin-bottom: 3rem; line-height: 1.2; text-shadow: 0 2px 20px rgba(0,0,0,0.3);">
+                    Transforming Spaces,<br><span style="font-style: italic;">Enriching Lives</span>
+                </h1>
+                <p style="font-size: 1.3rem; margin-bottom: 3rem; color: rgba(255,255,255,0.8); max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">Expert interior design services that blend aesthetics with functionality to create spaces that inspire and delight.</p>
             </div>
+        </div>
+        
+        <!-- Scroll Down Arrow -->
+        <div style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); color: rgba(255,255,255,0.7); animation: bounce 2s infinite;">
+            <div style="font-size: 2rem;">↓</div>
+            <p style="font-size: 0.9rem; margin-top: 0.5rem;">Explore Our Work</p>
+        </div>
+    </section>
+
+    <!-- Contact Section Teaser -->
+    <section style="background: #1a1a1a; color: white; padding: 100px 0; text-align: center;">
+        <div class="container">
+            <h2 style="font-family: 'Crimson Text', serif; font-size: 3rem; color: var(--gold-light); margin-bottom: 2rem;">Contact Us</h2>
+            <p style="font-size: 1.2rem; color: rgba(255,255,255,0.8); margin-bottom: 2rem;">Ready to transform your space? Let's discuss your interior design vision.</p>
+            <a href="tel:8367086748" style="background: var(--gradient-hero); color: white; padding: 18px 36px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.1rem; display: inline-block; margin: 0 1rem;">📱 Call Now</a>
+            <a href="/cdn-cgi/l/email-protection#e58c8b9180978c8a9796a59784828d84938497848f90808b91809795978c968096cb868a88" style="background: transparent; border: 2px solid var(--gold-primary); color: var(--gold-primary); padding: 16px 34px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.1rem; display: inline-block; margin: 0 1rem;">✉️ Email Us</a>
         </div>
     </section>
 
@@ -193,8 +216,8 @@
     <section class="gallery" id="gallery">
         <div class="container">
             <div class="section-header">
-                <h2>Project Gallery</h2>
-                <p>Explore our completed interior design projects</p>
+                <h2>Explore our stunning interior design projects</h2>
+                <p>Discover our portfolio of completed interior design projects with detailed information</p>
             </div>
             
             <div class="gallery-filter">
@@ -205,65 +228,45 @@
                 <button class="filter-btn" onclick="filterGallery('commercial')">Commercial</button>
             </div>
             
-            <div class="gallery-grid" id="gallery-container">
-                <div class="gallery-item" data-category="living">
-                    <div class="gallery-image">📸 Living Room Project</div>
-                    <div class="gallery-content">
-                        <div class="gallery-category">Living Room</div>
-                        <h3 class="gallery-title">Modern Living Space</h3>
-                        <p class="gallery-description">Contemporary living room design with premium finishes and custom lighting solutions.</p>
-                    </div>
+            <!-- Project Statistics -->
+            <div class="project-stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="totalProjects">0</span>
+                    <div class="stat-label">Completed Projects</div>
                 </div>
-                
-                <div class="gallery-item" data-category="bedroom">
-                    <div class="gallery-image">📸 Bedroom Project</div>
-                    <div class="gallery-content">
-                        <div class="gallery-category">Bedroom</div>
-                        <h3 class="gallery-title">Master Bedroom Suite</h3>
-                        <p class="gallery-description">Luxurious master bedroom with walk-in wardrobe and elegant decor elements.</p>
-                    </div>
+                <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <div class="stat-label">Cities Served</div>
                 </div>
-                
-                <div class="gallery-item" data-category="kitchen">
-                    <div class="gallery-image">📸 Kitchen Project</div>
-                    <div class="gallery-content">
-                        <div class="gallery-category">Kitchen</div>
-                        <h3 class="gallery-title">Modular Kitchen Design</h3>
-                        <p class="gallery-description">Functional modular kitchen with modern appliances and optimal storage solutions.</p>
-                    </div>
+                <div class="stat-item">
+                    <span class="stat-number">₹50L+</span>
+                    <div class="stat-label">Total Project Value</div>
                 </div>
-                
-                <div class="gallery-item" data-category="commercial">
-                    <div class="gallery-image">📸 Office Project</div>
-                    <div class="gallery-content">
-                        <div class="gallery-category">Commercial</div>
-                        <h3 class="gallery-title">Corporate Office</h3>
-                        <p class="gallery-description">Professional office interior design with modern workspace solutions.</p>
-                    </div>
-                </div>
-                
-                <div class="gallery-item" data-category="living">
-                    <div class="gallery-image">📸 Living Room Project</div>
-                    <div class="gallery-content">
-                        <div class="gallery-category">Living Room</div>
-                        <h3 class="gallery-title">Traditional Living Room</h3>
-                        <p class="gallery-description">Classic Indian living room design with traditional elements and modern comfort.</p>
-                    </div>
-                </div>
-                
-                <div class="gallery-item" data-category="bedroom">
-                    <div class="gallery-image">📸 Bedroom Project</div>
-                    <div class="gallery-content">
-                        <div class="gallery-category">Bedroom</div>
-                        <h3 class="gallery-title">Kids Bedroom</h3>
-                        <p class="gallery-description">Colorful and functional kids bedroom with creative storage and play areas.</p>
-                    </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <div class="stat-label">Client Satisfaction</div>
                 </div>
             </div>
             
-            <div style="text-align: center; margin-top: 3rem;">
-                <p style="color: var(--text-secondary); font-size: 1.1rem;">Ready to add your project to our gallery?</p>
-                <a href="#upload" class="btn-primary" style="margin-top: 1rem;">Upload Your Project</a>
+            <!-- Dynamic Project Grid -->
+            <div class="gallery-grid" id="gallery-container">
+                <!-- Projects will be loaded dynamically by JavaScript -->
+                <div style="grid-column: 1 / -1; text-align: center; padding: 3rem; color: var(--text-secondary);">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🔄</div>
+                    <p>Loading our amazing projects...</p>
+                </div>
+            </div>
+            
+            <!-- How to Add Projects Guide -->
+            <div style="background: var(--warm-white); padding: 2rem; border-radius: 12px; margin-top: 3rem; border-left: 4px solid var(--gold-primary);">
+                <h3 style="color: var(--navy-deep); margin-bottom: 1rem;">💡 How to Add New Projects</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1rem;">Adding new projects is super easy! Just follow these steps:</p>
+                <ol style="color: var(--text-secondary); line-height: 1.8; padding-left: 1.5rem;">
+                    <li><strong>Add Images:</strong> Upload project photos to <code>assets/images/interiors/</code></li>
+                    <li><strong>Update Data:</strong> Add project details in <code>assets/js/projects.js</code></li>
+                    <li><strong>Include Details:</strong> Location, date completed, client name, budget, area</li>
+                    <li><strong>Auto-Refresh:</strong> Website automatically shows new projects!</li>
+                </ol>
             </div>
         </div>
     </section>
@@ -304,7 +307,7 @@
                 <div class="contact-card">
                     <div class="contact-icon">📧</div>
                     <h3>Email</h3>
-                    <p><a href="mailto:interiors@raghavarajuenterprises.com" style="color: var(--text-primary);">interiors@raghavarajuenterprises.com</a></p>
+                    <p><a href="/cdn-cgi/l/email-protection#573e392332253e382524172536303f36213625363d22323923322527253e2432247934383a" style="color: var(--text-primary);"><span class="__cf_email__" data-cfemail="88e1e6fcedfae1e7fafbc8fae9efe0e9fee9fae9e2fdede6fcedfaf8fae1fbedfba6ebe7e5">[email&#160;protected]</span></a></p>
                 </div>
                 
                 <div class="contact-card">
@@ -342,7 +345,7 @@
                 <div class="footer-section">
                     <h3>Contact</h3>
                     <p>Phone: <a href="tel:8367086748">8367086748</a></p>
-                    <p>Email: <a href="mailto:interiors@raghavarajuenterprises.com">interiors@raghavarajuenterprises.com</a></p>
+                    <p>Email: <a href="/cdn-cgi/l/email-protection#1a73746e7f68737568695a687b7d727b6c7b687b706f7f746e7f686a6873697f6934797577"><span class="__cf_email__" data-cfemail="20494e544552494f5253605241474841564152414a55454e5445525052495345530e434f4d">[email&#160;protected]</span></a></p>
                     <p>Kakinada, Andhra Pradesh</p>
                 </div>
                 
@@ -360,8 +363,9 @@
         </div>
     </footer>
 
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/projects.js"></script>
     <script>
-        // Gallery Filter Functionality
+        // Enhanced Gallery Filter Functionality
         function filterGallery(category) {
             const items = document.querySelectorAll('.gallery-item');
             const buttons = document.querySelectorAll('.filter-btn');
@@ -372,16 +376,40 @@
             
             // Filter items
             items.forEach(item => {
-                if (category === 'all' || item.getAttribute('data-category') === category) {
+                const itemCategory = item.getAttribute('data-category');
+                if (category === 'all' || itemCategory === category) {
                     item.style.display = 'block';
                     item.style.animation = 'fadeInUp 0.5s ease';
                 } else {
                     item.style.display = 'none';
                 }
             });
+            
+            // Update project count
+            const visibleItems = Array.from(items).filter(item => item.style.display !== 'none');
+            updateProjectCount(visibleItems.length);
         }
 
-        // File Upload Functionality
+        // Update project statistics
+        function updateProjectCount(count) {
+            const totalProjectsElement = document.getElementById('totalProjects');
+            if (totalProjectsElement) {
+                totalProjectsElement.textContent = count || projectData.interiors.length;
+            }
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load projects
+            loadProjects('interiors', 'gallery-container');
+            
+            // Update statistics
+            setTimeout(() => {
+                updateProjectCount(projectData.interiors.length);
+            }, 500);
+        });
+
+        // File Upload Functionality (Enhanced)
         document.getElementById('fileInput').addEventListener('change', function(e) {
             const files = e.target.files;
             const uploadedContainer = document.getElementById('uploadedFiles');
@@ -409,6 +437,20 @@
                     
                     uploadedContainer.appendChild(fileItem);
                 }
+                
+                // Show instructions for adding to projects
+                const instructionsDiv = document.createElement('div');
+                instructionsDiv.innerHTML = `
+                    <div style="background: rgba(212, 175, 55, 0.2); padding: 1rem; border-radius: 8px; margin-top: 1rem;">
+                        <h4 style="color: var(--gold-light); margin-bottom: 0.5rem;">📝 Next Steps:</h4>
+                        <p style="color: white; font-size: 0.9rem;">
+                            1. Save images to <code>assets/images/interiors/</code><br>
+                            2. Add project details to <code>assets/js/projects.js</code><br>
+                            3. Include: title, location, date, client, budget, area
+                        </p>
+                    </div>
+                `;
+                uploadedContainer.appendChild(instructionsDiv);
             }
         });
 
@@ -455,13 +497,3 @@
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-    </script>
-</body>
-</html>
