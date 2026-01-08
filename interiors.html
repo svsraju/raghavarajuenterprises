@@ -3,156 +3,786 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RR Interiors & Home Decors | Premium Interior Design in Andhra Pradesh</title>
-    <meta name="description" content="Professional interior design and home decoration services. Modern aesthetics, functional designs, and quality finishes for residential and commercial spaces.">
+    <title>Raghavaraju Enterprises | Solar, Interiors & Construction Services in Andhra Pradesh</title>
+    <meta name="description" content="Leading provider of solar solutions, interior design, and construction services in Andhra Pradesh. Three specialized divisions serving residential and commercial clients across AP.">
+    
+    <!-- Favicon and Logo Meta Tags -->
+    <link rel="icon" type="image/x-icon" href="images/branding/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/branding/rr-main-logo.png">
+    <meta property="og:image" content="images/branding/rr-main-logo.png">
+    <meta name="twitter:image" content="images/branding/rr-main-logo.png">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/projects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --gold-primary: #D4AF37; --gold-light: #F4E4B8; --gold-dark: #B8941F;
-            --navy-deep: #1B2951; --navy-medium: #2A3F6B; --cream: #FEFBF3; --warm-white: #FAF8F1;
-            --charcoal: #2C2C2C; --text-primary: #333333; --text-secondary: #666666;
-            --accent-orange: #E67E22; --success-green: #27AE60;
-            --gradient-hero: linear-gradient(135deg, #D4AF37 0%, #E67E22 50%, #DC7633 100%);
-            --shadow-elegant: 0 8px 32px rgba(0, 0, 0, 0.1);
-            --shadow-hover: 0 12px 40px rgba(212, 175, 55, 0.3);
+            --primary-white: #FFFFFF;
+            --soft-cream: #FEFEFE;
+            --light-gray: #F5F5F5;
+            --medium-gray: #8E8E93;
+            --dark-gray: #1D1D1F;
+            --accent-orange: #E67E22;
+            --accent-blue: #3498DB;
+            --accent-green: #27AE60;
+            --soft-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+            --medium-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+            --hover-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Montserrat', sans-serif; line-height: 1.7; color: var(--text-primary); background: var(--cream); }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background: var(--primary-white);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
 
         /* Header */
-        .header { background: rgba(254, 251, 243, 0.95); backdrop-filter: blur(20px); position: fixed; top: 0; left: 0; right: 0; z-index: 1000; border-bottom: 1px solid rgba(212, 175, 55, 0.2); }
-        .nav { display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 0; }
-        .logo { display: flex; align-items: center; gap: 15px; font-family: 'Crimson Text', serif; font-size: 2rem; font-weight: 600; color: var(--navy-deep); text-decoration: none; }
-        .logo-icon { width: 50px; height: 50px; background: var(--gradient-hero); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; box-shadow: var(--shadow-elegant); }
-        .nav-menu { display: flex; list-style: none; gap: 2.5rem; align-items: center; }
-        .nav-menu a { text-decoration: none; color: var(--text-primary); font-weight: 500; transition: all 0.3s ease; }
-        .nav-menu a:hover { color: var(--gold-dark); }
-        .cta-button { background: var(--gradient-hero); color: white; padding: 12px 24px; border: none; border-radius: 8px; font-weight: 600; text-decoration: none; transition: all 0.3s ease; box-shadow: var(--shadow-elegant); }
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
 
-        /* Hero */
-        .hero { padding: 140px 0 100px; background: linear-gradient(135deg, rgba(254, 251, 243, 0.9) 0%, rgba(250, 248, 241, 0.9) 100%); text-align: center; }
-        .hero h1 { font-family: 'Crimson Text', serif; font-size: 3.5rem; font-weight: 600; color: var(--navy-deep); margin-bottom: 1.5rem; }
-        .highlight { background: var(--gradient-hero); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .hero .subtitle { font-size: 1.3rem; color: var(--text-secondary); margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto; }
-        .btn-primary { background: var(--gradient-hero); color: white; padding: 16px 32px; border: none; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: var(--shadow-elegant); display: inline-block; margin: 0 10px; }
-        .btn-primary:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+        }
 
-        /* Services */
-        .services { padding: 100px 0; background: var(--warm-white); }
-        .section-header { text-align: center; margin-bottom: 4rem; }
-        .section-header h2 { font-family: 'Crimson Text', serif; font-size: 2.8rem; color: var(--navy-deep); margin-bottom: 1rem; }
-        .services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
-        @media (max-width: 1200px) { .services-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; } }
-        @media (max-width: 768px) { .services-grid { grid-template-columns: 1fr; gap: 1.5rem; } }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            transition: transform 0.2s ease;
+        }
 
-        /* Project Statistics Cards */
-        .project-stats { 
-            display: grid; 
-            grid-template-columns: repeat(4, 1fr); 
-            gap: 2rem; 
-            margin: 3rem 0; 
-            padding: 2rem 0;
+        .logo:hover {
+            transform: translateY(-1px);
         }
-        .stat-item { 
-            background: white; 
-            padding: 2rem; 
-            border-radius: 12px; 
-            text-align: center; 
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--accent-orange), #F39C12);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: white;
+            font-weight: bold;
+            overflow: hidden;
+            position: relative;
         }
-        .stat-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+
+        /* Logo image styling */
+        .logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
-        .stat-number { 
-            font-size: 2.5rem; 
-            font-weight: 700; 
-            color: var(--gold-primary); 
-            display: block; 
-            margin-bottom: 0.5rem;
+
+        /* Fallback text when no logo image */
+        .logo-icon::after {
+            content: 'R';
+            position: relative;
+            z-index: 1;
         }
-        .stat-label { 
-            font-size: 1rem; 
-            color: var(--text-secondary); 
+
+        /* Hide fallback when image loads */
+        .logo-icon:has(img)::after {
+            display: none;
+        }
+
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--dark-gray);
+        }
+
+        @media (max-width: 768px) {
+            .logo-icon {
+                width: 36px;
+                height: 36px;
+            }
+            
+            .logo-text {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-icon {
+                width: 32px;
+                height: 32px;
+            }
+            
+            .logo-text {
+                font-size: 1.1rem; /* Keep company name visible on mobile */
+            }
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-weight: 500;
+            font-size: 15px;
+            transition: all 0.2s ease;
+            padding: 8px 0;
+        }
+
+        .nav-menu a:hover {
+            color: var(--accent-orange);
+        }
+
+        .cta-button {
+            background: var(--accent-orange);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background: #D35400;
+            transform: translateY(-1px);
+            box-shadow: var(--soft-shadow);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 120px 0 80px;
+            background: linear-gradient(180deg, var(--soft-cream) 0%, var(--primary-white) 100%);
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 20%, rgba(52, 152, 219, 0.03) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 80%, rgba(230, 126, 34, 0.03) 0%, transparent 50%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2rem;
+            font-weight: 400;
+            color: var(--dark-gray);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero .highlight {
+            color: var(--accent-orange);
             font-weight: 500;
         }
-        @media (max-width: 768px) { 
-            .project-stats { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; } 
-        }
-        @media (max-width: 480px) { 
-            .project-stats { grid-template-columns: 1fr; gap: 1rem; } 
-        }
-        .service-card { background: white; padding: 2.5rem; border-radius: 16px; box-shadow: var(--shadow-elegant); transition: all 0.3s ease; border: 1px solid rgba(212, 175, 55, 0.1); }
-        .service-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-hover); }
-        .service-icon { width: 80px; height: 80px; background: var(--gradient-hero); border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; margin-bottom: 1.5rem; }
-        .service-card h3 { font-family: 'Crimson Text', serif; font-size: 1.8rem; color: var(--navy-deep); margin-bottom: 1rem; }
-        .service-features { list-style: none; }
-        .service-features li { padding: 0.3rem 0; color: var(--text-secondary); position: relative; padding-left: 1.5rem; }
-        .service-features li::before { content: '✓'; position: absolute; left: 0; color: var(--success-green); font-weight: bold; }
 
-        /* Project Gallery */
-        .gallery { padding: 100px 0; background: var(--cream); }
-        .gallery-filter { display: flex; justify-content: center; gap: 1rem; margin-bottom: 3rem; flex-wrap: wrap; }
-        .filter-btn { background: white; color: var(--text-primary); padding: 12px 24px; border: 2px solid var(--gold-primary); border-radius: 8px; font-weight: 500; cursor: pointer; transition: all 0.3s ease; text-decoration: none; }
-        .filter-btn.active, .filter-btn:hover { background: var(--gold-primary); color: white; }
-        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-        .gallery-item { background: white; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-elegant); transition: all 0.3s ease; }
-        .gallery-item:hover { transform: translateY(-8px); box-shadow: var(--shadow-hover); }
-        .gallery-image { width: 100%; height: 250px; background: linear-gradient(45deg, #f0f0f0 25%, transparent 25%, transparent 75%, #f0f0f0 75%), linear-gradient(45deg, #f0f0f0 25%, transparent 25%, transparent 75%, #f0f0f0 75%); background-size: 20px 20px; background-position: 0 0, 10px 10px; display: flex; align-items: center; justify-content: center; color: var(--text-secondary); font-size: 1.1rem; }
-        .gallery-content { padding: 1.5rem; }
-        .gallery-title { font-family: 'Crimson Text', serif; font-size: 1.5rem; color: var(--navy-deep); margin-bottom: 0.5rem; }
-        .gallery-category { color: var(--gold-primary); font-weight: 500; font-size: 0.9rem; margin-bottom: 0.5rem; }
-        .gallery-description { color: var(--text-secondary); line-height: 1.5; }
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--medium-gray);
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 400;
+            line-height: 1.5;
+        }
 
-        /* Upload Section */
-        .upload-section { padding: 60px 0; background: var(--navy-deep); color: white; text-align: center; }
-        .upload-area { background: rgba(255, 255, 255, 0.1); border: 2px dashed rgba(255, 255, 255, 0.3); border-radius: 12px; padding: 3rem; margin: 2rem auto; max-width: 600px; transition: all 0.3s ease; }
-        .upload-area:hover { background: rgba(255, 255, 255, 0.15); border-color: var(--gold-primary); }
-        .upload-icon { font-size: 3rem; margin-bottom: 1rem; }
-        
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+
+        .btn-primary {
+            background: var(--accent-orange);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary:hover {
+            background: #D35400;
+            transform: translateY(-2px);
+            box-shadow: var(--medium-shadow);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--dark-gray);
+            border: 2px solid var(--light-gray);
+            padding: 14px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--accent-orange);
+            color: var(--accent-orange);
+            transform: translateY(-2px);
+            box-shadow: var(--soft-shadow);
+        }
+
+        /* Services Overview */
+        .services {
+            padding: 100px 0;
+            background: var(--primary-white);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4rem;
+            font-weight: 400;
+            color: var(--dark-gray);
+            margin-bottom: 16px;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: var(--medium-gray);
+            max-width: 600px;
+            margin: 0 auto;
+            font-weight: 400;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 32px;
+            margin-bottom: 60px;
+        }
+
+        .service-card {
+            background: var(--primary-white);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            min-height: 520px;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-orange), var(--accent-blue));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--hover-shadow);
+        }
+
+        .service-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 16px;
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            transition: transform 0.3s ease;
+            background: var(--light-gray);
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.1);
+        }
+
+        .service-icon.interiors {
+            background: linear-gradient(135deg, #FFF9E6, #F39C12);
+        }
+
+        .service-icon.solar {
+            background: linear-gradient(135deg, #E8F6F3, #27AE60);
+        }
+
+        .service-icon.construction {
+            background: linear-gradient(135deg, #EBF3FD, #3498DB);
+        }
+
+        .service-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: var(--dark-gray);
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+
+        .service-card p {
+            color: var(--medium-gray);
+            margin-bottom: 24px;
+            line-height: 1.6;
+            font-size: 15px;
+            flex-grow: 1;
+        }
+
+        .service-features {
+            list-style: none;
+            margin-bottom: 32px;
+            text-align: left;
+            flex-grow: 1;
+        }
+
+        .service-features li {
+            padding: 8px 0;
+            color: var(--medium-gray);
+            position: relative;
+            padding-left: 20px;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .service-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent-green);
+            font-weight: bold;
+            top: 8px;
+        }
+
+        .service-link-container {
+            margin-top: auto;
+            padding-top: 20px;
+        }
+
+        .service-link {
+            background: var(--light-gray);
+            color: var(--dark-gray);
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            width: 100%;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        .service-link:hover {
+            background: var(--accent-orange);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: var(--soft-shadow);
+        }
+
+        /* Stats Section */
+        .stats {
+            padding: 80px 0;
+            background: var(--soft-cream);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 32px;
+            text-align: center;
+        }
+
+        .stat-item {
+            background: var(--primary-white);
+            padding: 32px 24px;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--soft-shadow);
+        }
+
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: var(--accent-orange);
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            color: var(--medium-gray);
+            font-size: 14px;
+            font-weight: 500;
+        }
+
         /* Contact Section */
-        .contact-section { padding: 80px 0; background: var(--warm-white); }
-        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; text-align: center; }
-        .contact-card { background: white; padding: 2rem; border-radius: 12px; box-shadow: var(--shadow-elegant); }
-        .contact-icon { width: 60px; height: 60px; background: var(--gradient-hero); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1rem; }
+        .contact {
+            padding: 100px 0;
+            background: var(--dark-gray);
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4rem;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+
+        .contact p {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            opacity: 0.8;
+        }
+
+        .contact-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-white {
+            background: white;
+            color: var(--dark-gray);
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-white:hover {
+            background: var(--soft-cream);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-outline-white {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 14px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-outline-white:hover {
+            background: white;
+            color: var(--dark-gray);
+            transform: translateY(-2px);
+        }
 
         /* Footer */
-        .footer { background: var(--charcoal); color: white; padding: 60px 0 30px; }
-        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
-        .footer-section h3 { font-family: 'Crimson Text', serif; font-size: 1.5rem; margin-bottom: 1rem; color: var(--gold-light); }
-        .footer-section a { color: rgba(255, 255, 255, 0.8); text-decoration: none; }
-        .footer-section a:hover { color: var(--gold-primary); }
-        .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 2rem; text-align: center; color: rgba(255, 255, 255, 0.6); }
+        .footer {
+            background: #1A1A1A;
+            color: white;
+            padding: 60px 0 30px;
+        }
 
-        @media (max-width: 768px) { .nav-menu { display: none; } .hero h1 { font-size: 2.5rem; } .gallery-filter { justify-content: center; } }
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            margin-bottom: 16px;
+            color: white;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            line-height: 1.8;
+            font-size: 14px;
+            transition: color 0.2s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-orange);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 14px;
+        }
+
+        /* Mobile Responsive - Enhanced */
+        @media (max-width: 1024px) {
+            .container {
+                padding: 0 20px;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 24px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.4rem;
+                line-height: 1.2;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 32px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .service-card {
+                padding: 28px 20px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .hero {
+                padding: 100px 0 60px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+                margin-bottom: 16px;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+                margin-bottom: 28px;
+            }
+
+            .service-card {
+                padding: 24px 16px;
+            }
+
+            .service-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.8rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .stat-item {
+                padding: 24px 16px;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .services {
+                padding: 60px 0;
+            }
+
+            .stats {
+                padding: 50px 0;
+            }
+
+            .contact {
+                padding: 60px 0;
+            }
+        }
+
+        /* Tablet specific optimizations */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 28px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /* Large desktop optimizations */
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1300px;
+            }
+
+            .hero h1 {
+                font-size: 3.6rem;
+            }
+
+            .services-grid {
+                gap: 40px;
+            }
+        }
     </style>
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <nav class="nav container">
-            <a href="index.html" class="logo">
+            <a href="#" class="logo">
                 <div class="logo-icon">
                     <img src="images/branding/rr-main-logo.png" 
-                         alt="RR Interiors - Raghavaraju Enterprises" 
-                         onerror="this.style.display='none'; this.parentElement.innerHTML='🏡';"
-                         style="width: 100%; height: 100%; object-fit: contain;">
+                         alt="Raghavaraju Enterprises Logo" 
+                         onerror="this.style.display='none'"
+                         onload="this.style.display='block'">
                 </div>
-                <span>Raghavaraju Enterprises</span>
+                <span class="logo-text">Raghavaraju Enterprises</span>
             </a>
             
             <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#upload">Upload Project</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             
@@ -160,254 +790,131 @@
         </nav>
     </header>
 
-    <!-- Hero -->
-    <section class="hero" style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%), url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; color: white; text-align: center; padding: 200px 0 150px; position: relative;">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
         <div class="container">
-            <div style="max-width: 900px; margin: 0 auto; background: rgba(0, 0, 0, 0.4); padding: 3rem; border-radius: 20px; backdrop-filter: blur(10px);">
-                <p style="font-size: 1.2rem; margin-bottom: 2rem; color: rgba(255,255,255,0.9); font-weight: 300; letter-spacing: 3px; text-transform: uppercase;">Raghavaraju Enterprises</p>
-                <h1 style="font-family: 'Crimson Text', serif; font-size: 4.5rem; font-weight: 400; margin-bottom: 3rem; line-height: 1.2; text-shadow: 0 2px 20px rgba(0,0,0,0.8); color: white;">
-                    Transforming Spaces,<br><span style="font-style: italic; color: #FFD700;">Enriching Lives</span>
-                </h1>
-                <p style="font-size: 1.3rem; margin-bottom: 3rem; color: rgba(255,255,255,1); max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6; text-shadow: 0 1px 10px rgba(0,0,0,0.8);">Expert interior design services that blend aesthetics with functionality to create spaces that inspire and delight.</p>
-                <a href="#gallery" style="background: linear-gradient(135deg, #D4AF37, #E67E22); color: white; padding: 18px 36px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.1rem; display: inline-block; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);">Explore Our Work</a>
-            </div>
-            
-            <div style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); color: rgba(255,255,255,0.9);">
-                <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">↓</div>
-                <p style="font-size: 0.9rem;">Explore Our Work</p>
+            <div class="hero-content">
+                <h1>Transforming <span class="highlight">Dreams</span> Into<br>Reality Across Andhra Pradesh</h1>
+                <p class="hero-subtitle">From stunning interiors to sustainable solar energy and quality construction - we bring expertise, innovation, and excellence to every project we undertake.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#services" class="btn-primary">🚀 Explore Our Services</a>
+                    <a href="#contact" class="btn-secondary">💬 Get Free Quote</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section Teaser -->
-    <section style="background: #1a1a1a; color: white; padding: 100px 0; text-align: center;">
-        <div class="container">
-            <div style="text-align: center;">
-                <h2 style="font-family: 'Crimson Text', serif; font-size: 3rem; color: var(--gold-light); margin-bottom: 1rem;">Ready to Transform Your Space?</h2>
-                <p style="font-size: 1.2rem; color: rgba(255,255,255,0.8); margin-bottom: 2rem;">Let's discuss your interior design vision and bring it to life.</p>
-                <a href="tel:8367086748" style="background: var(--gradient-hero); color: white; padding: 18px 36px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.1rem; display: inline-block; margin: 0 1rem;">📱 Call Now</a>
-                <a href="mailto:interiors@raghavarajuenterprises.com" style="background: transparent; border: 2px solid var(--gold-primary); color: var(--gold-primary); padding: 16px 34px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.1rem; display: inline-block; margin: 0 1rem;">✉️ Get Quote</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services -->
+    <!-- Services Overview -->
     <section class="services" id="services">
         <div class="container">
             <div class="section-header">
-                <h2>Our Interior Design Services</h2>
-                <p>Complete interior solutions from concept to completion</p>
+                <h2>Our Business Excellence</h2>
+                <p>Comprehensive solutions across multiple sectors with dedicated expertise and personalized service for every client need.</p>
             </div>
             
             <div class="services-grid">
+                <!-- Interior Design Division -->
                 <div class="service-card">
-                    <div class="service-icon">🏠</div>
-                    <h3>Residential Interiors</h3>
-                    <p>Complete home interior design including living rooms, bedrooms, kitchens, and bathrooms with modern and traditional styles.</p>
-                    <ul class="service-features">
-                        <li>Living room design</li>
-                        <li>Bedroom interiors</li>
-                        <li>Kitchen design</li>
-                        <li>Bathroom renovation</li>
-                        <li>Custom furniture</li>
-                    </ul>
+                    <div class="service-content">
+                        <div class="service-icon interiors">🏡</div>
+                        <h3>RR Interiors & Home Decors</h3>
+                        <p>Transform your living and working spaces with our premium interior design services. Modern aesthetics meet functional design for residential and commercial projects.</p>
+                        <ul class="service-features">
+                            <li>Residential interior design</li>
+                            <li>Commercial space planning</li>
+                            <li>Custom furniture & décor</li>
+                            <li>3D visualization & planning</li>
+                            <li>Complete project management</li>
+                            <li>Quality materials & finishes</li>
+                        </ul>
+                    </div>
+                    <div class="service-link-container">
+                        <a href="interiors.html" class="service-link">View Interior Projects →</a>
+                    </div>
                 </div>
-                
+
+                <!-- Solar Energy Division -->
                 <div class="service-card">
-                    <div class="service-icon">🏢</div>
-                    <h3>Commercial Spaces</h3>
-                    <p>Professional interior design for offices, retail spaces, restaurants, and other commercial establishments.</p>
-                    <ul class="service-features">
-                        <li>Office interior design</li>
-                        <li>Retail space planning</li>
-                        <li>Restaurant interiors</li>
-                        <li>Reception area design</li>
-                        <li>Brand-focused design</li>
-                    </ul>
+                    <div class="service-content">
+                        <div class="service-icon solar">
+                            <img src="images/branding/suryakantha-solar-logo.png" 
+                                 alt="Suryakantha Solar Energies"
+                                 style="width: 85%; height: 85%; object-fit: contain;"
+                                 onerror="this.style.display='none'; this.parentElement.innerHTML='☀️';">
+                        </div>
+                        <h3>Suryakantha Solar Energies</h3>
+                        <p>Harness clean energy with our comprehensive solar solutions. Authorized EPC contractor serving residential, commercial, and industrial clients across Andhra Pradesh.</p>
+                        <ul class="service-features">
+                            <li>1kW to 100kW solar installations</li>
+                            <li>Residential & commercial projects</li>
+                            <li>PM Surya Ghar subsidy support</li>
+                            <li>25-year system warranty</li>
+                            <li>Bank loan facilitation</li>
+                            <li>Complete EPC services</li>
+                        </ul>
+                    </div>
+                    <div class="service-link-container">
+                        <a href="solar.html" class="service-link">Solar Solutions →</a>
+                    </div>
                 </div>
-                
+
+                <!-- Construction Division -->
                 <div class="service-card">
-                    <div class="service-icon">🎨</div>
-                    <h3>Home Decoration</h3>
-                    <p>Complete home decoration services including wall treatments, lighting, accessories, and seasonal decor.</p>
-                    <ul class="service-features">
-                        <li>Wall painting & textures</li>
-                        <li>Lighting design</li>
-                        <li>Curtains & blinds</li>
-                        <li>Art & accessories</li>
-                        <li>Seasonal decoration</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">🔧</div>
-                    <h3>Custom Solutions</h3>
-                    <p>Tailored interior solutions including built-in storage, custom furniture, and specialized design requirements.</p>
-                    <ul class="service-features">
-                        <li>Built-in wardrobes</li>
-                        <li>Custom cabinets</li>
-                        <li>Storage solutions</li>
-                        <li>Modular furniture</li>
-                        <li>Space optimization</li>
-                    </ul>
+                    <div class="service-content">
+                        <div class="service-icon construction">🏗️</div>
+                        <h3>RR Homes Construction</h3>
+                        <p>Build your dreams with our expert construction services. Quality materials, skilled workforce, and timely delivery for residential and commercial projects.</p>
+                        <ul class="service-features">
+                            <li>Residential construction</li>
+                            <li>Commercial buildings</li>
+                            <li>Renovation & remodeling</li>
+                            <li>Project management</li>
+                            <li>Quality assurance</li>
+                            <li>Timely delivery</li>
+                        </ul>
+                    </div>
+                    <div class="service-link-container">
+                        <a href="construction.html" class="service-link">Construction Projects →</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Project Gallery -->
-    <section class="gallery" id="gallery">
+    <!-- Statistics -->
+    <section class="stats">
         <div class="container">
-            <div class="section-header">
-                <h2>Explore our stunning interior design projects</h2>
-                <p>Discover our portfolio of completed interior design projects with detailed information</p>
-            </div>
-            
-            <div class="gallery-filter">
-                <button class="filter-btn active" onclick="filterGallery('all')">All Projects</button>
-                <button class="filter-btn" onclick="filterGallery('living')">Living Rooms</button>
-                <button class="filter-btn" onclick="filterGallery('bedroom')">Bedrooms</button>
-                <button class="filter-btn" onclick="filterGallery('kitchen')">Kitchens</button>
-                <button class="filter-btn" onclick="filterGallery('commercial')">Commercial</button>
-            </div>
-            
-            <!-- Project Statistics -->
-            <div class="project-stats">
+            <div class="stats-grid">
                 <div class="stat-item">
-                    <span class="stat-number">125+</span>
-                    <div class="stat-label">Completed Projects</div>
+                    <span class="stat-number">500+</span>
+                    <div class="stat-label">Projects Completed</div>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">15+</span>
                     <div class="stat-label">Cities Served</div>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">₹50L+</span>
-                    <div class="stat-label">Total Project Value</div>
+                    <span class="stat-number">25</span>
+                    <div class="stat-label">Years Warranty (Solar)</div>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">100%</span>
                     <div class="stat-label">Client Satisfaction</div>
                 </div>
             </div>
-            
-            <!-- Dynamic Project Grid -->
-            <div class="gallery-grid" id="gallery-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
-                
-                <!-- Sample Project 1 -->
-                <div class="project-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                    <div style="height: 200px; background: linear-gradient(45deg, #f0f0f0, #e0e0e0); display: flex; align-items: center; justify-content: center; color: var(--text-secondary);">
-                        <div style="text-align: center;">
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏠</div>
-                            <p>Sample Project Image</p>
-                        </div>
-                    </div>
-                    <div style="padding: 1.5rem;">
-                        <h3 style="color: var(--navy-deep); margin-bottom: 0.5rem;">Modern Living Room</h3>
-                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Complete renovation with contemporary furniture and lighting solutions.</p>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary);">
-                            <span>📍 Visakhapatnam, AP</span>
-                            <span>💰 ₹2.5 Lakhs</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sample Project 2 -->
-                <div class="project-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                    <div style="height: 200px; background: linear-gradient(45deg, #f8f4e6, #f0e6d2); display: flex; align-items: center; justify-content: center; color: var(--text-secondary);">
-                        <div style="text-align: center;">
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🍽️</div>
-                            <p>Sample Project Image</p>
-                        </div>
-                    </div>
-                    <div style="padding: 1.5rem;">
-                        <h3 style="color: var(--navy-deep); margin-bottom: 0.5rem;">Luxury Kitchen Design</h3>
-                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Premium modular kitchen with island and smart appliances.</p>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary);">
-                            <span>📍 Kakinada, AP</span>
-                            <span>💰 ₹4.2 Lakhs</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sample Project 3 -->
-                <div class="project-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-                    <div style="height: 200px; background: linear-gradient(45deg, #e6f3ff, #d2e9ff); display: flex; align-items: center; justify-content: center; color: var(--text-secondary);">
-                        <div style="text-align: center;">
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🛏️</div>
-                            <p>Sample Project Image</p>
-                        </div>
-                    </div>
-                    <div style="padding: 1.5rem;">
-                        <h3 style="color: var(--navy-deep); margin-bottom: 0.5rem;">Master Bedroom Suite</h3>
-                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Elegant bedroom with walk-in closet and private sitting area.</p>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary);">
-                            <span>📍 Rajahmundry, AP</span>
-                            <span>💰 ₹1.8 Lakhs</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            
-            <!-- Call to Action -->
-            <div style="text-align: center; margin-top: 2rem;">
-                <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Ready to transform your space?</p>
-                <a href="#contact" style="background: var(--gradient-hero); color: white; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block;">Get Free Consultation</a>
-            </div>
         </div>
     </section>
 
-    <!-- Upload Section -->
-    <section class="upload-section" id="upload">
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
         <div class="container">
-            <h2 style="font-family: 'Crimson Text', serif; font-size: 2.5rem; color: var(--gold-light); margin-bottom: 1rem;">Add Your Project</h2>
-            <p style="margin-bottom: 2rem; font-size: 1.1rem;">Upload images of your completed interior design projects to showcase our work</p>
+            <h2>Ready to Start Your Project?</h2>
+            <p>Contact us today for a free consultation and personalized quote for your interior, solar, or construction needs.</p>
             
-            <div class="upload-area" id="uploadArea">
-                <div class="upload-icon">📁</div>
-                <h3 style="margin-bottom: 1rem;">Drag & Drop Project Images</h3>
-                <p style="margin-bottom: 1rem;">or click to select files</p>
-                <input type="file" id="fileInput" multiple accept="image/*" style="display: none;">
-                <button onclick="document.getElementById('fileInput').click()" class="btn-primary">Select Images</button>
-            </div>
-            
-            <div id="uploadedFiles" style="margin-top: 2rem;"></div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="contact-section" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Get Your Design Consultation</h2>
-                <p>Contact RR Interiors for professional interior design services</p>
-            </div>
-            
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <div class="contact-icon">📱</div>
-                    <h3>Phone</h3>
-                    <p><a href="tel:8367086748" style="color: var(--text-primary); font-size: 1.1rem;">8367086748</a></p>
-                </div>
-                
-                <div class="contact-card">
-                    <div class="contact-icon">📧</div>
-                    <h3>Email</h3>
-                    <p><a href="/cdn-cgi/l/email-protection#573e392332253e382524172536303f36213625363d22323923322527253e2432247934383a" style="color: var(--text-primary);"><span class="__cf_email__" data-cfemail="88e1e6fcedfae1e7fafbc8fae9efe0e9fee9fae9e2fdede6fcedfaf8fae1fbedfba6ebe7e5">[email&#160;protected]</span></a></p>
-                </div>
-                
-                <div class="contact-card">
-                    <div class="contact-icon">📍</div>
-                    <h3>Location</h3>
-                    <p>Kakinada, Andhra Pradesh</p>
-                </div>
-                
-                <div class="contact-card">
-                    <div class="contact-icon">🏡</div>
-                    <h3>Specialization</h3>
-                    <p>Residential & Commercial Interiors</p>
-                </div>
+            <div class="contact-buttons">
+                <a href="tel:8367086748" class="btn-white">📞 Call: 8367086748</a>
+                <a href="/cdn-cgi/l/email-protection#7d14131b123d0f1c1a151c0b1c0f1c1708181309180f0d0f140e180e531e1210" class="btn-outline-white">✉️ Email Us</a>
             </div>
         </div>
     </section>
@@ -417,170 +924,73 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>RR Interiors & Home Decors</h3>
-                    <p>Premium interior design and home decoration services with modern aesthetics and functional designs.</p>
+                    <h3>Raghavaraju Enterprises</h3>
+                    <p>Leading provider of solar solutions, interior design, and construction services in Andhra Pradesh. Three specialized divisions committed to excellence.</p>
                 </div>
                 
                 <div class="footer-section">
-                    <h3>Services</h3>
-                    <p>Residential Interiors</p>
-                    <p>Commercial Spaces</p>
-                    <p>Home Decoration</p>
-                    <p>Custom Furniture</p>
+                    <h3>Our Divisions</h3>
+                    <p><a href="interiors.html">RR Interiors & Home Decors</a></p>
+                    <p><a href="solar.html">Suryakantha Solar Energies</a></p>
+                    <p><a href="construction.html">RR Homes Construction</a></p>
                 </div>
                 
                 <div class="footer-section">
-                    <h3>Contact</h3>
-                    <p>Phone: <a href="tel:8367086748">8367086748</a></p>
-                    <p>Email: <a href="/cdn-cgi/l/email-protection#1a73746e7f68737568695a687b7d727b6c7b687b706f7f746e7f686a6873697f6934797577"><span class="__cf_email__" data-cfemail="20494e544552494f5253605241474841564152414a55454e5445525052495345530e434f4d">[email&#160;protected]</span></a></p>
-                    <p>Kakinada, Andhra Pradesh</p>
+                    <h3>Contact Info</h3>
+                    <p>📞 <a href="tel:8367086748">8367086748</a></p>
+                    <p>✉️ <a href="/cdn-cgi/l/email-protection#fe97909891be8c9f99969f889f8c9f948b9b908a9b8c8e8c978d9b8dd09d9193"><span class="__cf_email__" data-cfemail="7e171018113e0c1f19161f081f0c1f140b1b100a1b0c0e0c170d1b0d501d1113">[email&#160;protected]</span></a></p>
+                    <p>📍 Kakinada, Andhra Pradesh</p>
                 </div>
                 
                 <div class="footer-section">
-                    <h3>Other Divisions</h3>
-                    <p><a href="index.html">Raghavaraju Enterprises</a></p>
-                    <p><a href="solar.html">Suryakantha Solar</a></p>
-                    <p><a href="construction.html">RR Homes</a></p>
+                    <h3>Business Info</h3>
+                    <p>GST: 37MIFPS2466D1ZU</p>
+                    <p>Established: 2024</p>
+                    <p>Serving: Andhra Pradesh</p>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2026 RR Interiors & Home Decors. All rights reserved. | GST: 37MIFPS2466D1ZU</p>
+                <p>&copy; 2026 Raghavaraju Enterprises. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/projects.js"></script>
-    <script>
-        // Enhanced Gallery Filter Functionality
-        function filterGallery(category) {
-            const items = document.querySelectorAll('.gallery-item');
-            const buttons = document.querySelectorAll('.filter-btn');
-            
-            // Update active button
-            buttons.forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-            
-            // Filter items
-            items.forEach(item => {
-                const itemCategory = item.getAttribute('data-category');
-                if (category === 'all' || itemCategory === category) {
-                    item.style.display = 'block';
-                    item.style.animation = 'fadeInUp 0.5s ease';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-            
-            // Update project count
-            const visibleItems = Array.from(items).filter(item => item.style.display !== 'none');
-            updateProjectCount(visibleItems.length);
-        }
-
-        // Update project statistics
-        function updateProjectCount(count) {
-            const totalProjectsElement = document.getElementById('totalProjects');
-            if (totalProjectsElement) {
-                totalProjectsElement.textContent = count || projectData.interiors.length;
-            }
-        }
-
-        // Initialize when page loads
-        document.addEventListener('DOMContentLoaded', function() {
-            // Load projects
-            loadProjects('interiors', 'gallery-container');
-            
-            // Update statistics
-            setTimeout(() => {
-                updateProjectCount(projectData.interiors.length);
-            }, 500);
-        });
-
-        // File Upload Functionality (Enhanced)
-        document.getElementById('fileInput').addEventListener('change', function(e) {
-            const files = e.target.files;
-            const uploadedContainer = document.getElementById('uploadedFiles');
-            
-            if (files.length > 0) {
-                uploadedContainer.innerHTML = '<h3 style="color: white; margin-bottom: 1rem;">Uploaded Files:</h3>';
-                
-                for (let i = 0; i < files.length; i++) {
-                    const file = files[i];
-                    const fileItem = document.createElement('div');
-                    fileItem.style.cssText = `
-                        background: rgba(255, 255, 255, 0.1);
-                        padding: 1rem;
-                        margin: 0.5rem 0;
-                        border-radius: 8px;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    `;
-                    
-                    fileItem.innerHTML = `
-                        <span>${file.name}</span>
-                        <span style="color: var(--gold-light);">${(file.size / 1024 / 1024).toFixed(2)} MB</span>
-                    `;
-                    
-                    uploadedContainer.appendChild(fileItem);
-                }
-                
-                // Show instructions for adding to projects
-                const instructionsDiv = document.createElement('div');
-                instructionsDiv.innerHTML = `
-                    <div style="background: rgba(212, 175, 55, 0.2); padding: 1rem; border-radius: 8px; margin-top: 1rem;">
-                        <h4 style="color: var(--gold-light); margin-bottom: 0.5rem;">📝 Next Steps:</h4>
-                        <p style="color: white; font-size: 0.9rem;">
-                            1. Save images to <code>assets/images/interiors/</code><br>
-                            2. Add project details to <code>assets/js/projects.js</code><br>
-                            3. Include: title, location, date, client, budget, area
-                        </p>
-                    </div>
-                `;
-                uploadedContainer.appendChild(instructionsDiv);
-            }
-        });
-
-        // Drag and drop functionality
-        const uploadArea = document.getElementById('uploadArea');
-
-        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
-            uploadArea.addEventListener(eventName, preventDefaults, false);
-        });
-
-        function preventDefaults(e) {
-            e.preventDefault();
-            e.stopPropagation();
-        }
-
-        ['dragenter', 'dragover'].forEach(eventName => {
-            uploadArea.addEventListener(eventName, highlight, false);
-        });
-
-        ['dragleave', 'drop'].forEach(eventName => {
-            uploadArea.addEventListener(eventName, unhighlight, false);
-        });
-
-        function highlight() {
-            uploadArea.style.background = 'rgba(255, 255, 255, 0.2)';
-            uploadArea.style.borderColor = 'var(--gold-primary)';
-        }
-
-        function unhighlight() {
-            uploadArea.style.background = 'rgba(255, 255, 255, 0.1)';
-            uploadArea.style.borderColor = 'rgba(255, 255, 255, 0.3)';
-        }
-
-        uploadArea.addEventListener('drop', handleDrop, false);
-
-        function handleDrop(e) {
-            const dt = e.dataTransfer;
-            const files = dt.files;
-            
-            document.getElementById('fileInput').files = files;
-            document.getElementById('fileInput').dispatchEvent(new Event('change', { bubbles: true }));
-        }
-
-        // Smooth scrolling
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Smooth scrolling for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = 'none';
+            }
+        });
+
+        // Service cards animation on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0
