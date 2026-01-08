@@ -1,428 +1,438 @@
-# 🏢 Raghavaraju Enterprises Website
+# Raghavaraju Enterprises Website Documentation
 
-**Professional multi-division business website showcasing Solar Energy, Interior Design, and Construction services across Andhra Pradesh.**
+## 🏢 Business Overview
+**Main Company**: Raghavaraju Enterprises  
+**Legal Name**: SRIDATLA VENKATA RAGHAVA MEHAR SHASHANK VARMA  
+**GST**: 37MIFPS2466D1ZU  
+**Location**: Kakinada, Andhra Pradesh  
+**Contact**: 8367086748  
 
-[![Website Status](https://img.shields.io/website?url=http%3A%2F%2Fraghavarajuenterprises.com)](http://raghavarajuenterprises.com)
-[![Responsive Design](https://img.shields.io/badge/responsive-mobile%20%7C%20tablet%20%7C%20desktop-brightgreen)](#responsive-design)
-[![Logo Ready](https://img.shields.io/badge/logo-integration%20ready-blue)](#logo-integration)
-
----
-
-## 🌟 **Live Website**
-**Main Website**: [http://raghavarajuenterprises.com](http://raghavarajuenterprises.com)  
-**GitHub Pages**: [https://svsraju.github.io/raghavarajuenterprises](https://svsraju.github.io/raghavarajuenterprises)
-
----
-
-## 🏗️ **Business Overview**
-
-### **Company Details**
-- **Legal Name**: SRIDATLA VENKATA RAGHAVA MEHAR SHASHANK VARMA
-- **Trade Name**: Raghavaraju Enterprises
-- **GST Number**: 37MIFPS2466D1ZU
-- **Contact**: 8367086748
-- **Location**: Kakinada, Andhra Pradesh (PIN: 533003)
-
-### **Three Specialized Divisions**
-
-1. **🏡 RR Interiors & Home Decors**
-   - Premium interior design services
-   - Residential and commercial projects
-   - Custom furniture and décor solutions
-
-2. **☀️ Suryakantha Solar Energies**
-   - Solar EPC contractor (1kW to 100kW)
-   - Residential, commercial & industrial installations
-   - PM Surya Ghar subsidy support
-
-3. **🏗️ RR Homes Construction**
-   - Complete construction solutions
-   - Residential and commercial buildings
-   - Quality materials and timely delivery
+### Business Divisions
+- **RR Interiors & Home Decors** - Interior design services
+- **Suryakantha Solar Energies** - Solar power solutions  
+- **RR Homes** - Construction services
 
 ---
 
-## 📁 **Website Structure**
+## 📁 Complete File Structure
 
-### **Main Files**
 ```
-├── index.html                    # Multi-service landing page
-├── interiors.html               # Interior design portfolio
-├── solar.html                   # Solar energy solutions
-├── construction.html            # Construction services
-├── CNAME                        # Domain configuration
-└── README.md                    # This documentation
-```
-
-### **Assets Organization**
-```
-assets/
-├── css/
-│   └── projects.css            # Project styling system
-├── js/
-│   ├── projects.js             # Project data management
-│   └── image-manager.js        # Image system controller
+raghavarajuenterprises/
+├── index.html                    # Main landing page (rename from index-new.html)
+├── interiors.html               # Interior design services page
+├── solar.html                   # Solar solutions page
+├── construction.html            # Construction services page
+├── CNAME                        # Custom domain configuration
+├── README.md                    # This documentation file
 └── images/
-    ├── branding/               # Logo files
-    │   ├── logo-icon.png       # Square logo (128x128px)
-    │   ├── logo-main.png       # Main logo (400x160px)
-    │   ├── logo-white.png      # White version for dark backgrounds
-    │   └── favicon.ico         # Browser tab icon
-    ├── hero/                   # Hero background images
-    │   ├── hero-main.jpg       # Landing page background
-    │   ├── hero-interiors.jpg  # Interior page background
-    │   ├── hero-solar.jpg      # Solar page background
-    │   └── hero-construction.jpg # Construction page background
-    ├── interiors/              # Interior project photos
-    │   ├── project-1/
-    │   ├── project-2/
-    │   └── gallery/
-    ├── solar/                  # Solar installation photos
-    │   ├── installations/
-    │   ├── panels/
-    │   └── gallery/
-    └── construction/           # Construction project photos
-        ├── projects/
-        └── gallery/
+    └── branding/
+        ├── rr-main-logo.png            # Main company logo
+        ├── suryakantha-solar-logo.png  # Solar division logo
+        └── favicon.ico                 # Website icon (optional)
+    └── projects/
+        └── interiors/
+            ├── living-rooms/
+            │   ├── modern-living-visakhapatnam/
+            │   │   ├── main.jpg         # Main project image (displayed in grid)
+            │   │   ├── living-1.jpg     # Additional project photos
+            │   │   ├── living-2.jpg
+            │   │   ├── living-3.jpg
+            │   │   └── living-4.jpg
+            │   └── contemporary-living-kakinada/
+            │       ├── main.jpg
+            │       └── ...
+            ├── kitchens/
+            │   └── luxury-kitchen-kakinada/
+            │       ├── main.jpg
+            │       ├── kitchen-1.jpg
+            │       ├── kitchen-2.jpg
+            │       ├── kitchen-3.jpg
+            │       ├── kitchen-4.jpg
+            │       └── kitchen-5.jpg
+            ├── bedrooms/
+            │   └── master-bedroom-rajahmundry/
+            │       ├── main.jpg
+            │       ├── bedroom-1.jpg
+            │       ├── bedroom-2.jpg
+            │       └── bedroom-3.jpg
+            ├── bathrooms/
+            │   └── luxury-washroom-guntur/
+            │       ├── main.jpg
+            │       ├── washroom-1.jpg
+            │       ├── washroom-2.jpg
+            │       ├── washroom-3.jpg
+            │       └── washroom-4.jpg
+            ├── home-theaters/
+            │   └── home-theater-nellore/
+            │       ├── main.jpg
+            │       ├── theater-1.jpg
+            │       ├── theater-2.jpg
+            │       ├── theater-3.jpg
+            │       ├── theater-4.jpg
+            │       └── theater-5.jpg
+            └── commercial/
+                └── commercial-office-vijayawada/
+                    ├── main.jpg
+                    ├── office-1.jpg
+                    ├── office-2.jpg
+                    ├── office-3.jpg
+                    ├── office-4.jpg
+                    ├── office-5.jpg
+                    └── office-6.jpg
+        └── solar/
+            ├── residential/
+            │   ├── 5kw-visakhapatnam/
+            │   │   ├── main.jpg         # Overall rooftop installation view
+            │   │   ├── rooftop-1.jpg    # Solar panels on roof
+            │   │   ├── rooftop-2.jpg    # Inverter setup
+            │   │   ├── rooftop-3.jpg    # Net meter installation
+            │   │   └── rooftop-4.jpg    # Monitoring system
+            │   └── 10kw-guntur/
+            │       ├── main.jpg
+            │       ├── farm-1.jpg
+            │       ├── farm-2.jpg
+            │       ├── farm-3.jpg
+            │       └── farm-4.jpg
+            ├── commercial/
+            │   ├── 25kw-kakinada/
+            │   │   ├── main.jpg
+            │   │   ├── commercial-1.jpg
+            │   │   ├── commercial-2.jpg
+            │   │   ├── commercial-3.jpg
+            │   │   ├── commercial-4.jpg
+            │   │   └── commercial-5.jpg
+            │   ├── 15kw-rajahmundry/
+            │   │   ├── main.jpg
+            │   │   ├── school-1.jpg
+            │   │   ├── school-2.jpg
+            │   │   ├── school-3.jpg
+            │   │   ├── school-4.jpg
+            │   │   └── school-5.jpg
+            │   └── 50kw-nellore/
+            │       ├── main.jpg
+            │       ├── hospital-1.jpg
+            │       ├── hospital-2.jpg
+            │       ├── hospital-3.jpg
+            │       ├── hospital-4.jpg
+            │       ├── hospital-5.jpg
+            │       └── hospital-6.jpg
+            └── industrial/
+                └── 100kw-vijayawada/
+                    ├── main.jpg
+                    ├── industrial-1.jpg
+                    ├── industrial-2.jpg
+                    ├── industrial-3.jpg
+                    ├── industrial-4.jpg
+                    ├── industrial-5.jpg
+                    └── industrial-6.jpg
+        └── construction/
+            ├── residential/
+            │   ├── villa-project-visakhapatnam/
+            │   │   ├── main.jpg
+            │   │   ├── foundation.jpg
+            │   │   ├── structure.jpg
+            │   │   ├── interior.jpg
+            │   │   └── elevation.jpg
+            │   └── apartment-complex-kakinada/
+            │       └── ...
+            ├── commercial/
+            │   ├── office-building-guntur/
+            │   │   └── ...
+            │   └── retail-complex-nellore/
+            │       └── ...
+            └── industrial/
+                └── warehouse-project-vijayawada/
+                    └── ...
 ```
 
 ---
 
-## 🎨 **Design Features**
+## 🚀 Step-by-Step Deployment Guide
 
-### **Visual Design**
-- **Clean, Light Theme**: White backgrounds with professional colors
-- **Typography**: Playfair Display (headings) + Inter (body text)
-- **Color Scheme**: Orange (#E67E22), Blue (#3498DB), Green (#27AE60)
-- **Logo-Focused**: Prominent branding throughout the site
+### 1. GitHub Repository Setup
 
-### **User Experience**
-- **Fully Responsive**: Perfect on desktop, mobile, and tablet
-- **Smooth Animations**: Scroll-triggered reveals and hover effects
-- **Professional Galleries**: Click-to-expand image modals
-- **Fast Loading**: Optimized images with lazy loading
+#### Create Repository
+1. Go to GitHub.com and sign in
+2. Click "New Repository"
+3. **Repository name**: `raghavarajuenterprises`
+4. Set to **Public**
+5. Click "Create Repository"
 
-### **Interactive Elements**
-- **Image Lightbox**: Professional photo viewing experience
-- **Before/After Sliders**: Perfect for renovation showcases
-- **Project Filtering**: Category-based project organization
-- **Mobile Navigation**: Touch-friendly menu system
+#### Upload Core Website Files
+Upload these files to the repository root:
+- `index-new.html` → **rename to** `index.html`
+- `interiors.html`
+- `solar.html` 
+- `construction.html`
+- `README.md`
+
+#### Upload Brand Assets
+Create folder structure and upload:
+- `images/branding/rr-main-logo.png`
+- `images/branding/suryakantha-solar-logo.png`
+
+### 2. Enable GitHub Pages
+
+1. Go to **Repository Settings**
+2. Scroll down to **Pages** section
+3. **Source**: Deploy from a branch
+4. **Branch**: main / (root)
+5. Click **Save**
+
+### 3. Custom Domain Setup
+
+1. Create file named `CNAME` in repository root
+2. Content: `raghavarajuenterprises.com`
+3. Domain will be active within 24-48 hours with HTTPS
+
+### Website URLs
+- **GitHub Pages**: https://svsraju.github.io/raghavarajuenterprises
+- **Custom Domain**: https://raghavarajuenterprises.com
 
 ---
 
-## 🚀 **Setup Instructions**
+## 📸 Adding New Projects - Step-by-Step Guide
 
-### **Step 1: Repository Setup**
-1. **Clone or download** this repository
-2. **Upload files** to your GitHub Pages repository
-3. **Enable GitHub Pages** in repository settings
-4. **Configure custom domain** (optional)
+### Interior Projects
 
-### **Step 2: Domain Configuration** ✅ COMPLETED
-- **Custom Domain**: raghavarajuenterprises.com
-- **DNS Records**: A records pointing to GitHub Pages IPs
-- **HTTPS**: Automatically enabled by GitHub (may take 24-48 hours)
+#### Step 1: Prepare Your Images
+**Image Requirements:**
+- **Format**: JPG or PNG
+- **Resolution**: Minimum 1200x800px
+- **File Size**: Under 500KB each (use online compressors)
+- **Naming**: Use descriptive names (living-1.jpg, kitchen-main.jpg)
 
-### **Step 3: Logo Integration** 🎯 READY FOR YOUR FILES
+#### Step 2: Create Project Folder
+**Folder Structure:**
+```
+images/projects/interiors/[category]/[project-name-location]/
+```
+**Example:**
+```
+images/projects/interiors/living-rooms/modern-living-visakhapatnam/
+```
 
-#### **Logo File Requirements**
-- **Main Logo**: 400x160px PNG with transparency
-- **Icon Logo**: 128x128px PNG (square format)
-- **White Logo**: Same sizes, white version for dark backgrounds
-- **Favicon**: 32x32px ICO format for browser tabs
+#### Step 3: Upload Images
+**Required Files:**
+- `main.jpg` - Primary image (shows in project grid)
+- `image-1.jpg`, `image-2.jpg`, etc. - Gallery images
 
-#### **Upload Process**
-1. **Prepare your logo files** in the specified formats
-2. **Upload to**: `assets/images/branding/` folder
-3. **File names**: 
-   - `logo-icon.png` (main square logo)
-   - `logo-main.png` (full company logo)
-   - `logo-white.png` (white version)
-   - `favicon.ico` (browser tab icon)
-4. **Website automatically detects** and displays your logo
+#### Step 4: Update interiors.html
 
-### **Step 4: Adding Project Images** 📸 READY FOR YOUR PHOTOS
+Find the project gallery section and add your new project:
 
-#### **Image Categories**
-- **Hero Images**: 1920x1080px JPG (under 300KB)
-- **Project Photos**: 1200x800px JPG (under 200KB)
-- **Gallery Thumbnails**: 300x200px JPG (auto-generated)
+```html
+<!-- Add New Project Card -->
+<div class="project-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease; cursor: pointer;" onclick="openProjectGallery('your-project-id', 'Your Project Name', ['image-1.jpg', 'image-2.jpg', 'image-3.jpg'])">
+    <div style="height: 200px; background-image: url('images/projects/interiors/category/project-folder/main.jpg'); background-size: cover; background-position: center; position: relative;">
+        <div style="position: absolute; top: 10px; right: 10px; background: var(--gold-primary); color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">X Photos</div>
+    </div>
+    <div style="padding: 1.5rem;">
+        <h3 style="color: var(--navy-deep); margin-bottom: 0.5rem;">Your Project Name</h3>
+        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Project description here.</p>
+        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary);">
+            <span>📍 Location, AP</span>
+            <span>💰 ₹X.X Lakhs</span>
+        </div>
+        <div style="margin-top: 1rem; padding: 0.5rem; background: var(--light-gray); border-radius: 6px; text-align: center; font-size: 0.9rem; font-weight: 600; color: var(--gold-primary);">Click to View Gallery</div>
+    </div>
+</div>
+```
 
-#### **Upload Locations**
-- **Interior Projects**: `assets/images/interiors/`
-- **Solar Installations**: `assets/images/solar/`
-- **Construction Projects**: `assets/images/construction/`
-- **Hero Backgrounds**: `assets/images/hero/`
+### Solar Projects
 
-### **Step 5: Managing Project Data** 📊 EASY SYSTEM
+#### Step 1: Create Solar Project Folder
+```
+images/projects/solar/[category]/[capacity-location]/
+Example: images/projects/solar/residential/5kw-visakhapatnam/
+```
 
-#### **Adding New Projects**
-1. **Upload project photos** to appropriate folder
-2. **Edit** `assets/js/projects.js`
-3. **Add project object** with details:
-```javascript
-{
-  id: 'luxury-villa-2025',
-  title: 'Luxury Villa Interior',
-  category: 'residential',
-  location: 'Visakhapatnam, AP',
-  completedDate: '2025-01-15',
-  client: 'Mr. Kumar Residence',
-  description: 'Modern luxury villa with premium finishes...',
-  images: ['villa-living.jpg', 'villa-bedroom.jpg'],
-  features: ['Smart Home', 'Premium Marble'],
-  area: '2500 sq ft',
-  budget: '₹15 Lakhs'
+#### Step 2: Solar Image Types
+- `main.jpg` - Overall installation view
+- `panels.jpg` - Solar panel array
+- `inverter.jpg` - Inverter setup
+- `meter.jpg` - Net meter installation
+- `monitoring.jpg` - Monitoring system
+- `installation.jpg` - Installation process
+
+#### Step 3: Update solar.html
+Add new project card to the solar gallery section.
+
+### Construction Projects
+
+#### Step 1: Create Construction Project Folder
+```
+images/projects/construction/[category]/[project-name]/
+Example: images/projects/construction/residential/villa-kakinada/
+```
+
+#### Step 2: Construction Image Types
+- `main.jpg` - Completed building
+- `foundation.jpg` - Foundation work
+- `structure.jpg` - Structural phase
+- `interior.jpg` - Interior completion
+- `elevation.jpg` - Building elevation
+- `handover.jpg` - Final handover
+
+---
+
+## 🎨 Design System
+
+### Color Palette
+```css
+:root {
+    --gold-primary: #D4AF37;      /* Primary gold for buttons, accents */
+    --gold-light: #E6C55A;        /* Light gold for highlights */
+    --navy-deep: #1e3a5f;         /* Dark navy for headings */
+    --text-primary: #2c3e50;      /* Main text color */
+    --text-secondary: #666;        /* Secondary text color */
+    --cream: #faf8f3;             /* Section backgrounds */
+    --warm-white: #fefdfb;        /* Card backgrounds */
+    --soft-cream: #f9f7f4;        /* Alternate sections */
 }
 ```
-4. **Save file** - Project appears automatically on website
+
+### Typography System
+- **Headings**: Crimson Text (elegant serif)
+- **Body Text**: Inter (clean sans-serif)
+- **Buttons**: Inter (bold)
+
+### Layout Grid System
+- **Desktop**: 3-column project grids, 4-column statistics
+- **Tablet**: 2-column responsive grids
+- **Mobile**: Single-column stacks
 
 ---
 
-## 📱 **Responsive Design**
+## 🔧 Maintenance Tasks
 
-### **Breakpoints**
-- **Desktop**: 1200px+ (Large screens)
-- **Laptop**: 1024px - 1199px (Medium screens)
-- **Tablet**: 769px - 1023px (Tablet landscape/portrait)
-- **Mobile Large**: 481px - 768px (Large phones)
-- **Mobile Small**: 320px - 480px (Small phones)
+### Regular Updates (Monthly)
+1. **Add New Projects**: Follow image upload process
+2. **Update Statistics**: Edit numbers in HTML files
+3. **Check Links**: Ensure all pages load correctly
+4. **Optimize Images**: Compress new uploads
 
-### **Mobile Optimizations**
-- **Touch-friendly buttons** (minimum 44px tap targets)
-- **Readable text sizes** (minimum 16px on mobile)
-- **Optimized images** for mobile networks
-- **Swipe gestures** for image galleries
-- **Collapsible navigation** menu
+### Content Updates
+- **Project Details**: Edit directly in HTML files
+- **Contact Information**: Update across all pages
+- **Service Descriptions**: Modify text in service cards
 
----
-
-## 🎯 **Business Features**
-
-### **Solar Division Features**
-- **Capacity Calculator**: 1kW to 100kW systems
-- **Pricing Tables**: Transparent cost breakdown
-- **Subsidy Information**: PM Surya Ghar details
-- **Technology Showcase**: Panel types and specifications
-- **EMI Calculator**: Bank loan facilitation
-
-### **Interior Design Features**
-- **Project Portfolio**: Categorized by room type
-- **3D Visualization**: Project planning showcase
-- **Before/After Galleries**: Transformation displays
-- **Style Categories**: Modern, traditional, commercial
-- **Client Testimonials**: Success story highlights
-
-### **Construction Features**
-- **Project Timeline**: Construction phase tracking
-- **Quality Assurance**: Material and process standards
-- **Cost Estimation**: Budget planning tools
-- **Progress Documentation**: Build stage photography
-- **Completion Certificates**: Project delivery proof
+### Performance Monitoring
+- **Page Speed**: Test on Google PageSpeed Insights
+- **Mobile Responsiveness**: Test on various devices
+- **Image Loading**: Verify all images display correctly
 
 ---
 
-## 🔧 **Technical Features**
+## 📊 Current Website Statistics
 
-### **Performance Optimizations**
-- **Image Lazy Loading**: Load images as needed
-- **Optimized Assets**: Compressed CSS/JS files
-- **Caching Headers**: Fast repeat visits
-- **Mobile-First Design**: Optimized for smaller screens first
-- **SEO Optimized**: Meta tags and structured data
+### Content Inventory
+- **Interior Projects**: 6 showcase projects ready
+- **Solar Projects**: 6 installation examples
+- **Construction**: Framework ready for projects
+- **Service Pages**: 3 complete service sections
+- **Contact Methods**: Multiple contact options per division
 
-### **Image Management System**
-- **Automatic Gallery Generation**: Add images → Gallery updates
-- **Lightbox Modals**: Professional photo viewing
-- **Before/After Sliders**: Interactive comparisons
-- **Thumbnail Generation**: Automatic size optimization
-- **Lazy Loading**: Improved page speed
-
-### **Project Management System**
-- **Centralized Data**: All projects in `projects.js`
-- **Category Filtering**: Easy project organization
-- **Date Sorting**: Chronological project display
-- **Search Functionality**: Find specific projects
-- **Statistics Dashboard**: Automatic project counting
+### Technical Features
+- **Responsive Design**: Mobile-first approach
+- **Interactive Galleries**: Click-to-view project images
+- **Professional Layout**: Consistent spacing and typography
+- **SEO Optimized**: Semantic HTML and meta tags
 
 ---
 
-## 📈 **SEO & Marketing**
+## 📧 Business Contact Structure
 
-### **Search Engine Optimization**
-- **Meta Descriptions**: Optimized for each page
-- **Keyword Optimization**: Industry-specific terms
-- **Local SEO**: Andhra Pradesh geo-targeting
-- **Schema Markup**: Business information structure
-- **Google My Business**: Integration ready
-
-### **Social Media Integration**
-- **Open Graph Tags**: Facebook sharing optimization
-- **Twitter Cards**: Enhanced Twitter sharing
-- **WhatsApp Business**: Direct messaging integration
-- **Social Proof**: Client testimonials and reviews
-- **Contact Integration**: Multiple communication channels
-
----
-
-## 🛠️ **Maintenance & Updates**
-
-### **Regular Updates Needed**
-- **Project Photos**: Add new completed projects monthly
-- **Client Testimonials**: Fresh reviews and feedback
-- **Pricing Updates**: Current market rates (especially solar)
-- **Contact Information**: Keep all details current
-- **Blog Content**: Industry news and company updates
-
-### **Content Management**
-- **Image Optimization**: Compress new photos before upload
-- **Project Data**: Update `projects.js` with new work
-- **Performance Monitoring**: Check page load speeds
-- **Mobile Testing**: Verify functionality on devices
-- **Backup Strategy**: Regular code and content backups
-
-### **Analytics Tracking** (Optional Setup)
-```html
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'GA_MEASUREMENT_ID');
-</script>
-```
-
----
-
-## 📞 **Contact Information**
-
-### **Business Contact**
-- **Phone**: [8367086748](tel:8367086748)
-- **Email**: info@raghavarajuenterprises.com
-- **Address**: 68-11-4/2B/G3, Revenue Ward 29, Rajeshwari Nagar, Kakinada, AP 533003
-
-### **Division-Specific Contacts**
-- **Solar Inquiries**: solar@raghavarajuenterprises.com
-- **Interior Design**: interiors@raghavarajuenterprises.com  
+### Division-Specific Emails
+- **Main**: info@raghavarajuenterprises.com
+- **Interiors**: interiors@raghavarajuenterprises.com  
+- **Solar**: solar@raghavarajuenterprises.com
 - **Construction**: construction@raghavarajuenterprises.com
 
----
-
-## 🔧 **Technical Support**
-
-### **Common Issues & Solutions**
-
-#### **Logo Not Displaying**
-- Check file path: `assets/images/branding/logo-icon.png`
-- Verify file format: PNG recommended
-- File size: Under 1MB for fast loading
-- Clear browser cache and refresh
-
-#### **Images Not Loading**
-- Verify folder structure matches documentation
-- Check file names for special characters
-- Ensure files are under 500KB each
-- Test on different devices
-
-#### **Mobile Display Issues**
-- Test on actual mobile devices
-- Use browser developer tools
-- Check touch target sizes (minimum 44px)
-- Verify text readability (minimum 16px)
-
-### **Browser Compatibility**
-- **Chrome**: Full support (recommended)
-- **Safari**: Full support
-- **Firefox**: Full support  
-- **Edge**: Full support
-- **Mobile Browsers**: Optimized experience
+### Phone Support
+- **Primary**: 8367086748
+- **Business Hours**: 9 AM - 8 PM
+- **Emergency**: Available for existing clients
 
 ---
 
-## 📊 **Performance Metrics**
+## 🔍 SEO & Marketing
 
-### **Target Benchmarks**
-- **Page Load Time**: Under 3 seconds
-- **Mobile Optimization**: 90+ Google PageSpeed score
-- **Image Optimization**: Under 2MB total page weight
-- **User Experience**: Smooth 60fps animations
-- **SEO Score**: 95+ in Google Lighthouse
+### Current SEO Setup
+- **Title Tags**: Service-specific, location-aware
+- **Meta Descriptions**: Compelling, keyword-rich
+- **Header Structure**: Proper H1-H6 hierarchy
+- **Image Alt Text**: Descriptive for accessibility
 
-### **Monitoring Tools**
-- **Google PageSpeed Insights**: Performance analysis
-- **GTmetrix**: Load time optimization
-- **Mobile-Friendly Test**: Google mobile compatibility
-- **Search Console**: SEO performance tracking
-
----
-
-## 🎯 **Future Enhancements**
-
-### **Phase 2 Features** (Optional Additions)
-- **Online Quote Calculator**: Interactive pricing tool
-- **Project Management Portal**: Client login area
-- **Blog Section**: Industry news and company updates
-- **Multi-language Support**: Telugu and Hindi versions
-- **Payment Gateway**: Online payment processing
-
-### **Advanced Features** (Premium Additions)
-- **3D Project Visualizations**: Interior design previews
-- **Solar Calculator**: Energy savings calculator
-- **Client Portal**: Project tracking dashboard
-- **Inventory Management**: Material and product catalogs
-- **CRM Integration**: Customer relationship management
+### Recommended Additions
+- **Google Analytics**: Track visitor behavior
+- **Google My Business**: Local search presence
+- **Schema Markup**: Rich snippets for services
+- **Local Citations**: Business directory listings
 
 ---
 
-## 📚 **Documentation Files**
+## 🚨 Troubleshooting Guide
 
-- **LOGO-IMAGES-INTEGRATION-GUIDE.md**: Complete image management guide
-- **PROJECT-MANAGEMENT-GUIDE.md**: Adding and managing projects
-- **BACKGROUND-IMAGES-GUIDE.md**: Hero image setup instructions
+### Common Issues & Solutions
 
----
+#### Images Not Loading
+- **Check**: File paths and names match exactly
+- **Verify**: Images are uploaded to correct folders
+- **Test**: File extensions (.jpg, .png) are correct
 
-## 📄 **License & Credits**
+#### Mobile Layout Problems
+- **Inspect**: Use browser developer tools
+- **Test**: On actual mobile devices
+- **Fix**: Adjust CSS breakpoints if needed
 
-### **Website License**
-- **Copyright**: © 2026 Raghavaraju Enterprises
-- **Usage**: Business website for Raghavaraju Enterprises only
-- **Development**: Custom-built responsive website
+#### Gallery Not Opening
+- **Check**: JavaScript function names match
+- **Verify**: onclick handlers are correct
+- **Test**: Console for JavaScript errors
 
-### **Third-Party Resources**
-- **Fonts**: Google Fonts (Playfair Display, Inter)
-- **Icons**: Unicode emoji and custom graphics
-- **Images**: Client-provided photos and Unsplash placeholders
-- **Hosting**: GitHub Pages with custom domain
-
----
-
-## 🚀 **Getting Started Checklist**
-
-### **Essential Steps** (In Order)
-- [ ] **Upload all files** to GitHub repository
-- [ ] **Configure domain** settings (already done)
-- [ ] **Add your logo files** to branding folder
-- [ ] **Upload hero background** images
-- [ ] **Add project photos** to respective folders
-- [ ] **Update project data** in projects.js
-- [ ] **Test on mobile devices** for responsiveness
-- [ ] **Verify contact information** accuracy
-- [ ] **Enable analytics** tracking (optional)
-- [ ] **Submit to Google** for indexing
-
-### **Content Updates** (Ongoing)
-- [ ] **Monthly project additions** with new photos
-- [ ] **Quarterly pricing updates** (especially solar)
-- [ ] **Regular contact verification** and updates
-- [ ] **Performance monitoring** and optimization
-- [ ] **Client testimonial** collection and display
+#### Domain Issues
+- **CNAME File**: Ensure content is correct domain
+- **DNS**: May take 24-48 hours to propagate
+- **HTTPS**: Enabled automatically by GitHub
 
 ---
 
-**Website Status**: ✅ **Production Ready**  
-**Last Updated**: January 2026  
-**Version**: 2.0 - Multi-Service Professional Edition
+## 🔄 Version History
 
-**Ready to showcase your three business divisions with style!** 🌟
+### Current Version: 2.0 (January 2025)
+- ✅ Complete responsive redesign
+- ✅ Interactive project galleries
+- ✅ Optimized spacing and layouts
+- ✅ Professional branding integration
+- ✅ Multi-service architecture
+
+### Previous Versions
+- **v1.0**: Basic landing page
+- **v1.5**: Added service pages
+- **v2.0**: Complete redesign with project galleries
+
+---
+
+## 📞 Support & Contact
+
+### Technical Support
+- **Repository Issues**: Use GitHub Issues tab
+- **General Questions**: Email info@raghavarajuenterprises.com
+- **Urgent Updates**: Phone 8367086748
+
+### Business Development
+- **New Projects**: Follow project addition guide
+- **Service Updates**: Modify service descriptions
+- **Content Changes**: Edit HTML files directly
+
+---
+
+**Website Status**: ✅ Production Ready  
+**Last Updated**: January 8, 2025  
+**Maintained By**: Raghavaraju Enterprises Team  
+**Next Review**: March 2025
+
+---
+
+*Professional website showcasing Raghavaraju Enterprises' complete range of services: Interior Design, Solar Solutions, and Construction Services across Andhra Pradesh.*
