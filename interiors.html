@@ -50,6 +50,45 @@
         .services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
         @media (max-width: 1200px) { .services-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; } }
         @media (max-width: 768px) { .services-grid { grid-template-columns: 1fr; gap: 1.5rem; } }
+
+        /* Project Statistics Cards */
+        .project-stats { 
+            display: grid; 
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 2rem; 
+            margin: 3rem 0; 
+            padding: 2rem 0;
+        }
+        .stat-item { 
+            background: white; 
+            padding: 2rem; 
+            border-radius: 12px; 
+            text-align: center; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .stat-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+        .stat-number { 
+            font-size: 2.5rem; 
+            font-weight: 700; 
+            color: var(--gold-primary); 
+            display: block; 
+            margin-bottom: 0.5rem;
+        }
+        .stat-label { 
+            font-size: 1rem; 
+            color: var(--text-secondary); 
+            font-weight: 500;
+        }
+        @media (max-width: 768px) { 
+            .project-stats { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; } 
+        }
+        @media (max-width: 480px) { 
+            .project-stats { grid-template-columns: 1fr; gap: 1rem; } 
+        }
         .service-card { background: white; padding: 2.5rem; border-radius: 16px; box-shadow: var(--shadow-elegant); transition: all 0.3s ease; border: 1px solid rgba(212, 175, 55, 0.1); }
         .service-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-hover); }
         .service-icon { width: 80px; height: 80px; background: var(--gradient-hero); border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; margin-bottom: 1.5rem; }
@@ -143,36 +182,6 @@
     <!-- Contact Section Teaser -->
     <section style="background: #1a1a1a; color: white; padding: 100px 0; text-align: center;">
         <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
-                <!-- Phone -->
-                <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 12px; backdrop-filter: blur(10px);">
-                    <div style="width: 60px; height: 60px; background: var(--gradient-hero); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1rem;">📱</div>
-                    <h3 style="color: white; margin-bottom: 0.5rem;">Phone</h3>
-                    <a href="tel:8367086748" style="color: var(--gold-light); text-decoration: none;">8367086748</a>
-                </div>
-
-                <!-- Email -->
-                <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 12px; backdrop-filter: blur(10px);">
-                    <div style="width: 60px; height: 60px; background: var(--gradient-hero); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1rem;">✉️</div>
-                    <h3 style="color: white; margin-bottom: 0.5rem;">Email</h3>
-                    <a href="mailto:interiors@raghavarajuenterprises.com" style="color: var(--gold-light); text-decoration: none;">interiors@raghavarajuenterprises.com</a>
-                </div>
-
-                <!-- Location -->
-                <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 12px; backdrop-filter: blur(10px);">
-                    <div style="width: 60px; height: 60px; background: var(--gradient-hero); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1rem;">📍</div>
-                    <h3 style="color: white; margin-bottom: 0.5rem;">Location</h3>
-                    <p style="color: rgba(255,255,255,0.8); margin: 0;">Kakinada, Andhra Pradesh</p>
-                </div>
-
-                <!-- Specialization -->
-                <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 12px; backdrop-filter: blur(10px);">
-                    <div style="width: 60px; height: 60px; background: var(--gradient-hero); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1rem;">🏡</div>
-                    <h3 style="color: white; margin-bottom: 0.5rem;">Specialization</h3>
-                    <p style="color: rgba(255,255,255,0.8); margin: 0;">Residential & Commercial Interiors</p>
-                </div>
-            </div>
-
             <div style="text-align: center;">
                 <h2 style="font-family: 'Crimson Text', serif; font-size: 3rem; color: var(--gold-light); margin-bottom: 1rem;">Ready to Transform Your Space?</h2>
                 <p style="font-size: 1.2rem; color: rgba(255,255,255,0.8); margin-bottom: 2rem;">Let's discuss your interior design vision and bring it to life.</p>
