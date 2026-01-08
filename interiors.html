@@ -44,7 +44,7 @@
         .btn-primary:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
 
         /* Services */
-        .services { padding: 100px 0; background: var(--warm-white); }
+        .services { padding: 70px 0; background: var(--warm-white); }
         .section-header { text-align: center; margin-bottom: 4rem; }
         .section-header h2 { font-family: 'Crimson Text', serif; font-size: 2.8rem; color: var(--navy-deep); margin-bottom: 1rem; }
         .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
@@ -53,7 +53,7 @@
         /* Project Statistics Cards */
         .project-stats { 
             display: grid; 
-            grid-template-columns: repeat(2, 1fr); 
+            grid-template-columns: repeat(4, 1fr); 
             gap: 2rem; 
             margin: 3rem 0; 
             padding: 2rem 0;
@@ -82,8 +82,20 @@
             color: var(--text-secondary); 
             font-weight: 500;
         }
+        @media (max-width: 1024px) { 
+            .project-stats { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; } 
+            .stat-item { padding: 1.5rem; }
+            .stat-number { font-size: 2rem; }
+        }
         @media (max-width: 768px) { 
-            .project-stats { grid-template-columns: 1fr; gap: 1.5rem; } 
+            .project-stats { grid-template-columns: repeat(2, 1fr); gap: 1rem; } 
+            .stat-item { padding: 1rem; }
+            .stat-number { font-size: 1.8rem; }
+            .stat-label { font-size: 0.9rem; }
+        }
+        @media (max-width: 480px) { 
+            .project-stats { grid-template-columns: 1fr; gap: 1rem; } 
+            .stat-item { padding: 1.5rem; }
         }
         .service-card { background: white; padding: 2.5rem; border-radius: 16px; box-shadow: var(--shadow-elegant); transition: all 0.3s ease; border: 1px solid rgba(212, 175, 55, 0.1); }
         .service-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-hover); }
@@ -94,7 +106,10 @@
         .service-features li::before { content: '✓'; position: absolute; left: 0; color: var(--success-green); font-weight: bold; }
 
         /* Project Gallery */
-        .gallery { padding: 100px 0; background: var(--cream); }
+        .gallery { padding: 70px 0; background: var(--cream); }
+        .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+        @media (max-width: 1024px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; } }
+        @media (max-width: 768px) { .gallery-grid { grid-template-columns: 1fr; gap: 1.5rem; } }
         .gallery-filter { display: flex; justify-content: center; gap: 1rem; margin-bottom: 3rem; flex-wrap: wrap; }
         .filter-btn { background: white; color: var(--text-primary); padding: 12px 24px; border: 2px solid var(--gold-primary); border-radius: 8px; font-weight: 500; cursor: pointer; transition: all 0.3s ease; text-decoration: none; }
         .filter-btn.active, .filter-btn:hover { background: var(--gold-primary); color: white; }
@@ -157,7 +172,7 @@
     </header>
 
     <!-- Hero -->
-    <section class="hero" style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%), url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; color: white; text-align: center; padding: 200px 0 150px; position: relative;">
+    <section class="hero" style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%), url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; color: white; text-align: center; padding: 120px 0 80px; position: relative;">
         <div class="container">
             <div style="max-width: 900px; margin: 0 auto; background: rgba(0, 0, 0, 0.4); padding: 3rem; border-radius: 20px; backdrop-filter: blur(10px);">
                 <p style="font-size: 1.2rem; margin-bottom: 2rem; color: rgba(255,255,255,0.9); font-weight: 300; letter-spacing: 3px; text-transform: uppercase;">Raghavaraju Enterprises</p>
@@ -176,7 +191,7 @@
     </section>
 
     <!-- Contact Section Teaser -->
-    <section style="background: #1a1a1a; color: white; padding: 100px 0; text-align: center;">
+    <section style="background: #1a1a1a; color: white; padding: 70px 0; text-align: center;">
         <div class="container">
             <div style="text-align: center;">
                 <h2 style="font-family: 'Crimson Text', serif; font-size: 3rem; color: var(--gold-light); margin-bottom: 1rem;">Ready to Transform Your Space?</h2>
@@ -288,7 +303,7 @@
             </div>
             
             <!-- Dynamic Project Grid -->
-            <div class="gallery-grid" id="gallery-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+            <div class="gallery-grid" id="gallery-container" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 3rem;">
                 
                 <!-- Sample Project 1 - Modern Living Room -->
                 <div class="project-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease; cursor: pointer;" onclick="openProjectGallery('modern-living', 'Modern Living Room', ['living-1.jpg', 'living-2.jpg', 'living-3.jpg', 'living-4.jpg'])">
@@ -350,7 +365,47 @@
                     </div>
                 </div>
 
-                <!-- Sample Project 4 - Commercial Office -->
+                <!-- Sample Project 4 - Luxury Washroom Design -->
+                <div class="project-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease; cursor: pointer;" onclick="openProjectGallery('luxury-washroom', 'Luxury Washroom Design', ['washroom-1.jpg', 'washroom-2.jpg', 'washroom-3.jpg', 'washroom-4.jpg'])">
+                    <div style="height: 200px; background: linear-gradient(135deg, #f0f8ff, #e6f4ff); display: flex; align-items: center; justify-content: center; color: var(--text-secondary); position: relative;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🛁</div>
+                            <p>Main Project Image</p>
+                        </div>
+                        <div style="position: absolute; top: 10px; right: 10px; background: var(--gold-primary); color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">4 Photos</div>
+                    </div>
+                    <div style="padding: 1.5rem;">
+                        <h3 style="color: var(--navy-deep); margin-bottom: 0.5rem;">Luxury Washroom Design</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Modern bathroom with premium fixtures and spa-like ambiance.</p>
+                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary);">
+                            <span>📍 Guntur, AP</span>
+                            <span>💰 ₹3.2 Lakhs</span>
+                        </div>
+                        <div style="margin-top: 1rem; padding: 0.5rem; background: var(--light-gray); border-radius: 6px; text-align: center; font-size: 0.9rem; font-weight: 600; color: var(--gold-primary);">Click to View Gallery</div>
+                    </div>
+                </div>
+
+                <!-- Sample Project 5 - Home Theater Design -->
+                <div class="project-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease; cursor: pointer;" onclick="openProjectGallery('home-theater', 'Home Theater Design', ['theater-1.jpg', 'theater-2.jpg', 'theater-3.jpg', 'theater-4.jpg', 'theater-5.jpg'])">
+                    <div style="height: 200px; background: linear-gradient(135deg, #2d1b4e, #4a3366); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.8); position: relative;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎬</div>
+                            <p>Main Project Image</p>
+                        </div>
+                        <div style="position: absolute; top: 10px; right: 10px; background: var(--gold-primary); color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">5 Photos</div>
+                    </div>
+                    <div style="padding: 1.5rem;">
+                        <h3 style="color: var(--navy-deep); margin-bottom: 0.5rem;">Home Theater Design</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Premium home cinema with acoustic treatment and luxury seating.</p>
+                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary);">
+                            <span>📍 Nellore, AP</span>
+                            <span>💰 ₹5.5 Lakhs</span>
+                        </div>
+                        <div style="margin-top: 1rem; padding: 0.5rem; background: var(--light-gray); border-radius: 6px; text-align: center; font-size: 0.9rem; font-weight: 600; color: var(--gold-primary);">Click to View Gallery</div>
+                    </div>
+                </div>
+
+                <!-- Sample Project 6 - Commercial Office -->
                 <div class="project-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease; cursor: pointer;" onclick="openProjectGallery('commercial-office', 'Commercial Office Design', ['office-1.jpg', 'office-2.jpg', 'office-3.jpg', 'office-4.jpg', 'office-5.jpg', 'office-6.jpg'])">
                     <div style="height: 200px; background: linear-gradient(135deg, #fff0e6, #ffe6d2); display: flex; align-items: center; justify-content: center; color: var(--text-secondary); position: relative;">
                         <div style="text-align: center;">
