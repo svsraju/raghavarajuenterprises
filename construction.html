@@ -46,7 +46,8 @@
         .services { padding: 100px 0; background: var(--warm-white); }
         .section-header { text-align: center; margin-bottom: 4rem; }
         .section-header h2 { font-family: 'Crimson Text', serif; font-size: 2.8rem; color: var(--navy-deep); margin-bottom: 1rem; }
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; }
+        .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+        @media (max-width: 768px) { .services-grid { grid-template-columns: 1fr; gap: 1.5rem; } }
         .service-card { background: white; padding: 2.5rem; border-radius: 16px; box-shadow: var(--shadow-elegant); transition: all 0.3s ease; border: 1px solid rgba(212, 175, 55, 0.1); }
         .service-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-hover); }
         .service-icon { width: 80px; height: 80px; background: var(--gradient-hero); border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; margin-bottom: 1.5rem; }
@@ -57,14 +58,18 @@
 
         /* Process Section */
         .process { padding: 100px 0; background: var(--cream); }
-        .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .process-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; }
+        @media (max-width: 768px) { .process-steps { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; } }
+        @media (max-width: 480px) { .process-steps { grid-template-columns: 1fr; gap: 1rem; } }
         .step { text-align: center; padding: 2rem; }
         .step-number { width: 60px; height: 60px; background: var(--gradient-hero); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 700; color: white; margin: 0 auto 1rem; }
         .step h4 { font-family: 'Crimson Text', serif; font-size: 1.5rem; color: var(--navy-deep); margin-bottom: 0.5rem; }
 
         /* Features */
         .features { padding: 80px 0; background: var(--navy-deep); color: white; }
-        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center; }
+        .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; text-align: center; }
+        @media (max-width: 768px) { .features-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; } }
+        @media (max-width: 480px) { .features-grid { grid-template-columns: 1fr; gap: 1rem; } }
         .feature { padding: 2rem; }
         .feature-icon { font-size: 3rem; margin-bottom: 1rem; }
         .feature h4 { font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--gold-light); }
@@ -302,7 +307,7 @@
                 <div class="contact-card">
                     <div class="contact-icon">📧</div>
                     <h3>Email</h3>
-                    <p><a href="/cdn-cgi/l/email-protection#c2a1adacb1b6b0b7a1b6abadac82b0a3a5aaa3b4a3b0a3a8b7a7acb6a7b0b2b0abb1a7b1eca1adaf" style="color: var(--text-primary);"><span class="__cf_email__" data-cfemail="61020e0f121513140215080e0f211300060900170013000b14040f1504131113081204124f020e0c">[email&#160;protected]</span></a></p>
+                    <p><a href="mailto:construction@raghavarajuenterprises.com" style="color: var(--text-primary);">construction@raghavarajuenterprises.com</a></p>
                 </div>
                 
                 <div class="contact-card">
@@ -346,7 +351,7 @@
                 <div class="footer-section">
                     <h3>Contact</h3>
                     <p>Phone: <a href="tel:8367086748">8367086748</a></p>
-                    <p>Email: <a href="/cdn-cgi/l/email-protection#11727e7f626563647265787e7f516370767970677063707b64747f6574636163786274623f727e7c"><span class="__cf_email__" data-cfemail="86e5e9e8f5f2f4f3e5f2efe9e8c6f4e7e1eee7f0e7f4e7ecf3e3e8f2e3f4f6f4eff5e3f5a8e5e9eb">[email&#160;protected]</span></a></p>
+                    <p>Email: <a href="mailto:construction@raghavarajuenterprises.com">construction@raghavarajuenterprises.com</a></p>
                     <p>Kakinada, Andhra Pradesh</p>
                 </div>
                 
