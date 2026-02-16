@@ -3,116 +3,401 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suryakantha Solar Energies | Premium Solar Solutions in Andhra Pradesh</title>
-    <meta name="description" content="Leading solar EPC contractor in AP. 1kW-100kW installations, PM Surya Ghar subsidy, quality brands, 25-year warranty, bank loans available.">
+    <title>Solar Solutions - Suryakantha Solar Energies | Raghavaraju Enterprises</title>
+    <meta name="description" content="Professional solar EPC contractor in Andhra Pradesh. Residential, commercial & industrial solar installations from 1kW to 100kW with government subsidies.">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --gold-primary: #D4AF37; --gold-light: #F4E4B8; --gold-dark: #B8941F;
-            --navy-deep: #1B2951; --navy-medium: #2A3F6B; --cream: #FEFBF3; --warm-white: #FAF8F1;
-            --charcoal: #2C2C2C; --text-primary: #333333; --text-secondary: #666666;
-            --accent-orange: #E67E22; --success-green: #27AE60;
-            --gradient-hero: linear-gradient(135deg, #D4AF37 0%, #E67E22 50%, #DC7633 100%);
-            --shadow-elegant: 0 8px 32px rgba(0, 0, 0, 0.1);
-            --shadow-hover: 0 12px 40px rgba(212, 175, 55, 0.3);
+            --gold-primary: #D4AF37;
+            --gold-light: #E6C55A;
+            --navy-deep: #1e3a5f;
+            --text-primary: #2c3e50;
+            --text-secondary: #666;
+            --cream: #faf8f3;
+            --warm-white: #fefdfb;
+            --success-green: #27AE60;
+            --accent-orange: #E67E22;
+            --gradient-hero: linear-gradient(135deg, #D4AF37, #E67E22);
+            --shadow-elegant: 0 8px 32px rgba(212, 175, 55, 0.15);
+            --shadow-hover: 0 20px 60px rgba(212, 175, 55, 0.25);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Montserrat', sans-serif; line-height: 1.7; color: var(--text-primary); background: var(--cream); }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--warm-white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
         /* Header */
-        .header { background: rgba(254, 251, 243, 0.95); backdrop-filter: blur(20px); position: fixed; top: 0; left: 0; right: 0; z-index: 1000; border-bottom: 1px solid rgba(212, 175, 55, 0.2); }
-        .nav { display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 0; }
-        .logo { display: flex; align-items: center; gap: 15px; font-family: 'Crimson Text', serif; font-size: 2rem; font-weight: 600; color: var(--navy-deep); text-decoration: none; white-space: nowrap; }
-        .logo-icon { width: 50px; height: 50px; background: var(--gradient-hero); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; box-shadow: var(--shadow-elegant); }
+        .header {
+            background: rgba(254, 251, 243, 0.95);
+            backdrop-filter: blur(20px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
         
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-family: 'Crimson Text', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--navy-deep);
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-hero);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: var(--shadow-elegant);
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+            align-items: center;
+        }
+        
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-primary);
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-menu a:hover { color: var(--gold-primary); }
+        
+        .cta-button {
+            background: var(--gradient-hero);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-elegant);
+        }
+
+        /* Hero */
+        .hero {
+            background: var(--gradient-hero);
+            color: white;
+            text-align: center;
+            padding: 120px 0 80px;
+            margin-top: 80px;
+        }
+
+        .hero h1 {
+            font-family: 'Crimson Text', serif;
+            font-size: 4rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .highlight {
+            color: #FFD700;
+            font-style: italic;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--navy-deep);
+            padding: 16px 32px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-elegant);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        /* Stats */
+        .stats {
+            padding: 80px 0;
+            background: var(--warm-white);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            text-align: center;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow-elegant);
+            transition: all 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--gold-primary);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        /* Services */
+        .services {
+            padding: 50px 0 40px;
+            background: var(--cream);
+        }
+        
+        .section-header {
+            margin-bottom: 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .section-content h2 {
+            font-family: 'Crimson Text', serif;
+            font-size: 2.8rem;
+            color: var(--navy-deep);
+            margin-bottom: 1rem;
+        }
+        
+        .section-content p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+        }
+        
+        .calculator-btn {
+            background: var(--gradient-hero);
+            color: white;
+            padding: 16px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+        
+        .calculator-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow-elegant);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-hero);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-card h3 {
+            font-family: 'Crimson Text', serif;
+            font-size: 1.8rem;
+            color: var(--navy-deep);
+            margin-bottom: 1rem;
+        }
+        
+        .service-features {
+            list-style: none;
+        }
+        
+        .service-features li {
+            padding: 0.3rem 0;
+            color: var(--text-secondary);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .service-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success-green);
+            font-weight: bold;
+        }
+
+        /* Contact */
+        .contact {
+            background: var(--navy-deep);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .contact h2 {
+            font-family: 'Crimson Text', serif;
+            font-size: 3rem;
+            color: var(--gold-light);
+            margin-bottom: 1rem;
+        }
+        
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .contact-btn {
+            background: var(--gradient-hero);
+            color: white;
+            padding: 18px 36px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .contact-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .contact-btn.secondary {
+            background: transparent;
+            border: 2px solid var(--gold-primary);
+            color: var(--gold-primary);
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            font-family: 'Crimson Text', serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--gold-light);
+        }
+        
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+        
+        .footer-section a:hover { color: var(--gold-primary); }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Mobile Responsive */
         @media (max-width: 768px) {
             .logo { font-size: 1.5rem; gap: 10px; }
             .logo-icon { width: 40px; height: 40px; font-size: 1.4rem; }
-        }
-        
-        @media (max-width: 480px) {
-            .logo { font-size: 1.2rem; gap: 8px; }
-            .logo-icon { width: 35px; height: 35px; font-size: 1.2rem; }
-        }
-        .nav-menu { display: flex; list-style: none; gap: 2.5rem; align-items: center; }
-        .nav-menu a { text-decoration: none; color: var(--text-primary); font-weight: 500; transition: all 0.3s ease; }
-        .nav-menu a:hover { color: var(--gold-dark); }
-        .cta-button { background: var(--gradient-hero); color: white; padding: 12px 24px; border: none; border-radius: 8px; font-weight: 600; text-decoration: none; transition: all 0.3s ease; box-shadow: var(--shadow-elegant); }
-
-        /* Hero */
-        .hero { padding: 120px 0 70px; background: linear-gradient(135deg, rgba(254, 251, 243, 0.9) 0%, rgba(250, 248, 241, 0.9) 100%); text-align: center; }
-        .hero h1 { font-family: 'Crimson Text', serif; font-size: 3.5rem; font-weight: 600; color: var(--navy-deep); margin-bottom: 1.5rem; }
-        .highlight { background: var(--gradient-hero); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .hero .subtitle { font-size: 1.3rem; color: var(--text-secondary); margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto; }
-        .btn-primary { background: var(--gradient-hero); color: white; padding: 16px 32px; border: none; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: var(--shadow-elegant); display: inline-block; margin: 0 10px; }
-        .btn-primary:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
-
-        /* Stats */
-        .stats { padding: 80px 0; background: var(--warm-white); }
-        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; text-align: center; }
-        
-        .solar-gallery-responsive {
-            display: grid !important;
-            grid-template-columns: repeat(3, 1fr) !important;
-            gap: 2rem !important;
-        }
-        @media (max-width: 1024px) { 
-            .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
-            .solar-gallery-responsive { grid-template-columns: repeat(2, 1fr) !important; gap: 1.5rem !important; }
-            .stat-card { padding: 1.5rem; }
-            .stat-number { font-size: 2rem; }
-        }
-        @media (max-width: 768px) { 
-            .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
-            .solar-gallery-responsive { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
-            .stat-card { padding: 1rem; }
-            .stat-number { font-size: 1.8rem; }
-        }
-        @media (max-width: 480px) { 
-            .stats-grid { grid-template-columns: 1fr; gap: 1rem; }
-            .solar-gallery-responsive { grid-template-columns: 1fr !important; gap: 1rem !important; }
-            .stat-card { padding: 1.5rem; }
-        }
-        .stat-card { background: white; padding: 2rem; border-radius: 12px; box-shadow: var(--shadow-elegant); border: 1px solid rgba(212, 175, 55, 0.1); }
-        .stat-number { font-size: 2.5rem; font-weight: 700; color: var(--gold-primary); display: block; }
-        .stat-label { font-size: 1rem; color: var(--text-secondary); margin-top: 0.5rem; }
-
-        /* Services */
-        .services { padding: 50px 0 40px; background: var(--cream); }
-        .section-header { text-align: center; margin-bottom: 4rem; }
-        .section-header h2 { font-family: 'Crimson Text', serif; font-size: 2.8rem; color: var(--navy-deep); margin-bottom: 1rem; }
-        .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
-        @media (max-width: 1024px) { .services-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; } }
-        @media (max-width: 768px) { .services-grid { grid-template-columns: 1fr; gap: 1.5rem; } }
-        .service-card { background: white; padding: 2.5rem; border-radius: 16px; box-shadow: var(--shadow-elegant); transition: all 0.3s ease; border: 1px solid rgba(212, 175, 55, 0.1); }
-        .service-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-hover); }
-        .service-icon { width: 80px; height: 80px; background: var(--gradient-hero); border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; margin-bottom: 1.5rem; }
-        .service-card h3 { font-family: 'Crimson Text', serif; font-size: 1.8rem; color: var(--navy-deep); margin-bottom: 1rem; }
-        .service-features { list-style: none; }
-        .service-features li { padding: 0.3rem 0; color: var(--text-secondary); position: relative; padding-left: 1.5rem; }
-        .service-features li::before { content: '✓'; position: absolute; left: 0; color: var(--success-green); font-weight: bold; }
-
-        /* Contact Section */
-        .contact-section { padding: 80px 0; background: var(--navy-deep); color: white; text-align: center; }
-        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem; }
-        .contact-card { background: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 12px; }
-        .contact-icon { width: 60px; height: 60px; background: var(--gradient-hero); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1rem; }
-
-        /* Footer */
-        .footer { background: var(--charcoal); color: white; padding: 60px 0 30px; }
-        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
-        .footer-section h3 { font-family: 'Crimson Text', serif; font-size: 1.5rem; margin-bottom: 1rem; color: var(--gold-light); }
-        .footer-section a { color: rgba(255, 255, 255, 0.8); text-decoration: none; }
-        .footer-section a:hover { color: var(--gold-primary); }
-        .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 2rem; text-align: center; color: rgba(255, 255, 255, 0.6); }
-
-        @media (max-width: 768px) { 
-            .nav-menu { display: none; } 
+            .nav-menu { display: none; }
             .container { padding: 0 20px; }
             
             .hero { padding: 120px 0 60px; }
@@ -121,6 +406,15 @@
             .hero p { font-size: 1.1rem; margin-bottom: 2rem; padding: 0 10px; line-height: 1.5; }
             .hero a { display: block; margin: 0.8rem 10px; padding: 16px 32px; text-align: center; }
             
+            .section-header {
+                flex-direction: column !important;
+                text-align: center !important;
+                gap: 16px !important;
+            }
+            
+            .section-content h2 { font-size: 2.2rem; }
+            .calculator-btn { font-size: 0.9rem !important; padding: 14px 20px !important; }
+            
             .services-grid { grid-template-columns: 1fr; gap: 1.5rem; }
             .service-card { padding: 2rem 1.5rem; margin: 0 10px; }
             .service-icon { width: 60px; height: 60px; font-size: 2rem; }
@@ -128,35 +422,11 @@
             
             .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; margin: 0 10px; }
             .stat-card { padding: 1.5rem 1rem; }
-            
-            .gallery-grid { grid-template-columns: 1fr; gap: 1.5rem; margin: 0 10px; }
-            .project-card { 
-                margin: 0 5px; 
-                display: flex !important;
-                flex-direction: column !important;
-                min-height: 400px !important;
-                border-radius: 12px !important;
-                overflow: hidden !important;
-            }
-            
-            .project-card > div:first-child {
-                height: 200px !important;
-                flex-shrink: 0 !important;
-                background-size: cover !important;
-                background-position: center !important;
-            }
-            
-            .project-card > div:last-child {
-                flex: 1 !important;
-                display: flex !important;
-                flex-direction: column !important;
-                justify-content: space-between !important;
-                padding: 1.5rem !important;
-            }
-            .filter-btn { padding: 8px 16px; font-size: 0.9rem; margin: 4px; }
         }
         
         @media (max-width: 480px) {
+            .logo { font-size: 1.2rem; gap: 8px; }
+            .logo-icon { width: 35px; height: 35px; font-size: 1.2rem; }
             .container { padding: 0 16px; }
             
             .hero { padding: 100px 0 50px; }
@@ -175,39 +445,8 @@
             .stat-card { padding: 1.5rem 1rem; }
             .stat-number { font-size: 2rem; }
             
-            .section-header h2 { font-size: 1.8rem; margin-bottom: 0.8rem; }
-            .section-header p { font-size: 0.9rem; padding: 0 10px; }
-            
-            .gallery-grid { grid-template-columns: 1fr; gap: 1rem; margin: 0 8px; }
-            .project-card { 
-                margin: 0 2px; 
-                display: flex !important;
-                flex-direction: column !important;
-                min-height: 380px !important;
-                border-radius: 12px !important;
-                overflow: hidden !important;
-            }
-            
-            .project-card > div:first-child {
-                height: 180px !important;
-                flex-shrink: 0 !important;
-                background-size: cover !important;
-                background-position: center !important;
-            }
-            
-            .project-card > div:last-child {
-                flex: 1 !important;
-                display: flex !important;
-                flex-direction: column !important;
-                justify-content: space-between !important;
-                padding: 1.2rem !important;
-            }
-            
-            .project-card div[style*="padding: 1.5rem"] { padding: 1.2rem !important; }
-            .project-card h3 { font-size: 1.1rem !important; margin-bottom: 0.5rem !important; }
-            .project-card p { font-size: 0.85rem !important; line-height: 1.3 !important; }
-            
-            .filter-btn { padding: 6px 12px; font-size: 0.85rem; margin: 2px; }
+            .section-content h2 { font-size: 1.8rem; margin-bottom: 0.8rem; }
+            .section-content p { font-size: 0.9rem; padding: 0 10px; }
         }
     </style>
 </head>
@@ -218,9 +457,9 @@
             <a href="index-new.html" class="logo">
                 <div class="logo-icon">
                     <img src="images/branding/suryakantha-solar-logo.png" 
-                         alt="Suryakantha Solar Energies" 
-                         onerror="this.style.display='none'; this.parentElement.innerHTML='☀';"
-                         style="width: 90%; height: 90%; object-fit: contain;">
+                         alt="Suryakantha Solar - Raghavaraju Enterprises" 
+                         onerror="this.style.display='none'; this.parentElement.innerHTML='☀️';"
+                         style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <span>Raghavaraju Enterprises</span>
             </a>
@@ -228,9 +467,9 @@
             <ul class="nav-menu">
                 <li><a href="index-new.html">Home</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="solar-calculator.html">Solar Calculator</a></li>
                 <li><a href="interiors.html">Interiors</a></li>
                 <li><a href="construction.html">Construction</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
             
             <a href="tel:8367086748" class="cta-button">Call Now</a>
@@ -277,337 +516,74 @@
     <section class="services" id="services">
         <div class="container">
             <div class="section-header">
-                <h2>Our Solar Solutions</h2>
-                <p>Comprehensive solar EPC services across all sectors</p>
+                <div class="section-content">
+                    <h2>Our Solar Solutions</h2>
+                    <p>Comprehensive solar EPC services across all sectors</p>
+                </div>
+                <a href="solar-calculator.html" class="calculator-btn">
+                    🧮 Calculate Your Savings
+                </a>
             </div>
             
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">🏠</div>
                     <h3>Residential Solar</h3>
-                    <p>Complete rooftop solar solutions for homes with PM Surya Ghar subsidy support</p>
+                    <p>Complete home solar solutions with maximum savings and government subsidies.</p>
                     <ul class="service-features">
-                        <li>1kW to 10kW systems</li>
-                        <li>Up to ₹78,000 subsidy</li>
+                        <li>1kW - 10kW systems</li>
+                        <li>PM Surya Ghar subsidy up to ₹78,000</li>
                         <li>Net metering support</li>
-                        <li>EMI options available</li>
                         <li>25-year warranty</li>
+                        <li>EMI options available</li>
                     </ul>
                 </div>
                 
                 <div class="service-card">
                     <div class="service-icon">🏢</div>
                     <h3>Commercial Solar</h3>
-                    <p>Cost-effective solar solutions for businesses and commercial establishments</p>
+                    <p>Reduce operational costs with efficient commercial solar installations.</p>
                     <ul class="service-features">
-                        <li>10kW to 50kW systems</li>
-                        <li>Quick ROI calculation</li>
-                        <li>Tax benefits available</li>
+                        <li>10kW - 50kW systems</li>
+                        <li>Quick payback period</li>
                         <li>Professional installation</li>
-                        <li>Maintenance support</li>
+                        <li>Minimal downtime</li>
+                        <li>Complete O&M support</li>
                     </ul>
                 </div>
                 
                 <div class="service-card">
                     <div class="service-icon">🏭</div>
                     <h3>Industrial Solar</h3>
-                    <p>Large-scale solar installations for industries and manufacturing units</p>
+                    <p>Large-scale solar solutions for industries with significant power requirements.</p>
                     <ul class="service-features">
-                        <li>50kW to 100kW+ systems</li>
-                        <li>Significant cost savings</li>
-                        <li>Grid stability solutions</li>
-                        <li>Custom engineering</li>
-                        <li>Long-term service contracts</li>
+                        <li>50kW - 100kW+ systems</li>
+                        <li>Custom engineering solutions</li>
+                        <li>High-efficiency panels</li>
+                        <li>Grid integration support</li>
+                        <li>Performance monitoring</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Table -->
-    <section style="padding: 70px 0; background: var(--warm-white);" id="pricing">
+    <!-- Contact -->
+    <section class="contact" id="contact">
         <div class="container">
-            <div class="section-header">
-                <h2>Solar System Pricing</h2>
-                <p>Transparent pricing for all capacity ranges in Andhra Pradesh</p>
-            </div>
+            <h2>Ready to Go Solar?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem; color: rgba(255,255,255,0.9);">Get a free consultation and customized solar solution for your property</p>
             
-            <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-elegant); margin: 2rem 0;">
-                <table style="width: 100%; border-collapse: collapse;">
-                    <thead>
-                        <tr style="background: var(--gradient-hero); color: white;">
-                            <th style="padding: 1.5rem; text-align: left;">Capacity</th>
-                            <th style="padding: 1.5rem; text-align: left;">Cost</th>
-                            <th style="padding: 1.5rem; text-align: left;">Monthly Generation</th>
-                            <th style="padding: 1.5rem; text-align: left;">Annual Savings*</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td style="padding: 1.2rem 1.5rem; border-bottom: 1px solid #eee;"><strong>1 kW</strong></td><td style="padding: 1.2rem 1.5rem; border-bottom: 1px solid #eee;">₹70,000</td><td style="padding: 1.2rem 1.5rem; border-bottom: 1px solid #eee;">135-150 units</td><td style="padding: 1.2rem 1.5rem; border-bottom: 1px solid #eee;">₹20,000 - ₹25,000</td></tr>
-                        <tr><td style="padding: 1.2rem 1.5rem; border-bottom: 1px solid #eee;"><strong>3 kW</strong></td><td style="padding: 1.2rem 1.5rem; border-bottom: 1px solid #eee;">₹2.1 - 2.3 L</td><td style="padding: 1.2rem 1.5rem; border-bottom: 1px solid #eee;">405-450 units</td><td style="padding: 1.2rem 1.5rem; border-bottom: 1px solid #eee;">₹60,000 - ₹75,000</td></tr>
-                        <tr><td style="padding: 1.2rem 1.5rem; border-bottom: 1px solid #eee;"><strong>5 kW</strong></td><td style="padding: 1.2rem 1.5rem; border-bottom: 1px solid #eee;">₹3.3 - 3.6 L</td><td style="padding: 1.2rem 1.5rem; border-bottom: 1px solid #eee;">675-750 units</td><td style="padding: 1.2rem 1.5rem; border-bottom: 1px solid #eee;">₹1,00,000 - ₹1,25,000</td></tr>
-                        <tr><td style="padding: 1.2rem 1.5rem; border-bottom: 1px solid #eee;"><strong>10 kW</strong></td><td style="padding: 1.2rem 1.5rem; border-bottom: 1px solid #eee;">₹6.5 - 7 L</td><td style="padding: 1.2rem 1.5rem; border-bottom: 1px solid #eee;">1350-1500 units</td><td style="padding: 1.2rem 1.5rem; border-bottom: 1px solid #eee;">₹2,00,000 - ₹2,50,000</td></tr>
-                    </tbody>
-                </table>
-            </div>
-            <p style="font-size: 0.9rem; color: var(--text-secondary);">*Savings calculated based on current electricity tariffs</p>
-        </div>
-    </section>
-
-    <!-- Solar Projects Gallery -->
-    <section class="gallery" style="padding: 40px 0 50px; background: var(--cream);">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Solar Installation Projects</h2>
-                <p>Discover our portfolio of completed solar projects with detailed installation information</p>
-            </div>
-            
-            <!-- Filter Buttons -->
-            <div style="text-align: center; margin-bottom: 3rem;">
-                <button class="filter-btn" style="background: var(--gold-primary); color: white; border: none; padding: 12px 24px; margin: 0 8px; border-radius: 25px; font-weight: 600; cursor: pointer;" onclick="filterGallery('all')">All Projects</button>
-                <button class="filter-btn" style="background: white; color: var(--text-primary); border: 2px solid var(--gold-primary); padding: 10px 22px; margin: 0 8px; border-radius: 25px; font-weight: 600; cursor: pointer;" onclick="filterGallery('residential')">Residential</button>
-                <button class="filter-btn" style="background: white; color: var(--text-primary); border: 2px solid var(--gold-primary); padding: 10px 22px; margin: 0 8px; border-radius: 25px; font-weight: 600; cursor: pointer;" onclick="filterGallery('commercial')">Commercial</button>
-                <button class="filter-btn" style="background: white; color: var(--text-primary); border: 2px solid var(--gold-primary); padding: 10px 22px; margin: 0 8px; border-radius: 25px; font-weight: 600; cursor: pointer;" onclick="filterGallery('industrial')">Industrial</button>
-            </div>
-            
-            <!-- Solar Projects Grid -->
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 3rem;" id="solar-gallery-container" class="solar-gallery-responsive">
-                
-                <!-- Solar Project 1 - Residential Rooftop -->
-                <div class="project-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease; cursor: pointer;" onclick="openSolarProjectGallery('residential-rooftop', 'Residential Rooftop Solar - 5kW', ['rooftop-1.jpg', 'rooftop-2.jpg', 'rooftop-3.jpg', 'rooftop-4.jpg'])">
-                    <div style="height: 200px; background: linear-gradient(135deg, #ffeb3b, #ffc107); display: flex; align-items: center; justify-content: center; color: rgba(0,0,0,0.7); position: relative;">
-                        <div style="text-align: center;">
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏠</div>
-                            <p>Main Project Image</p>
-                        </div>
-                        <div style="position: absolute; top: 10px; right: 10px; background: var(--gold-primary); color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">4 Photos</div>
-                    </div>
-                    <div style="padding: 1.5rem;">
-                        <h3 style="color: var(--navy-deep); margin-bottom: 0.5rem;">Residential Rooftop Solar - 5kW</h3>
-                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Complete residential installation with net metering and monitoring system.</p>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
-                            <span>📍 Visakhapatnam, AP</span>
-                            <span>⚡ 5kW System</span>
-                        </div>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary);">
-                            <span>💰 ₹3.5 Lakhs</span>
-                            <span>📅 Dec 2024</span>
-                        </div>
-                        <div style="margin-top: 1rem; padding: 0.5rem; background: var(--light-gray); border-radius: 6px; text-align: center; font-size: 0.9rem; font-weight: 600; color: var(--gold-primary);">Click to View Gallery</div>
-                    </div>
-                </div>
-
-                <!-- Solar Project 2 - Commercial Building -->
-                <div class="project-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease; cursor: pointer;" onclick="openSolarProjectGallery('commercial-building', 'Commercial Building Solar - 25kW', ['commercial-1.jpg', 'commercial-2.jpg', 'commercial-3.jpg', 'commercial-4.jpg', 'commercial-5.jpg'])">
-                    <div style="height: 200px; background: linear-gradient(135deg, #2196f3, #1976d2); display: flex; align-items: center; justify-content: center; color: white; position: relative;">
-                        <div style="text-align: center;">
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏢</div>
-                            <p>Main Project Image</p>
-                        </div>
-                        <div style="position: absolute; top: 10px; right: 10px; background: var(--gold-primary); color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">5 Photos</div>
-                    </div>
-                    <div style="padding: 1.5rem;">
-                        <h3 style="color: var(--navy-deep); margin-bottom: 0.5rem;">Commercial Building Solar - 25kW</h3>
-                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Large-scale commercial installation with grid-tie system and remote monitoring.</p>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
-                            <span>📍 Kakinada, AP</span>
-                            <span>⚡ 25kW System</span>
-                        </div>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary);">
-                            <span>💰 ₹16 Lakhs</span>
-                            <span>📅 Nov 2024</span>
-                        </div>
-                        <div style="margin-top: 1rem; padding: 0.5rem; background: var(--light-gray); border-radius: 6px; text-align: center; font-size: 0.9rem; font-weight: 600; color: var(--gold-primary);">Click to View Gallery</div>
-                    </div>
-                </div>
-
-                <!-- Solar Project 3 - Industrial Installation -->
-                <div class="project-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease; cursor: pointer;" onclick="openSolarProjectGallery('industrial-solar', 'Industrial Solar Plant - 100kW', ['industrial-1.jpg', 'industrial-2.jpg', 'industrial-3.jpg', 'industrial-4.jpg', 'industrial-5.jpg', 'industrial-6.jpg'])">
-                    <div style="height: 200px; background: linear-gradient(135deg, #4caf50, #388e3c); display: flex; align-items: center; justify-content: center; color: white; position: relative;">
-                        <div style="text-align: center;">
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏭</div>
-                            <p>Main Project Image</p>
-                        </div>
-                        <div style="position: absolute; top: 10px; right: 10px; background: var(--gold-primary); color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">6 Photos</div>
-                    </div>
-                    <div style="padding: 1.5rem;">
-                        <h3 style="color: var(--navy-deep); margin-bottom: 0.5rem;">Industrial Solar Plant - 100kW</h3>
-                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Mega-scale industrial installation with advanced inverters and monitoring systems.</p>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
-                            <span>📍 Vijayawada, AP</span>
-                            <span>⚡ 100kW System</span>
-                        </div>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary);">
-                            <span>💰 ₹58 Lakhs</span>
-                            <span>📅 Oct 2024</span>
-                        </div>
-                        <div style="margin-top: 1rem; padding: 0.5rem; background: var(--light-gray); border-radius: 6px; text-align: center; font-size: 0.9rem; font-weight: 600; color: var(--gold-primary);">Click to View Gallery</div>
-                    </div>
-                </div>
-
-                <!-- Solar Project 4 - Farm House Installation -->
-                <div class="project-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease; cursor: pointer;" onclick="openSolarProjectGallery('farmhouse-solar', 'Farm House Solar - 10kW', ['farm-1.jpg', 'farm-2.jpg', 'farm-3.jpg', 'farm-4.jpg'])">
-                    <div style="height: 200px; background: linear-gradient(135deg, #8bc34a, #689f38); display: flex; align-items: center; justify-content: center; color: white; position: relative;">
-                        <div style="text-align: center;">
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🌾</div>
-                            <p>Main Project Image</p>
-                        </div>
-                        <div style="position: absolute; top: 10px; right: 10px; background: var(--gold-primary); color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">4 Photos</div>
-                    </div>
-                    <div style="padding: 1.5rem;">
-                        <h3 style="color: var(--navy-deep); margin-bottom: 0.5rem;">Farm House Solar - 10kW</h3>
-                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Rural installation with battery backup for agricultural and residential use.</p>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
-                            <span>📍 Guntur, AP</span>
-                            <span>⚡ 10kW System</span>
-                        </div>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary);">
-                            <span>💰 ₹7.2 Lakhs</span>
-                            <span>📅 Sep 2024</span>
-                        </div>
-                        <div style="margin-top: 1rem; padding: 0.5rem; background: var(--light-gray); border-radius: 6px; text-align: center; font-size: 0.9rem; font-weight: 600; color: var(--gold-primary);">Click to View Gallery</div>
-                    </div>
-                </div>
-
-                <!-- Solar Project 5 - School Installation -->
-                <div class="project-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease; cursor: pointer;" onclick="openSolarProjectGallery('school-solar', 'School Solar Project - 15kW', ['school-1.jpg', 'school-2.jpg', 'school-3.jpg', 'school-4.jpg', 'school-5.jpg'])">
-                    <div style="height: 200px; background: linear-gradient(135deg, #ff9800, #f57c00); display: flex; align-items: center; justify-content: center; color: white; position: relative;">
-                        <div style="text-align: center;">
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏫</div>
-                            <p>Main Project Image</p>
-                        </div>
-                        <div style="position: absolute; top: 10px; right: 10px; background: var(--gold-primary); color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">5 Photos</div>
-                    </div>
-                    <div style="padding: 1.5rem;">
-                        <h3 style="color: var(--navy-deep); margin-bottom: 0.5rem;">School Solar Project - 15kW</h3>
-                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Educational institution installation with student learning integration.</p>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
-                            <span>📍 Rajahmundry, AP</span>
-                            <span>⚡ 15kW System</span>
-                        </div>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary);">
-                            <span>💰 ₹10.5 Lakhs</span>
-                            <span>📅 Aug 2024</span>
-                        </div>
-                        <div style="margin-top: 1rem; padding: 0.5rem; background: var(--light-gray); border-radius: 6px; text-align: center; font-size: 0.9rem; font-weight: 600; color: var(--gold-primary);">Click to View Gallery</div>
-                    </div>
-                </div>
-
-                <!-- Solar Project 6 - Hospital Installation -->
-                <div class="project-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease; cursor: pointer;" onclick="openSolarProjectGallery('hospital-solar', 'Hospital Solar System - 50kW', ['hospital-1.jpg', 'hospital-2.jpg', 'hospital-3.jpg', 'hospital-4.jpg', 'hospital-5.jpg', 'hospital-6.jpg'])">
-                    <div style="height: 200px; background: linear-gradient(135deg, #e91e63, #c2185b); display: flex; align-items: center; justify-content: center; color: white; position: relative;">
-                        <div style="text-align: center;">
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏥</div>
-                            <p>Main Project Image</p>
-                        </div>
-                        <div style="position: absolute; top: 10px; right: 10px; background: var(--gold-primary); color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">6 Photos</div>
-                    </div>
-                    <div style="padding: 1.5rem;">
-                        <h3 style="color: var(--navy-deep); margin-bottom: 0.5rem;">Hospital Solar System - 50kW</h3>
-                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Critical healthcare facility with backup systems and uninterrupted power solutions.</p>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
-                            <span>📍 Nellore, AP</span>
-                            <span>⚡ 50kW System</span>
-                        </div>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary);">
-                            <span>💰 ₹32 Lakhs</span>
-                            <span>📅 Jul 2024</span>
-                        </div>
-                        <div style="margin-top: 1rem; padding: 0.5rem; background: var(--light-gray); border-radius: 6px; text-align: center; font-size: 0.9rem; font-weight: 600; color: var(--gold-primary);">Click to View Gallery</div>
-                    </div>
-                </div>
-
-            </div>
-            
-            <!-- Call to Action -->
-            <div style="text-align: center; margin-top: 2rem;">
-                <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Ready to harness solar energy for your property?</p>
-                <a href="#contact" style="background: var(--gradient-hero); color: white; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block;">Get Free Solar Consultation</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Solar Project Gallery Modal -->
-    <div id="solarProjectGalleryModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 9999; justify-content: center; align-items: center;">
-        <div style="position: relative; max-width: 90%; max-height: 90%; background: white; border-radius: 12px; overflow: hidden;">
-            <div style="position: absolute; top: 10px; right: 10px; z-index: 10;">
-                <button onclick="closeSolarProjectGallery()" style="background: rgba(0,0,0,0.7); color: white; border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 1.2rem;">×</button>
-            </div>
-            
-            <div id="solarGalleryContent" style="padding: 2rem;">
-                <h2 id="solarGalleryTitle" style="font-family: 'Crimson Text', serif; color: var(--navy-deep); margin-bottom: 1.5rem; text-align: center;"></h2>
-                <div id="solarGalleryImages" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
-                    <!-- Images will be loaded here -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        function openSolarProjectGallery(projectId, title, images) {
-            document.getElementById('solarGalleryTitle').textContent = title;
-            const galleryImages = document.getElementById('solarGalleryImages');
-            galleryImages.innerHTML = '';
-            
-            images.forEach((image, index) => {
-                const imageDiv = document.createElement('div');
-                imageDiv.style.cssText = 'background: linear-gradient(45deg, #ffeb3b, #ffc107); height: 150px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: rgba(0,0,0,0.7); font-size: 0.9rem; cursor: pointer; transition: transform 0.2s ease;';
-                imageDiv.innerHTML = `<div style="text-align: center;"><div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📸</div><p>Solar Image ${index + 1}</p></div>`;
-                imageDiv.onmouseover = () => imageDiv.style.transform = 'scale(1.05)';
-                imageDiv.onmouseout = () => imageDiv.style.transform = 'scale(1)';
-                galleryImages.appendChild(imageDiv);
-            });
-            
-            document.getElementById('solarProjectGalleryModal').style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        }
-        
-        function closeSolarProjectGallery() {
-            document.getElementById('solarProjectGalleryModal').style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-        
-        // Close modal when clicking outside
-        document.getElementById('solarProjectGalleryModal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeSolarProjectGallery();
-            }
-        });
-        
-        function filterGallery(category) {
-            // Add filter functionality here when needed
-            console.log('Filter:', category);
-        }
-    </script>
-    <section class="contact-section" id="contact">
-        <div class="container">
-            <h2 style="font-family: 'Crimson Text', serif; font-size: 2.5rem; color: var(--gold-light); margin-bottom: 1rem;">Get Your Solar Quote Today</h2>
-            <p style="margin-bottom: 2rem;">Contact Suryakantha Solar Energies for professional solar installation</p>
-            
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <div class="contact-icon">📱</div>
-                    <h3>Phone</h3>
-                    <p><a href="tel:8367086748" style="color: white; font-size: 1.1rem;">8367086748</a></p>
-                </div>
-                
-                <div class="contact-card">
-                    <div class="contact-icon">📧</div>
-                    <h3>Email</h3>
-                    <p><a href="/cdn-cgi/l/email-protection#b0c3dfdcd1c2f0c2d1d7d8d1c6d1c2d1dac5d5dec4d5c2c0c2d9c3d5c39ed3dfdd" style="color: white;"><span class="__cf_email__" data-cfemail="5625393a3724162437313e37203724373c23333822332426243f2533257835393b">[email&#160;protected]</span></a></p>
-                </div>
-                
-                <div class="contact-card">
-                    <div class="contact-icon">📍</div>
-                    <h3>Location</h3>
-                    <p>Kakinada, Andhra Pradesh</p>
-                </div>
-                
-                <div class="contact-card">
-                    <div class="contact-icon">⚡</div>
-                    <h3>Services</h3>
-                    <p>1kW - 100kW Solar EPC</p>
-                </div>
+            <div class="contact-buttons">
+                <a href="tel:8367086748" class="contact-btn">
+                    📱 Call: 8367086748
+                </a>
+                <a href="mailto:solar@raghavarajuenterprises.com" class="contact-btn secondary">
+                    ✉️ Get Free Quote
+                </a>
+                <a href="solar-calculator.html" class="contact-btn">
+                    🧮 Calculate Savings
+                </a>
             </div>
         </div>
     </section>
@@ -618,18 +594,38 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Suryakantha Solar Energies</h3>
-                    <p>A unit of Raghavaraju Enterprises. Leading solar EPC contractor in Andhra Pradesh with quality installations and long-term support.</p>
+                    <p>A unit of Raghavaraju Enterprises</p>
+                    <p>Professional solar EPC contractor serving Andhra Pradesh with quality installations and long-term support.</p>
                 </div>
                 
                 <div class="footer-section">
                     <h3>Services</h3>
-                    <p>Residential Solar Systems</p>
-                    <p>Commercial Solar Solutions</p>
-                    <p>Industrial Solar Projects</p>
-                    <p>Solar Maintenance</p>
+                    <p><a href="#services">Residential Solar (1-10kW)</a></p>
+                    <p><a href="#services">Commercial Solar (10-50kW)</a></p>
+                    <p><a href="#services">Industrial Solar (50-100kW+)</a></p>
+                    <p><a href="solar-calculator.html">Solar Calculator</a></p>
                 </div>
                 
                 <div class="footer-section">
-                    <h3>Contact</h3>
-                    <p>Phone: <a href="tel:8367086748">8367086748</a></p>
-                    <p>Email: <a href="/cdn-cgi/l/email-protection#790a1615180b390b181e11180f180b18130c1c170d1c0b090b100a1c0a571a1614"><span class="__cf_email__" data-cfemail="f0839f9c9182b08291979891869182919a85959e849582808299839583de939f9d">[email&#160;protected]</span></a></p>
+                    <h3>Contact Info</h3>
+                    <p>📱 Phone: 8367086748</p>
+                    <p>✉️ Email: solar@raghavarajuenterprises.com</p>
+                    <p>📍 Kakinada, Andhra Pradesh</p>
+                    <p>🌐 GST: 37MIFPS2466D1ZU</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Other Services</h3>
+                    <p><a href="interiors.html">RR Interiors & Home Decors</a></p>
+                    <p><a href="construction.html">RR Homes Construction</a></p>
+                    <p><a href="index-new.html">About Raghavaraju Enterprises</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Raghavaraju Enterprises. All rights reserved. | Suryakantha Solar Energies - Authorized Solar EPC Contractor</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
