@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Calculator - Calculate Your Savings | Suryakantha Solar Energies</title>
+    
+    <style>
+        :root {
+            --gold-primary: #D4AF37;
+            --navy-deep: #1e3a5f;
+            --text-primary: #2c3e50;
+            --gradient-hero: linear-gradient(135deg, #D4AF37, #E67E22);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fefdfb;
+            color: var(--text-primary);
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        .header {
+            background: rgba(254, 251, 243, 0.95);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 0;
+        }
+
+        .logo {
+            font-family: 'Crimson Text', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--navy-deep);
+            text-decoration: none;
+        }
+
+        .calculator-hero {
+            text-align: center;
+            padding: 120px 0 60px;
+            background: var(--gradient-hero);
+            color: white;
+        }
+
+        .calculator-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .calculator-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 0;
+        }
+
+        .calculator-form, .calculator-results {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(212, 175, 55, 0.15);
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid #e1e1e1;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .result-item {
+            background: #faf8f3;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .result-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--gold-primary);
+        }
+
+        .highlight-result {
+            background: var(--gradient-hero);
+            color: white;
+        }
+
+        .highlight-result .result-value {
+            color: white;
+        }
+
+        .lead-capture {
+            background: var(--navy-deep);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 30px;
+        }
+
+        .lead-form input {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+
+        .lead-form button {
+            background: var(--gradient-hero);
+            color: white;
+            padding: 16px 24px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .calculator-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index-new.html" class="logo">Raghavaraju Enterprises</a>
+            <a href="tel:8367086748" style="background: var(--gradient-hero); color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none;">Call Now</a>
+        </nav>
+    </header>
+
+    <!-- Calculator Hero -->
+    <section class="calculator-hero">
+        <div class="container">
+            <h1>🧮 Solar Calculator</h1>
+            <p>Calculate your potential solar savings in Andhra Pradesh & Telangana</p>
+        </div>
+    </section>
+
+    <!-- Calculator -->
+    <div class="container">
+        <div class="calculator-container">
+            <!-- Input Form -->
+            <div class="calculator-form">
+                <h2>Enter Your Details</h2>
+                <form>
+                    <div class="form-group">
+                        <label>Monthly Electricity Bill (₹)</label>
+                        <input type="number" id="monthlyBill" placeholder="Enter amount">
+                    </div>
+                    <div class="form-group">
+                        <label>Select State</label>
+                        <select id="state">
+                            <option value="">Choose state</option>
+                            <option value="ap">Andhra Pradesh</option>
+                            <option value="telangana">Telangana</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Property Type</label>
+                        <select id="propertyType">
+                            <option value="residential">Residential</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="industrial">Industrial</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Results -->
+            <div class="calculator-results">
+                <h2>Your Savings</h2>
+                
+                <div class="result-item">
+                    <div class="result-value" id="capacity">0 kW</div>
+                    <div>Recommended Capacity</div>
+                </div>
+                
+                <div class="result-item highlight-result">
+                    <div class="result-value" id="monthlySavings">₹0</div>
+                    <div>Monthly Savings</div>
+                </div>
+                
+                <div class="result-item">
+                    <div class="result-value" id="annualSavings">₹0</div>
+                    <div>Annual Savings</div>
+                </div>
+                
+                <div class="result-item">
+                    <div class="result-value" id="systemCost">₹0</div>
+                    <div>System Cost</div>
+                </div>
+                
+                <div class="result-item">
+                    <div class="result-value" id="payback">0 Years</div>
+                    <div>Payback Period</div>
+                </div>
+
+                <!-- Lead Capture -->
+                <div class="lead-capture">
+                    <h3>Get Your Free Quote</h3>
+                    <form class="lead-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="tel" placeholder="Phone Number" required>
+                        <input type="email" placeholder="Email Address" required>
+                        <button type="submit">📞 Get Free Consultation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Solar data for AP/Telangana
+        const solarData = {
+            ap: { tariff: 6.8, generation: 4.8, cost: 68000 },
+            telangana: { tariff: 7.5, generation: 4.6, cost: 70000 }
+        };
+
+        const monthlyBill = document.getElementById('monthlyBill');
+        const state = document.getElementById('state');
+        const capacity = document.getElementById('capacity');
+        const monthlySavings = document.getElementById('monthlySavings');
+        const annualSavings = document.getElementById('annualSavings');
+        const systemCost = document.getElementById('systemCost');
+        const payback = document.getElementById('payback');
+
+        function calculate() {
+            const bill = parseFloat(monthlyBill.value) || 0;
+            const selectedState = state.value;
+            
+            if (bill < 500 || !selectedState) return;
+
+            const data = solarData[selectedState];
+            const units = bill / data.tariff;
+            const reqCapacity = Math.ceil(units / 150); // 150 units per kW monthly
+            const monthlySaving = reqCapacity * 150 * data.tariff;
+            const annualSaving = monthlySaving * 12;
+            const cost = reqCapacity * data.cost;
+            const paybackYears = cost / annualSaving;
+
+            capacity.textContent = `${reqCapacity} kW`;
+            monthlySavings.textContent = `₹${Math.round(monthlySaving).toLocaleString()}`;
+            annualSavings.textContent = `₹${Math.round(annualSaving).toLocaleString()}`;
+            systemCost.textContent = `₹${cost.toLocaleString()}`;
+            payback.textContent = `${paybackYears.toFixed(1)} Years`;
+        }
+
+        monthlyBill.addEventListener('input', calculate);
+        state.addEventListener('change', calculate);
+
+        // Lead form
+        document.querySelector('.lead-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = this.querySelector('input[type="text"]').value;
+            alert(`Thank you ${name}! We'll contact you soon with a detailed solar proposal.`);
+        });
+    </script>
+</body>
+</html>
