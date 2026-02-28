@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suryakantha Solar Energies | Premium Solar Solutions </title>
-    <meta name="description" content="Leading solar EPC contractor in AP. 1kW-100kW installations, PM Surya Ghar subsidy, quality brands, 25-year warranty, bank loans available.">
-
+    <title>Suryakantha Solar Energies | Solar Solutions in Andhra Pradesh | A Unit of Raghavaraju Enterprises</title>
+    <meta name="description" content="Authorized Solar EPC Contractor in Andhra Pradesh. Residential, Commercial & Industrial solar installations from 1kW to 100kW. Get up to ₹78,000 PM Surya Ghar subsidy. Quality panels, professional installation, complete support.">
+    <meta name="keywords" content="solar panels Andhra Pradesh, solar installation Kakinada, PM Surya Ghar subsidy, rooftop solar AP, Suryakantha Solar, solar EPC contractor">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    
     <style>
         :root {
-            --gold-primary: #D4AF37; 
-            --gold-light: #F4E4B8; 
+            --gold-primary: #D4AF37;
+            --gold-light: #F4E4B8;
             --gold-dark: #B8941F;
-            --navy-deep: #1B2951; 
-            --cream: #FEFBF3; 
+            --navy-deep: #1B2951;
+            --navy-medium: #2A3F6B;
+            --cream: #FEFBF3;
             --warm-white: #FAF8F1;
-            --charcoal: #2C2C2C; 
-            --text-primary: #333333; 
+            --charcoal: #2C2C2C;
+            --text-primary: #333333;
             --text-secondary: #666666;
+            --accent-orange: #E67E22;
             --success-green: #27AE60;
-            --gradient-hero: linear-gradient(135deg, #D4AF37 0%, #E67E22 50%, #DC7633 100%);
+            --solar-orange: #FF6B35;
+            --solar-yellow: #F7B731;
+            --gradient-hero: linear-gradient(135deg, #FF6B35 0%, #F7B731 50%, #E67E22 100%);
+            --gradient-solar: linear-gradient(135deg, #FF6B35 0%, #F7B731 100%);
             --shadow-elegant: 0 8px 32px rgba(0, 0, 0, 0.1);
-            --shadow-hover: 0 12px 40px rgba(212, 175, 55, 0.3);
+            --shadow-hover: 0 12px 40px rgba(255, 107, 53, 0.3);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -32,194 +37,1405 @@
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
         /* Header */
-        .header { background: rgba(254, 251, 243, 0.95); position: fixed; top: 0; left: 0; right: 0; z-index: 1000; border-bottom: 1px solid rgba(212, 175, 55, 0.2); }
-        .nav { display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 0; }
-        .logo { display: flex; align-items: center; gap: 15px; font-family: 'Crimson Text', serif; font-size: 2rem; font-weight: 600; color: var(--navy-deep); text-decoration: none; }
-        .logo-icon { width: 50px; height: 50px; background: var(--gradient-hero); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; box-shadow: var(--shadow-elegant); }
-        .nav-menu { display: flex; list-style: none; gap: 2.5rem; align-items: center; }
-        .nav-menu a { text-decoration: none; color: var(--text-primary); font-weight: 500; transition: 0.3s; }
-        .nav-menu a:hover { color: var(--gold-dark); }
-        .cta-button { background: var(--gradient-hero); color: white; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none; box-shadow: var(--shadow-elegant); }
+        .header { 
+            background: rgba(254, 251, 243, 0.95); 
+            backdrop-filter: blur(20px); 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            right: 0; 
+            z-index: 1000; 
+            border-bottom: 1px solid rgba(255, 107, 53, 0.2); 
+        }
+        .nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
+        .logo { 
+            display: flex; 
+            align-items: center; 
+            gap: 12px; 
+            font-family: 'Crimson Text', serif; 
+            font-size: 1.6rem; 
+            font-weight: 600; 
+            color: var(--navy-deep); 
+            text-decoration: none; 
+        }
+        .logo-icon { 
+            width: 50px; 
+            height: 50px; 
+            background: var(--gradient-solar); 
+            border-radius: 12px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 1.8rem; 
+            box-shadow: var(--shadow-elegant); 
+        }
+        .logo-text { display: flex; flex-direction: column; line-height: 1.2; }
+        .logo-main { font-size: 1.4rem; color: var(--solar-orange); }
+        .logo-sub { font-size: 0.7rem; color: var(--text-secondary); font-weight: 400; }
+        
+        .nav-menu { display: flex; list-style: none; gap: 2rem; align-items: center; }
+        .nav-menu a { text-decoration: none; color: var(--text-primary); font-weight: 500; transition: all 0.3s ease; font-size: 0.95rem; }
+        .nav-menu a:hover { color: var(--solar-orange); }
+        .cta-button { 
+            background: var(--gradient-solar); 
+            color: white; 
+            padding: 12px 24px; 
+            border: none; 
+            border-radius: 8px; 
+            font-weight: 600; 
+            text-decoration: none; 
+            transition: all 0.3s ease; 
+            box-shadow: var(--shadow-elegant); 
+        }
+        .cta-button:hover { transform: translateY(-2px); box-shadow: var(--shadow-hover); }
+
+        /* Mobile Menu */
+        .mobile-menu-btn { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; }
 
         /* Hero */
-        .hero { padding: 120px 0 70px; background: var(--warm-white); text-align: center; }
-        .hero h1 { font-family: 'Crimson Text', serif; font-size: 3.5rem; color: var(--navy-deep); margin-bottom: 1.5rem; }
-        .highlight { background: var(--gradient-hero); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .subtitle { font-size: 1.3rem; color: var(--text-secondary); margin-bottom: 2rem; }
+        .hero { 
+            padding: 140px 0 80px; 
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.05) 0%, rgba(247, 183, 49, 0.08) 100%);
+            text-align: center; 
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '☀';
+            position: absolute;
+            top: 100px;
+            right: 10%;
+            font-size: 8rem;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .hero h1 { 
+            font-family: 'Crimson Text', serif; 
+            font-size: 3.2rem; 
+            font-weight: 600; 
+            color: var(--navy-deep); 
+            margin-bottom: 1rem; 
+        }
+        .highlight { 
+            background: var(--gradient-solar); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle { 
+            font-size: 1.2rem; 
+            color: var(--text-secondary); 
+            margin-bottom: 1.5rem; 
+            max-width: 700px; 
+            margin-left: auto; 
+            margin-right: auto; 
+        }
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        .hero-stat {
+            text-align: center;
+        }
+        .hero-stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: var(--gradient-solar);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        .btn-primary { 
+            background: var(--gradient-solar); 
+            color: white; 
+            padding: 16px 32px; 
+            border: none; 
+            border-radius: 8px; 
+            font-weight: 600; 
+            text-decoration: none; 
+            font-size: 1.1rem; 
+            transition: all 0.3s ease; 
+            box-shadow: var(--shadow-elegant); 
+            display: inline-block; 
+            margin: 0.5rem; 
+            cursor: pointer;
+        }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
+        .btn-secondary {
+            background: transparent;
+            color: var(--navy-deep);
+            border: 2px solid var(--solar-orange);
+            padding: 14px 30px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin: 0.5rem;
+        }
+        .btn-secondary:hover { background: var(--solar-orange); color: white; }
 
-        .btn-primary { background: var(--gradient-hero); color: white; padding: 16px 32px; border-radius: 8px; text-decoration: none; display: inline-block; margin: 0 10px; }
-
-        /* Services Layout Updated */
-        .services { padding: 60px 0; }
-        .section-header { text-align: center; margin-bottom: 3rem; }
-        .section-header h2 { font-family: 'Crimson Text', serif; font-size: 2.5rem; color: var(--navy-deep); }
-
-        .services-wrapper {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 2rem;
-            align-items: start;
+        /* Subsidy Banner */
+        .subsidy-banner {
+            background: var(--gradient-solar);
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+        .subsidy-banner h3 {
+            font-family: 'Crimson Text', serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .subsidy-banner p {
+            font-size: 1rem;
+            opacity: 0.95;
         }
 
+        /* Section Styles */
+        .section { padding: 80px 0; }
+        .section-alt { background: var(--warm-white); }
+        .section-header { text-align: center; margin-bottom: 3rem; }
+        .section-header h2 { 
+            font-family: 'Crimson Text', serif; 
+            font-size: 2.5rem; 
+            color: var(--navy-deep); 
+            margin-bottom: 0.5rem; 
+        }
+        .section-header p { color: var(--text-secondary); font-size: 1.1rem; }
+
+        /* Solar Calculator */
+        .calculator-section {
+            background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy-medium) 100%);
+            padding: 80px 0;
+            color: white;
+        }
+        .calculator-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        .calculator-info h2 {
+            font-family: 'Crimson Text', serif;
+            font-size: 2.5rem;
+            color: var(--solar-yellow);
+            margin-bottom: 1rem;
+        }
+        .calculator-info p {
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        .calculator-benefits {
+            list-style: none;
+        }
+        .calculator-benefits li {
+            padding: 0.5rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: rgba(255,255,255,0.9);
+        }
+        .calculator-benefits li::before {
+            content: '☀';
+            position: absolute;
+            left: 0;
+            color: var(--solar-yellow);
+        }
+        .calculator-box {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow-elegant);
+        }
+        .calculator-box h3 {
+            font-family: 'Crimson Text', serif;
+            font-size: 1.5rem;
+            color: var(--navy-deep);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            color: var(--text-primary);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #eee;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: var(--solar-orange);
+        }
+        .calculate-btn {
+            width: 100%;
+            background: var(--gradient-solar);
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .calculate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+        .calculator-result {
+            margin-top: 1.5rem;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(247, 183, 49, 0.1) 100%);
+            border-radius: 12px;
+            display: none;
+        }
+        .calculator-result.show {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            color: var(--text-primary);
+        }
+        .result-item:last-child { border-bottom: none; }
+        .result-item .label { font-weight: 500; }
+        .result-item .value { font-weight: 700; color: var(--solar-orange); }
+        .result-highlight {
+            background: var(--gradient-solar);
+            color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .result-highlight .big-number {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        /* Services Grid */
         .services-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
         }
-
         .service-card {
             background: white;
             padding: 2rem;
             border-radius: 16px;
             box-shadow: var(--shadow-elegant);
-            transition: 0.3s;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 107, 53, 0.1);
+            text-align: center;
         }
-
-        .service-card:hover { transform: translateY(-6px); }
-
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+        }
         .service-icon {
-            width: 70px; height: 70px;
-            background: var(--gradient-hero);
-            border-radius: 14px;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 2rem;
-            margin-bottom: 1rem;
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-solar);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            margin: 0 auto 1.5rem;
         }
-
         .service-card h3 {
             font-family: 'Crimson Text', serif;
+            font-size: 1.5rem;
             color: var(--navy-deep);
-            margin-bottom: 0.8rem;
+            margin-bottom: 0.75rem;
         }
-
-        .service-features { list-style: none; }
-        .service-features li {
-            padding: 0.3rem 0;
-            padding-left: 1.2rem;
-            position: relative;
+        .service-card p {
             color: var(--text-secondary);
+            font-size: 0.95rem;
         }
-        .service-features li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--success-green);
+        .service-card .capacity {
+            display: inline-block;
+            background: var(--gradient-solar);
+            color: white;
+            padding: 0.25rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 1rem;
         }
 
-        /* Calculator Box */
-        .calculator-box {
+        /* Pricing Table */
+        .pricing-table {
             background: white;
-            padding: 1.5rem;
             border-radius: 16px;
+            overflow: hidden;
             box-shadow: var(--shadow-elegant);
         }
+        .pricing-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .pricing-table th {
+            background: var(--gradient-solar);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+        .pricing-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+            color: var(--text-primary);
+        }
+        .pricing-table tr:last-child td { border-bottom: none; }
+        .pricing-table tr:hover { background: rgba(255, 107, 53, 0.05); }
+        .subsidy-badge {
+            display: inline-block;
+            background: var(--success-green);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
 
-        .calculator-box h3 {
+        /* Process Steps */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+        .process-step::after {
+            content: '→';
+            position: absolute;
+            right: -1.5rem;
+            top: 2rem;
+            font-size: 1.5rem;
+            color: var(--solar-orange);
+        }
+        .process-step:last-child::after { display: none; }
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-solar);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            margin: 0 auto 1rem;
+        }
+        .process-step h4 {
             font-family: 'Crimson Text', serif;
+            font-size: 1.2rem;
+            color: var(--navy-deep);
+            margin-bottom: 0.5rem;
+        }
+        .process-step p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Brands Section */
+        .brands-section {
+            background: var(--navy-deep);
+            padding: 60px 0;
+            color: white;
+        }
+        .brands-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+        }
+        .brand-category h3 {
+            font-family: 'Crimson Text', serif;
+            font-size: 1.5rem;
+            color: var(--solar-yellow);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--solar-orange);
+        }
+        .brand-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+        .brand-tag {
+            background: rgba(255,255,255,0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.9);
+            transition: all 0.3s ease;
+        }
+        .brand-tag:hover {
+            background: var(--solar-orange);
+        }
+        .brand-tag.premium {
+            background: var(--gradient-solar);
+            font-weight: 600;
+        }
+
+        /* Why Choose Us */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow-elegant);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .feature-card h4 {
+            font-family: 'Crimson Text', serif;
+            font-size: 1.3rem;
+            color: var(--navy-deep);
+            margin-bottom: 0.5rem;
+        }
+        .feature-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Contact Form */
+        .contact-section {
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.05) 0%, rgba(247, 183, 49, 0.08) 100%);
+            padding: 80px 0;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 3rem;
+        }
+        .contact-info {
+            padding: 2rem;
+        }
+        .contact-info h2 {
+            font-family: 'Crimson Text', serif;
+            font-size: 2.2rem;
             color: var(--navy-deep);
             margin-bottom: 1rem;
         }
-
-        /* Responsive */
-        @media(max-width: 1024px){
-            .services-wrapper { grid-template-columns: 1fr; }
-            .services-grid { grid-template-columns: repeat(2, 1fr); }
+        .contact-info p {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-solar);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+        }
+        .contact-item-text h4 {
+            font-size: 1rem;
+            color: var(--navy-deep);
+            margin-bottom: 0.25rem;
+        }
+        .contact-item-text a, .contact-item-text p {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        .contact-item-text a:hover {
+            color: var(--solar-orange);
+        }
+        .contact-form-box {
+            background: white;
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: var(--shadow-elegant);
+        }
+        .contact-form-box h3 {
+            font-family: 'Crimson Text', serif;
+            font-size: 1.5rem;
+            color: var(--navy-deep);
+            margin-bottom: 1.5rem;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .submit-btn {
+            width: 100%;
+            background: var(--gradient-solar);
+            color: white;
+            padding: 16px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+        .form-note {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-top: 1rem;
+            text-align: center;
         }
 
-        @media(max-width: 768px){
-            .services-grid { grid-template-columns: 1fr; }
+        /* Footer */
+        .footer {
+            background: var(--charcoal);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .footer-section h3 {
+            font-family: 'Crimson Text', serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--solar-yellow);
+        }
+        .footer-section p, .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+        .footer-section a:hover {
+            color: var(--solar-orange);
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            .calculator-container { grid-template-columns: 1fr; }
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .process-steps { grid-template-columns: repeat(2, 1fr); }
+            .process-step::after { display: none; }
+            .features-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-content { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
             .nav-menu { display: none; }
+            .mobile-menu-btn { display: block; }
+            
+            .hero { padding: 120px 0 60px; }
+            .hero h1 { font-size: 2.2rem; }
+            .hero .subtitle { font-size: 1rem; padding: 0 1rem; }
+            .hero-stats { gap: 1.5rem; }
+            .hero-stat-number { font-size: 2rem; }
+            
+            .section { padding: 60px 0; }
+            .section-header h2 { font-size: 2rem; }
+            
+            .services-grid { grid-template-columns: 1fr; }
+            .brands-grid { grid-template-columns: 1fr; }
+            .features-grid { grid-template-columns: 1fr; }
+            .contact-grid { grid-template-columns: 1fr; }
+            .form-row { grid-template-columns: 1fr; }
+            .process-steps { grid-template-columns: 1fr; gap: 1.5rem; }
+            .footer-content { grid-template-columns: 1fr; text-align: center; }
+            
+            .pricing-table { overflow-x: auto; }
+            .pricing-table table { min-width: 500px; }
+            
+            .logo { font-size: 1.2rem; }
+            .logo-icon { width: 40px; height: 40px; font-size: 1.4rem; }
+            .logo-main { font-size: 1.1rem; }
+            .logo-sub { font-size: 0.6rem; }
+        }
+
+        @media (max-width: 480px) {
+            .container { padding: 0 16px; }
+            .hero h1 { font-size: 1.8rem; }
+            .btn-primary, .btn-secondary { 
+                display: block; 
+                width: 100%; 
+                margin: 0.5rem 0; 
+                text-align: center;
+            }
+            .calculator-box { padding: 1.5rem; }
+            .contact-form-box { padding: 1.5rem; }
+            .service-card { padding: 1.5rem; }
+            .feature-card { padding: 1.5rem; }
+        }
+
+        /* Scroll animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
-
 <body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="images/branding/suryakantha-solar-logo.png" 
+                         alt="Suryakantha Solar Energies" 
+                         onerror="this.style.display='none'; this.parentElement.innerHTML='☀';"
+                         style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px;">
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Suryakantha Solar</span>
+                    <span class="logo-sub">A Unit of Raghavaraju Enterprises</span>
+                </div>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <a href="tel:8367086748" class="cta-button">📞 Call Now</a>
+            <button class="mobile-menu-btn">☰</button>
+        </nav>
+    </header>
 
-<header class="header">
-    <nav class="nav container">
-        <a href="./index.html" class="logo">
-            <div class="logo-icon">☀</div>
-            <span>Raghavaraju Enterprises</span>
-        </a>
-
-        <ul class="nav-menu">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="interiors.html">Interiors</a></li>
-            <li><a href="construction.html">Construction</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-
-        <a href="tel:8367086748" class="cta-button">Call Now</a>
-    </nav>
-</header>
-
-<section class="hero">
-    <div class="container">
-        <h1><span class="highlight">Suryakantha</span> Solar Energies</h1>
-        <p class="subtitle">Authorized Solar EPC Contractor in Andhra Pradesh</p>
-        <a href="#contact" class="btn-primary">Get Free Quote</a>
-        <a href="#services" class="btn-primary" style="background:transparent; border:2px solid var(--gold-primary); color:var(--navy-deep);">Our Services</a>
-    </div>
-</section>
-
-<section class="services" id="services">
-    <div class="container">
-        <div class="section-header">
-            <h2>Our Solar Solutions</h2>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1><span class="highlight">Suryakantha</span> Solar Energies</h1>
+            <p class="subtitle">Authorized Solar EPC Contractor serving Andhra Pradesh. Professional residential, commercial & industrial solar installations from 1kW to 100kW with complete subsidy & bank loan support.</p>
+            
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-number">1-100</div>
+                    <div class="hero-stat-label">kW Capacity Range</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">₹78K</div>
+                    <div class="hero-stat-label">Max Govt Subsidy</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">25</div>
+                    <div class="hero-stat-label">Years System Life</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">4.5-5</div>
+                    <div class="hero-stat-label">Units/kW/Day</div>
+                </div>
+            </div>
+            
+            <div>
+                <a href="#calculator" class="btn-primary">Calculate Your Savings</a>
+                <a href="#contact" class="btn-secondary">Get Free Quote</a>
+            </div>
         </div>
+    </section>
 
-        <div class="services-wrapper">
+    <!-- Subsidy Banner -->
+    <div class="subsidy-banner">
+        <div class="container">
+            <h3>🎉 PM Surya Ghar Yojana - Get Up to ₹78,000 Government Subsidy!</h3>
+            <p>Residential customers can avail central government subsidy. DCR (Made in India) panels mandatory.</p>
+        </div>
+    </div>
 
-            <!-- ORIGINAL SERVICE CARDS -->
+    <!-- Services Section -->
+    <section class="section section-alt" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Solar Solutions for Every Need</h2>
+                <p>Complete solar EPC services for homes, businesses, and industries across Andhra Pradesh</p>
+            </div>
+            
             <div class="services-grid">
-
-                <div class="service-card">
+                <div class="service-card fade-in">
                     <div class="service-icon">🏠</div>
                     <h3>Residential Solar</h3>
-                    <ul class="service-features">
-                        <li>1kW – 10kW Systems</li>
-                        <li>PM Surya Ghar Subsidy</li>
-                        <li>Net Metering</li>
-                        <li>25-Year Warranty</li>
-                    </ul>
+                    <p>Rooftop solar systems for homes. Reduce your electricity bills and earn from surplus power with net metering.</p>
+                    <span class="capacity">1 kW - 10 kW</span>
                 </div>
-
-                <div class="service-card">
+                
+                <div class="service-card fade-in">
                     <div class="service-icon">🏢</div>
                     <h3>Commercial Solar</h3>
-                    <ul class="service-features">
-                        <li>10kW – 50kW</li>
-                        <li>ROI Optimization</li>
-                        <li>Tax Benefits</li>
-                        <li>Maintenance Support</li>
-                    </ul>
+                    <p>Solar solutions for shops, offices, hotels, schools & hospitals. Cut operating costs significantly.</p>
+                    <span class="capacity">10 kW - 50 kW</span>
                 </div>
-
-                <div class="service-card">
+                
+                <div class="service-card fade-in">
                     <div class="service-icon">🏭</div>
                     <h3>Industrial Solar</h3>
-                    <ul class="service-features">
-                        <li>50kW – 100kW+</li>
-                        <li>Grid Solutions</li>
-                        <li>Custom Engineering</li>
-                        <li>Long-Term Contracts</li>
+                    <p>Large-scale solar installations for factories and industrial units. Maximize energy savings.</p>
+                    <span class="capacity">50 kW - 100 kW</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solar Calculator -->
+    <section class="calculator-section" id="calculator">
+        <div class="container">
+            <div class="calculator-container">
+                <div class="calculator-info">
+                    <h2>Solar Savings Calculator</h2>
+                    <p>Find out how much you can save by switching to solar energy. Enter your monthly electricity bill to get an instant estimate.</p>
+                    
+                    <ul class="calculator-benefits">
+                        <li>High solar generation: 4.5-5 units per kW per day in AP</li>
+                        <li>Rising electricity tariffs make solar more valuable</li>
+                        <li>Net metering supported by AP DISCOMs</li>
+                        <li>System life of 25+ years with minimal maintenance</li>
+                        <li>Government subsidies available for residential users</li>
+                        <li>Bank loans available at 8.5% - 10.5% interest</li>
                     </ul>
                 </div>
-
+                
+                <div class="calculator-box">
+                    <h3>Calculate Your Solar Needs</h3>
+                    
+                    <div class="form-group">
+                        <label for="monthlyBill">Monthly Electricity Bill (₹)</label>
+                        <input type="number" id="monthlyBill" placeholder="e.g., 3000" min="500">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="state">Select State</label>
+                        <select id="state">
+                            <option value="AP">Andhra Pradesh (₹6.8/unit)</option>
+                            <option value="TS">Telangana (₹7.5/unit)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="customerType">Customer Type</label>
+                        <select id="customerType">
+                            <option value="residential">Residential (Subsidy Eligible)</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="industrial">Industrial</option>
+                        </select>
+                    </div>
+                    
+                    <button class="calculate-btn" onclick="calculateSolar()">Calculate Savings ☀</button>
+                    
+                    <div class="calculator-result" id="calculatorResult">
+                        <div class="result-item">
+                            <span class="label">Monthly Consumption</span>
+                            <span class="value" id="resultUnits">-</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="label">Recommended System Size</span>
+                            <span class="value" id="resultSize">-</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="label">Estimated System Cost</span>
+                            <span class="value" id="resultCost">-</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="label">Government Subsidy</span>
+                            <span class="value" id="resultSubsidy">-</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="label">Your Investment (After Subsidy)</span>
+                            <span class="value" id="resultInvestment">-</span>
+                        </div>
+                        <div class="result-highlight">
+                            <div>Monthly Savings</div>
+                            <div class="big-number" id="resultSavings">-</div>
+                            <div style="font-size: 0.9rem; margin-top: 0.5rem;">Payback Period: <span id="resultPayback">-</span></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <!-- SOLAR CALCULATOR -->
-            <div class="calculator-box">
-                <h3>Solar Savings Calculator</h3>
-                <iframe src="solar_calculator.html"
-                        style="width:100%; height:600px; border:none; border-radius:12px;">
-                </iframe>
-            </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
+    <!-- Pricing Section -->
+    <section class="section" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Transparent Pricing</h2>
+                <p>Complete solar system costs in Andhra Pradesh (including installation)</p>
+            </div>
+            
+            <div class="pricing-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Capacity</th>
+                            <th>Approx. Cost</th>
+                            <th>Monthly Generation</th>
+                            <th>PM Surya Ghar Subsidy</th>
+                            <th>Your Cost (After Subsidy)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1 kW</strong></td>
+                            <td>₹65,000 - ₹76,000</td>
+                            <td>135 - 150 units</td>
+                            <td><span class="subsidy-badge">₹30,000</span></td>
+                            <td><strong>₹35,000 - ₹46,000</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>2 kW</strong></td>
+                            <td>₹1.3 - ₹1.5 L</td>
+                            <td>270 - 300 units</td>
+                            <td><span class="subsidy-badge">₹60,000</span></td>
+                            <td><strong>₹70,000 - ₹90,000</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>3 kW</strong></td>
+                            <td>₹2.1 - ₹2.3 L</td>
+                            <td>405 - 450 units</td>
+                            <td><span class="subsidy-badge">₹78,000</span></td>
+                            <td><strong>₹1.32 - ₹1.52 L</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>5 kW</strong></td>
+                            <td>₹3.3 - ₹3.6 L</td>
+                            <td>675 - 750 units</td>
+                            <td><span class="subsidy-badge">₹78,000</span></td>
+                            <td><strong>₹2.52 - ₹2.82 L</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>10 kW</strong></td>
+                            <td>₹6.5 - ₹7 L</td>
+                            <td>1,350 - 1,500 units</td>
+                            <td>Commercial/₹78K max</td>
+                            <td><strong>₹5.72 - ₹6.22 L</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>25 kW</strong></td>
+                            <td>₹15 - ₹16 L</td>
+                            <td>3,375 - 3,750 units</td>
+                            <td>Commercial</td>
+                            <td><strong>₹15 - ₹16 L</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>50 kW</strong></td>
+                            <td>₹29 - ₹31 L</td>
+                            <td>6,750 - 7,500 units</td>
+                            <td>Commercial</td>
+                            <td><strong>₹29 - ₹31 L</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>100 kW</strong></td>
+                            <td>₹55 - ₹60 L</td>
+                            <td>13,500 - 15,000 units</td>
+                            <td>Industrial</td>
+                            <td><strong>₹55 - ₹60 L</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <p style="text-align: center; margin-top: 2rem; color: var(--text-secondary);">
+                * Prices vary based on panel brand, inverter type, and site conditions. Contact us for exact quote.
+            </p>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Installation Process</h2>
+                <p>Simple and hassle-free solar installation in 4 easy steps</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step fade-in">
+                    <div class="step-number">1</div>
+                    <h4>Site Survey</h4>
+                    <p>Free site assessment, roof analysis, shading check & system design</p>
+                </div>
+                
+                <div class="process-step fade-in">
+                    <div class="step-number">2</div>
+                    <h4>Documentation</h4>
+                    <p>DISCOM application, subsidy registration & bank loan processing</p>
+                </div>
+                
+                <div class="process-step fade-in">
+                    <div class="step-number">3</div>
+                    <h4>Installation</h4>
+                    <p>Professional installation by trained team in 2-3 days</p>
+                </div>
+                
+                <div class="process-step fade-in">
+                    <div class="step-number">4</div>
+                    <h4>Commissioning</h4>
+                    <p>Net meter installation, DISCOM inspection & system handover</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands-section">
+        <div class="container">
+            <div class="section-header" style="color: white;">
+                <h2 style="color: var(--solar-yellow);">Premium Solar Brands</h2>
+                <p style="color: rgba(255,255,255,0.8);">We work with the best solar panel and inverter brands in India</p>
+            </div>
+            
+            <div class="brands-grid">
+                <div class="brand-category">
+                    <h3>Indian Brands (DCR Compliant)</h3>
+                    <div class="brand-list">
+                        <span class="brand-tag premium">Waaree</span>
+                        <span class="brand-tag premium">Adani Solar</span>
+                        <span class="brand-tag premium">Tata Power Solar</span>
+                        <span class="brand-tag">Vikram Solar</span>
+                        <span class="brand-tag">RenewSys</span>
+                        <span class="brand-tag">Goldi Solar</span>
+                        <span class="brand-tag premium">Premier Energies (AP-based)</span>
+                        <span class="brand-tag">Jakson</span>
+                        <span class="brand-tag">Navitas</span>
+                    </div>
+                </div>
+                
+                <div class="brand-category">
+                    <h3>International Brands (Commercial)</h3>
+                    <div class="brand-list">
+                        <span class="brand-tag">LONGi</span>
+                        <span class="brand-tag">Jinko Solar</span>
+                        <span class="brand-tag">Trina Solar</span>
+                        <span class="brand-tag">Canadian Solar</span>
+                    </div>
+                    <h3 style="margin-top: 1.5rem;">Panel Technologies</h3>
+                    <div class="brand-list">
+                        <span class="brand-tag premium">N-Type TOPCon</span>
+                        <span class="brand-tag">Mono PERC</span>
+                        <span class="brand-tag">Bifacial</span>
+                        <span class="brand-tag">Half-cut Cell</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Suryakantha Solar?</h2>
+                <p>Trusted solar EPC partner in Andhra Pradesh</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">✅</div>
+                    <h4>Quality Installation</h4>
+                    <p>Best-in-class solar panels and professional installation by trained technicians</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">💰</div>
+                    <h4>Complete Subsidy Support</h4>
+                    <p>We handle all PM Surya Ghar paperwork and ensure you get maximum subsidy</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🏦</div>
+                    <h4>Bank Loan Assistance</h4>
+                    <p>Easy financing at 8.5%-10.5% from SBI, Canara, Union Bank & more</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">📋</div>
+                    <h4>DISCOM Coordination</h4>
+                    <p>Complete net metering application and approval handling with APSPDCL/APEPDCL</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🛡️</div>
+                    <h4>25 Year Warranty</h4>
+                    <p>Panel performance warranty for 25 years, inverter warranty 5-10 years</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🔧</div>
+                    <h4>After-Sales Service</h4>
+                    <p>Long-term maintenance support and system monitoring assistance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get Your Free Solar Quote</h2>
+                    <p>Ready to switch to solar? Contact us for a free site survey and customized quote. Our team will guide you through the entire process.</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-item-text">
+                            <h4>Phone</h4>
+                            <a href="tel:8367086748">8367086748</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-item-text">
+                            <h4>Email</h4>
+                            <a href="mailto:solar@raghavarajuenterprises.com">solar@raghavarajuenterprises.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-item-text">
+                            <h4>Location</h4>
+                            <p>Kakinada, Andhra Pradesh</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🌍</div>
+                        <div class="contact-item-text">
+                            <h4>Service Area</h4>
+                            <p>All districts of Andhra Pradesh & Telangana</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-box">
+                    <h3>Request Free Site Survey</h3>
+                    <form id="enquiryForm" onsubmit="submitEnquiry(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="10-digit mobile number">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City/Town *</label>
+                                <input type="text" id="city" name="city" required placeholder="e.g., Kakinada">
+                            </div>
+                            <div class="form-group">
+                                <label for="roofType">Roof Type</label>
+                                <select id="roofType" name="roofType">
+                                    <option value="">Select roof type</option>
+                                    <option value="rcc">RCC / Concrete</option>
+                                    <option value="sheet">Metal Sheet</option>
+                                    <option value="tiles">Tiles</option>
+                                    <option value="ground">Ground Mount</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="monthlyBillForm">Monthly Bill (₹)</label>
+                                <input type="number" id="monthlyBillForm" name="monthlyBill" placeholder="e.g., 3000">
+                            </div>
+                            <div class="form-group">
+                                <label for="preferredCapacity">Preferred Capacity</label>
+                                <select id="preferredCapacity" name="preferredCapacity">
+                                    <option value="">Not sure</option>
+                                    <option value="1kW">1 kW</option>
+                                    <option value="2kW">2 kW</option>
+                                    <option value="3kW">3 kW</option>
+                                    <option value="5kW">5 kW</option>
+                                    <option value="10kW">10 kW</option>
+                                    <option value="10kW+">More than 10 kW</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Additional Details</label>
+                            <textarea id="message" name="message" rows="3" style="width: 100%; padding: 12px 16px; border: 2px solid #eee; border-radius: 8px; font-family: inherit; resize: vertical;" placeholder="Any specific requirements or questions?"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Submit Enquiry ☀</button>
+                        
+                        <p class="form-note">We'll contact you within 24 hours to schedule your free site survey.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Suryakantha Solar Energies</h3>
+                    <p>Authorized Solar EPC Contractor<br>A Unit of Raghavaraju Enterprises<br><br>Quality solar installations for residential, commercial & industrial projects across Andhra Pradesh.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="#services">Our Services</a></p>
+                    <p><a href="#calculator">Solar Calculator</a></p>
+                    <p><a href="#pricing">Pricing</a></p>
+                    <p><a href="#contact">Contact Us</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Other Divisions</h3>
+                    <p><a href="index.html">Raghavaraju Enterprises</a></p>
+                    <p><a href="interiors.html">RR Interiors & Home Decors</a></p>
+                    <p><a href="construction.html">RR Homes Construction</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📱 <a href="tel:8367086748">8367086748</a></p>
+                    <p>📧 <a href="mailto:solar@raghavarajuenterprises.com">solar@raghavarajuenterprises.com</a></p>
+                    <p>📍 Kakinada, Andhra Pradesh</p>
+                    <p style="margin-top: 1rem;">GST: 37MIFPS2466D1ZU</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Suryakantha Solar Energies | A Unit of Raghavaraju Enterprises. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Solar Calculator Function
+        function calculateSolar() {
+            const monthlyBill = parseFloat(document.getElementById('monthlyBill').value);
+            const state = document.getElementById('state').value;
+            const customerType = document.getElementById('customerType').value;
+            
+            if (!monthlyBill || monthlyBill < 500) {
+                alert('Please enter a valid monthly bill amount (minimum ₹500)');
+                return;
+            }
+            
+            // State-specific rates
+            const ratePerUnit = state === 'AP' ? 6.8 : 7.5;
+            const dailyGeneration = 4.75; // Average units per kW per day in AP
+            
+            // Calculate monthly consumption
+            const monthlyUnits = Math.round(monthlyBill / ratePerUnit);
+            
+            // Calculate required system size (adding 10% buffer)
+            const dailyUnits = monthlyUnits / 30;
+            const requiredKW = Math.ceil((dailyUnits / dailyGeneration) * 1.1);
+            const recommendedKW = Math.min(Math.max(requiredKW, 1), 100); // Between 1-100 kW
+            
+            // Cost calculation (₹70,000 per kW average, reduces with scale)
+            let costPerKW;
+            if (recommendedKW <= 3) costPerKW = 70000;
+            else if (recommendedKW <= 10) costPerKW = 67000;
+            else if (recommendedKW <= 25) costPerKW = 63000;
+            else if (recommendedKW <= 50) costPerKW = 60000;
+            else costPerKW = 57000;
+            
+            const systemCost = recommendedKW * costPerKW;
+            
+            // Subsidy calculation (only for residential)
+            let subsidy = 0;
+            if (customerType === 'residential') {
+                if (recommendedKW <= 1) subsidy = 30000;
+                else if (recommendedKW <= 2) subsidy = 60000;
+                else subsidy = 78000; // Max subsidy
+            }
+            
+            const netInvestment = systemCost - subsidy;
+            
+            // Monthly generation and savings
+            const monthlyGeneration = Math.round(recommendedKW * dailyGeneration * 30);
+            const monthlySavings = Math.round(monthlyGeneration * ratePerUnit);
+            
+            // Payback period
+            const paybackMonths = Math.round(netInvestment / monthlySavings);
+            const paybackYears = (paybackMonths / 12).toFixed(1);
+            
+            // Display results
+            document.getElementById('resultUnits').textContent = monthlyUnits + ' units';
+            document.getElementById('resultSize').textContent = recommendedKW + ' kW';
+            document.getElementById('resultCost').textContent = '₹' + formatNumber(systemCost);
+            document.getElementById('resultSubsidy').textContent = subsidy > 0 ? '₹' + formatNumber(subsidy) : 'Not applicable';
+            document.getElementById('resultInvestment').textContent = '₹' + formatNumber(netInvestment);
+            document.getElementById('resultSavings').textContent = '₹' + formatNumber(monthlySavings);
+            document.getElementById('resultPayback').textContent = paybackYears + ' years';
+            
+            document.getElementById('calculatorResult').classList.add('show');
+        }
+        
+        function formatNumber(num) {
+            if (num >= 10000000) return (num / 10000000).toFixed(2) + ' Cr';
+            if (num >= 100000) return (num / 100000).toFixed(2) + ' L';
+            return num.toLocaleString('en-IN');
+        }
+        
+        // Form Submission
+        function submitEnquiry(event) {
+            event.preventDefault();
+            
+            const form = document.getElementById('enquiryForm');
+            const formData = new FormData(form);
+            
+            // Create mailto link with form data
+            const name = formData.get('name');
+            const phone = formData.get('phone');
+            const email = formData.get('email') || 'Not provided';
+            const city = formData.get('city');
+            const roofType = formData.get('roofType') || 'Not specified';
+            const monthlyBill = formData.get('monthlyBill') || 'Not specified';
+            const capacity = formData.get('preferredCapacity') || 'Not sure';
+            const message = formData.get('message') || 'No additional details';
+            
+            const subject = encodeURIComponent('Solar Enquiry from ' + name + ' - ' + city);
+            const body = encodeURIComponent(
+                'NEW SOLAR ENQUIRY\n' +
+                '==================\n\n' +
+                'Name: ' + name + '\n' +
+                'Phone: ' + phone + '\n' +
+                'Email: ' + email + '\n' +
+                'City/Town: ' + city + '\n' +
+                'Roof Type: ' + roofType + '\n' +
+                'Monthly Bill: ₹' + monthlyBill + '\n' +
+                'Preferred Capacity: ' + capacity + '\n\n' +
+                'Additional Details:\n' + message + '\n\n' +
+                '==================\n' +
+                'Sent from Suryakantha Solar Website'
+            );
+            
+            // Open email client
+            window.location.href = 'mailto:solar@raghavarajuenterprises.com?subject=' + subject + '&body=' + body;
+            
+            // Show success message
+            alert('Thank you for your enquiry! Your email client will open to send the details. We will contact you within 24 hours.');
+            
+            // Reset form
+            form.reset();
+        }
+        
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+        
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        
+        // Mobile menu toggle (basic implementation)
+        document.querySelector('.mobile-menu-btn')?.addEventListener('click', function() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+            navMenu.style.flexDirection = 'column';
+            navMenu.style.position = 'absolute';
+            navMenu.style.top = '100%';
+            navMenu.style.left = '0';
+            navMenu.style.right = '0';
+            navMenu.style.background = 'var(--cream)';
+            navMenu.style.padding = '1rem';
+            navMenu.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
+        });
+    </script>
 </body>
 </html>
